@@ -1,0 +1,7 @@
+.rst-content .mydefinition .admonition-title::before {
+	background-color: rgba(85, 168, 140, 0.318) !important;
+}
+
+.rst-content .mydefinition {
+	background-color: rgba(21, 79, 69, 0.287) !important;
+}
