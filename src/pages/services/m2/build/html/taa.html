@@ -1,0 +1,658 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="fr" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>TAA - Techniques d’apprentissage automatique &#8212; Documentation M2 courses recap </title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/translations.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'taa';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="DM - Data Mining" href="dm.html" />
+    <link rel="prev" title="CCG - Combinatoire, Complexité et Graphes" href="ccg.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="fr"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Passer au contenu principal</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Documentation M2 courses recap </p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="aic.html">AIC - Artificial Intelligence and Cognition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ccg.html">CCG - Combinatoire, Complexité et Graphes</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">TAA - Techniques d’apprentissage automatique</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dm.html">DM - Data Mining</a></li>
+<li class="toctree-l1"><a class="reference internal" href="biml.html">BIML - Bio-Inspired Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ia.html">IA - intelligent Agents</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Téléchargez cette page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/taa.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Télécharger le fichier source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimer au format PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Mode plein écran"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="clair/sombre" aria-label="clair/sombre" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>TAA - Techniques d’apprentissage automatique</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenu </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#taa-a-partir-de-donnees">TAA à partir de données</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prise-de-recul">Prise de recul</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apprentissage-automatique-machine-learning">Apprentissage automatique (Machine Learning)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-d-apprentissage">Types d’apprentissage</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#differents-modeles">Différents modèles</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#er-modele-adaline">1er modèle : ADALINE</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eme-modele-madaline">2ème modèle : MADALINE</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eme-modele-perceptron">3ème modèle : Perceptron</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eme-modele-perceptron-multi-classes">4ème modèle : Perceptron multi-classes</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="taa-techniques-d-apprentissage-automatique">
+<h1>TAA - Techniques d’apprentissage automatique<a class="headerlink" href="#taa-techniques-d-apprentissage-automatique" title="Lien permanent vers cette rubrique">#</a></h1>
+<section id="taa-a-partir-de-donnees">
+<h2>TAA à partir de données<a class="headerlink" href="#taa-a-partir-de-donnees" title="Lien permanent vers cette rubrique">#</a></h2>
+<div class="line-block">
+<div class="line">Les données ne sont pas des informations.</div>
+</div>
+<div class="mydefinition admonition">
+<p class="admonition-title">Définitions</p>
+<ul class="simple">
+<li><p><strong>Donnée</strong> : Description élémentaire d’un objet. (une observation, une transaction, un signal, un graphe, …)</p></li>
+<li><p><strong>Information</strong> : Représente le moyen pour un individu de comprendre son environnement.</p></li>
+<li><p><strong>Connaissance</strong> : Etat de transition de la donnée.</p></li>
+</ul>
+</div>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/taa-triangle.png"><img alt="_images/taa-triangle.png" src="_images/taa-triangle.png" style="width: 602.0px; height: 437.0px;" /></a>
+</figure>
+</section>
+<section id="prise-de-recul">
+<h2>Prise de recul<a class="headerlink" href="#prise-de-recul" title="Lien permanent vers cette rubrique">#</a></h2>
+<div class="line-block">
+<div class="line">Préparation du terrain</div>
+<div class="line">Avant de commencer à coder : analyser et préparer le jeu de données.</div>
+</div>
+<ol class="arabic">
+<li><p>Pré-traitement + codage :</p>
+<p><span class="math notranslate nohighlight">\(\Rightarrow\)</span> Data engeenering</p>
+<ul class="simple">
+<li><p>Il faut traiter les données nuisibles/aberantes d’abord.</p></li>
+<li><p>Codage : faire une vectorisation de la donnée brute.</p></li>
+</ul>
+</li>
+<li><p>Sélection de variables :</p>
+<p><span class="math notranslate nohighlight">\(\Rightarrow\)</span> Fisher engeenering
+Réduire le nombre de dimensions matricielles.</p>
+<ul class="simple">
+<li><p>Détecter les variables ayant des valeurs trés proches pour tout les individus.</p></li>
+<li><p>Détecter les fortes corrélations entre les variables.</p></li>
+<li><p>Imputation des données manquantes.</p></li>
+</ul>
+</li>
+<li><p>Normatiser les données :</p>
+<ul class="simple">
+<li><p>Centrer et réduire les données.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="apprentissage-automatique-machine-learning">
+<h2>Apprentissage automatique (Machine Learning)<a class="headerlink" href="#apprentissage-automatique-machine-learning" title="Lien permanent vers cette rubrique">#</a></h2>
+<div class="line-block">
+<div class="line">Discipline de l’IA qui consiste à modéliser une fonction statistique pour résoudre les problèmes complexes, linéairement ou non séparables.</div>
+<div class="line"><span class="math notranslate nohighlight">\(y=f(x)\)</span> avec <span class="math notranslate nohighlight">\(x\in\rm I\!R^{p}\)</span> et <span class="math notranslate nohighlight">\(y\)</span> la valeur cible.</div>
+</div>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/taa-separation.png"><img alt="_images/taa-separation.png" src="_images/taa-separation.png" style="width: 440.5px; height: 365.5px;" /></a>
+</figure>
+<div class="line-block">
+<div class="line">Chercher le minimum global entre tous les minimums locaux.</div>
+</div>
+<section id="types-d-apprentissage">
+<h3>Types d’apprentissage<a class="headerlink" href="#types-d-apprentissage" title="Lien permanent vers cette rubrique">#</a></h3>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/taa-diffTypes.png"><img alt="_images/taa-diffTypes.png" src="_images/taa-diffTypes.png" style="width: 569.0px; height: 347.0px;" /></a>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p><strong>Statistique</strong> : Mathématiques appliquées.</p></li>
+<li><p><strong>Probabiliste</strong> : Génératif.</p></li>
+<li><p><strong>Supervisé</strong> : y est totalement connu.</p></li>
+<li><p><strong>Semi-supervisé</strong> : y est partiellement connu.</p></li>
+<li><p><strong>Non-supervisé</strong> : y est totalement inconnu.</p></li>
+</ul>
+</div>
+<ul class="simple">
+<li><p>A base de distance : KNN, K-means, …</p></li>
+<li><p>Connexioniste : Réseaux de neurones, …</p></li>
+<li><p>A base de densité : SVM, …</p></li>
+<li><p>Modèle probabiliste : BN (Bayesian Network), …</p></li>
+<li><p>A base d’induction : Arbre de décision, …</p></li>
+<li><p>A base de régression : Régression linéaire, régression logistique, …</p></li>
+</ul>
+<div class="admonition-definition admonition">
+<p class="admonition-title">Définition</p>
+<p><strong>Neurone formel (artificiel)</strong> : Unité de traitement qui prend en entrée des données sous forme de vecteur <span class="math notranslate nohighlight">\(x=(x_{1},x_{2},...,x_{n})\)</span> et qui produit en sortie une valeur réel <span class="math notranslate nohighlight">\(s\)</span> en fonction de poids de connexion <span class="math notranslate nohighlight">\(w=(w_{1},w_{2},...,w_{n})\)</span>.</p>
+</div>
+<p>Le neurone formel passe par 2 fonctions :</p>
+<ul class="simple">
+<li><p>Une linéaire <span class="math notranslate nohighlight">\(F(x,w)\)</span> pour calculer son activation <span class="math notranslate nohighlight">\(a\)</span>.</p></li>
+<li><p>La deuxième fonction est non-linéaire <span class="math notranslate nohighlight">\(f(a)\)</span> pour calculer sa décision <span class="math notranslate nohighlight">\(s\)</span>.</p></li>
+</ul>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/taa-neuroneFormel.png"><img alt="_images/taa-neuroneFormel.png" src="_images/taa-neuroneFormel.png" style="width: 626.5px; height: 353.5px;" /></a>
+</figure>
+<p>Il existe 2 types de neurones formels :</p>
+<ul class="simple">
+<li><p><strong>Neurone produit scalaire</strong> : <span class="math notranslate nohighlight">\(F(x,w)=&lt;x,w&gt;=\sum_{i=1}^{n}x_{i}w_{i}\)</span></p></li>
+<li><p><strong>Neurone distance</strong> : <span class="math notranslate nohighlight">\(F(x,w)=||x-w||^{2}\)</span></p></li>
+</ul>
+<div class="line-block">
+<div class="line">Si les poids sont normalisés, alors il existe un lien entre les 2 types.</div>
+<div class="line"><span class="math notranslate nohighlight">\(||x-w||^{2}=||x||^{2}+||w||-2&lt;x,w&gt;\)</span></div>
+</div>
+</section>
+</section>
+<section id="differents-modeles">
+<h2>Différents modèles<a class="headerlink" href="#differents-modeles" title="Lien permanent vers cette rubrique">#</a></h2>
+<section id="er-modele-adaline">
+<h3>1er modèle : ADALINE<a class="headerlink" href="#er-modele-adaline" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="line-block">
+<div class="line"><strong>ADALINE</strong> : ADAptive LInear NEuron</div>
+<div class="line">On suppose des données en entrée <span class="math notranslate nohighlight">\(x=(x_{1},x_{2},...,x_{n})\)</span> avec <span class="math notranslate nohighlight">\(x\in\rm I\!R^{p}\)</span> et les sorties désirées <span class="math notranslate nohighlight">\(d=(d_{1},d_{2},...,d_{n})\)</span>.</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>ADALINE est un modèle adaptatif qui consiste à calculer une sortie <span class="math notranslate nohighlight">\(y\)</span> en fonction d’un vecteur de poids <span class="math notranslate nohighlight">\(w\)</span> tel que :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}y = w_{0}+&lt;x,w&gt;\\
+  = w_{0}+\sum_{i=1}^{n}x_{i}w_{i}\end{split}\]</div>
+</div>
+<div class="admonition-algorithme admonition">
+<p class="admonition-title">Algorithme</p>
+<ol class="arabic simple">
+<li><p>Initialiser aléatoirement les poids <span class="math notranslate nohighlight">\(w\)</span>.</p></li>
+<li><p>Boucle jusqu’à convergence :</p>
+<ol class="arabic simple">
+<li><p>Présenter une donnée <span class="math notranslate nohighlight">\(x^{k}\)</span> avec sa sortie <span class="math notranslate nohighlight">\(d^{k}\)</span>.</p></li>
+<li><p>Calculer l’écart : <span class="math notranslate nohighlight">\(e=d^{k}-&lt;x^{k},w^{k}&gt;\)</span>.</p></li>
+<li><p>Calucler l’approximation : <span class="math notranslate nohighlight">\(\Delta = -2\epsilon x^{k}\)</span>.</p></li>
+<li><p>Mettre à jour les poids : <span class="math notranslate nohighlight">\(w(t+1)=w(t)-\epsilon \Delta\)</span>.</p></li>
+</ol>
+</li>
+</ol>
+</div>
+<div class="line-block">
+<div class="line">Comment trouver les formules ?</div>
+<div class="line">L’erreur est : <span class="math notranslate nohighlight">\(err(w)=(d^{k}-x^{k}w)^{2}\)</span> <cite>erreur quadratique</cite>.</div>
+<div class="line">On cherche à minimiser l’erreur : <span class="math notranslate nohighlight">\(\frac{\partial err(w)}{\partial w}=0\)</span>.</div>
+<div class="line">On obtient : <span class="math notranslate nohighlight">\(-2(d^{k}-x^{k}w)x^{k}=0\)</span> <cite>équation normale</cite>.</div>
+</div>
+</section>
+<section id="eme-modele-madaline">
+<h3>2ème modèle : MADALINE<a class="headerlink" href="#eme-modele-madaline" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="line-block">
+<div class="line"><strong>MADALINE</strong> : Multiple ADALINE</div>
+<div class="line">Modèle connexioniste à 2 couches :</div>
+</div>
+<ol class="arabic simple">
+<li><p>Plusieurs ADALINEs en parallèle.</p></li>
+<li><p>Une couche logique pour aggéger les sorties des ADALINEs.</p></li>
+</ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/taa-madaline.png"><img alt="_images/taa-madaline.png" src="_images/taa-madaline.png" style="width: 626.5px; height: 353.5px;" /></a>
+</figure>
+</section>
+<section id="eme-modele-perceptron">
+<span id="pmc"></span><h3>3ème modèle : Perceptron<a class="headerlink" href="#eme-modele-perceptron" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="line-block">
+<div class="line">Modèle connexioniste à 3 couches :</div>
+</div>
+<ol class="arabic simple">
+<li><p>Capter les variables.</p></li>
+<li><p>Coder les variables.</p></li>
+<li><p>Décision.</p></li>
+</ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/taa-perceptron.png"><img alt="_images/taa-perceptron.png" src="_images/taa-perceptron.png" style="width: 737.5px; height: 362.5px;" /></a>
+</figure>
+<div class="admonition-algorithme admonition">
+<p class="admonition-title">Algorithme</p>
+<ol class="arabic">
+<li><p>Initialiser aléatoirement les poids <span class="math notranslate nohighlight">\(w\)</span>.</p></li>
+<li><p>Boucle jusqu’à convergence :</p>
+<ol class="arabic">
+<li><p>Présenter une donnée <span class="math notranslate nohighlight">\(x^{k}\)</span> avec sa sortie <span class="math notranslate nohighlight">\(d^{k}\)</span>.</p></li>
+<li><p>Calculer la sortie du modèle : <span class="math notranslate nohighlight">\(y^{k}=f(&lt;w,\varphi (x^{k})&gt;)\)</span>.</p></li>
+<li><div class="line-block">
+<div class="line">Si la donnée est bien classée (<span class="math notranslate nohighlight">\(d^{k}=y^{k}\)</span>) : <span class="math notranslate nohighlight">\(w(t+1)=w(t)\)</span>.</div>
+<div class="line">Sinon : <span class="math notranslate nohighlight">\(w(t+1)=w(t)+\epsilon \varphi (x^{k})d^{k}\)</span>.</div>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Perceptron</strong> est plus rapide mais moins robuste que <strong>ADALINE</strong>.</p>
+<ul class="simple">
+<li><p><strong>ADALINE</strong> : cherche la bonne frontière de séparation.</p></li>
+<li><p><strong>Perceptron</strong> : cherche à tout bien classifier.</p></li>
+</ul>
+</div>
+</section>
+<section id="eme-modele-perceptron-multi-classes">
+<h3>4ème modèle : Perceptron multi-classes<a class="headerlink" href="#eme-modele-perceptron-multi-classes" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="line-block">
+<div class="line">Variante du perceptron pour séparer entre plusieurs classe <span class="math notranslate nohighlight">\(C=(C_{1},C_{2},...,C_{p})\)</span>.</div>
+<div class="line">Le principe consiste à apprendre plusieurs vecteurs de poids de connexion <span class="math notranslate nohighlight">\(W=(W_{1},W_{2},...,W_{p})\)</span>, avec <span class="math notranslate nohighlight">\(W_{i}=(w_{i1},w_{i2},...,w_{in})\)</span> tel que :</div>
+</div>
+<div class="math notranslate nohighlight">
+\[\forall i \in [1,p]\;si\;x\in C_{i}\;alors\;\forall j\neq i\;|\,&lt;x,W_{i}&gt;\;&gt;\;&lt;x,W_{j}&gt;\]</div>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/taa-perceptronmcouches.png"><img alt="_images/taa-perceptronmcouches.png" src="_images/taa-perceptronmcouches.png" style="width: 660.0px; height: 417.5px;" /></a>
+</figure>
+<div class="admonition-algorithme admonition">
+<p class="admonition-title">Algorithme</p>
+<ol class="arabic">
+<li><p>Initialiser aléatoirement les poids <span class="math notranslate nohighlight">\(W_{i}\)</span>.</p></li>
+<li><p>Boucle jusqu’à convergence :</p>
+<ol class="arabic">
+<li><p>Présenter une donnée <span class="math notranslate nohighlight">\(x^{k}\in C_{i}\)</span> avec <span class="math notranslate nohighlight">\(i\in [1,p]\)</span>.</p></li>
+<li><p>Calculer la sortie du modèle : <span class="math notranslate nohighlight">\(C_{j}=ArgMax_{i}(&lt;W_{i},x^{k}&gt;)\)</span>.</p></li>
+<li><div class="line-block">
+<div class="line">Si la donnée est bien classée (<span class="math notranslate nohighlight">\(C_{j}=C_{i}\)</span>) : <span class="math notranslate nohighlight">\(W(t+1)=W(t)\)</span>.</div>
+<div class="line">Sinon :</div>
+</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(W_{i}(t+1)=W_{i}(t)+\epsilon x^{k}\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(W_{j}(t+1)=W_{j}(t)-\epsilon x^{k}\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(W_{l}(t+1)=W_{l}(t)\)</span> avec <span class="math notranslate nohighlight">\(l\neq j\)</span> et <span class="math notranslate nohighlight">\(l\neq i\)</span>.</p></li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="ccg.html"
+       title="page précédente">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">précédent</p>
+        <p class="prev-next-title">CCG - Combinatoire, Complexité et Graphes</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="dm.html"
+       title="page suivante">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">DM - Data Mining</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenu
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#taa-a-partir-de-donnees">TAA à partir de données</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prise-de-recul">Prise de recul</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apprentissage-automatique-machine-learning">Apprentissage automatique (Machine Learning)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-d-apprentissage">Types d’apprentissage</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#differents-modeles">Différents modèles</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#er-modele-adaline">1er modèle : ADALINE</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eme-modele-madaline">2ème modèle : MADALINE</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eme-modele-perceptron">3ème modèle : Perceptron</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eme-modele-perceptron-multi-classes">4ème modèle : Perceptron multi-classes</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Par Axel
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023, Axel.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

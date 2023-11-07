@@ -1,0 +1,1326 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="fr" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>IA - intelligent Agents &#8212; Documentation M2 courses recap </title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/translations.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ia';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="prev" title="BIML - Bio-Inspired Machine Learning" href="biml.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="fr"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Passer au contenu principal</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Documentation M2 courses recap </p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="aic.html">AIC - Artificial Intelligence and Cognition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ccg.html">CCG - Combinatoire, Complexité et Graphes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taa.html">TAA - Techniques d’apprentissage automatique</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dm.html">DM - Data Mining</a></li>
+<li class="toctree-l1"><a class="reference internal" href="biml.html">BIML - Bio-Inspired Machine Learning</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">IA - intelligent Agents</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Téléchargez cette page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/ia.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Télécharger le fichier source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimer au format PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Mode plein écran"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="clair/sombre" aria-label="clair/sombre" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>IA - intelligent Agents</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenu </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mdp-et-planification-sous-incertitudes">MDP et Planification sous incertitudes</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notion-d-agent">Notion d’agent</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-a-la-decision-sequentielle">Introduction à la décision séquentielle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formalisation-mathematique">Formalisation mathématique</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#probleme-modele-mdp-markov-decision-process">Problème : Modèle MDP <em>(Markov Decision Process)</em></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#solution-politique">Solution : Politique</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#objectif-politique-optimale">Objectif : Politique optimale</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fonction-de-valeur">Fonction de valeur</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resolution-d-un-mdp">Résolution d’un MDP</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extensions-des-mdp">Extensions des MDP</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apprentissage-par-renforcement">Apprentissage par renforcement</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notions-de-base">Notions de base</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ar-passif">AR passif</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ar-actif">AR actif</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#agent-glouton">Agent glouton</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#politique-epsilon-greedy">Politique <span class="math notranslate nohighlight">\(\epsilon\)</span>-greedy</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generalisation">Généralisation</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#fusion-d-etats">Fusion d’états</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Généralisation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#approximate-q-learning">Approximate Q-learning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apprentissage-profond-par-renforcement-deep-rl">Apprentissage profond par renforcement <em>(Deep RL)</em></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deep-q-learning">Deep Q Learning</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#qlearning-avec-nn-naif">QLearning avec NN naïf</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#experience-replay">Experience Replay</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reseau-cible">Réseau cible</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deep-q-network-dqn">Deep Q-Network (DQN)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recherche-de-politique">Recherche de politique</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#v-based-vs-pi-based"><span class="math notranslate nohighlight">\(V\)</span>-based vs <span class="math notranslate nohighlight">\(\pi\)</span>-based</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#formalisation-du-probleme">Formalisation du problème</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recherche-stochastique-de-pi">Recherche stochastique de <span class="math notranslate nohighlight">\(\pi\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#approches-par-gradient-de-pi">Approches par gradient de <span class="math notranslate nohighlight">\(\pi\)</span></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#policy-gradient-theorem">Policy Gradient Theorem</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#algorithme-reinforce">Algorithme REINFORCE</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#on-policy-vs-off-policy">On-policy vs Off-policy</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#actor-critic">Actor-Critic</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#approche-bdi-belief-desire-intention">Approche BDI (Belief Desire Intention)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#agents">Agents</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#architectures-et-fonctionnement-des-agents">Architectures et fonctionnement des agents</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#architecture-bdi">Architecture BDI</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <style> .green {color:#60aa00; font-weight:bold; font-size:16px} </style>
+    <style> .red {color:#aa0060; font-weight:bold; font-size:16px} </style><section id="ia-intelligent-agents">
+<h1>IA - intelligent Agents<a class="headerlink" href="#ia-intelligent-agents" title="Lien permanent vers cette rubrique">#</a></h1>
+<div class="line-block">
+<div class="line">Dispensé par : <em>Laëtition Matignon</em> et <em>Nadia Kabachi</em> (2023 - Sept.Nov)</div>
+</div>
+<section id="mdp-et-planification-sous-incertitudes">
+<h2>MDP et Planification sous incertitudes<a class="headerlink" href="#mdp-et-planification-sous-incertitudes" title="Lien permanent vers cette rubrique">#</a></h2>
+<p><em>Laëtitia Matignon</em></p>
+<section id="notion-d-agent">
+<h3>Notion d’agent<a class="headerlink" href="#notion-d-agent" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="line-block">
+<div class="line">Un agent est une entité autonome évoluant dans un environnement avec des capteurs et des actionneurs. Il prend des décisions pour atteindre son objectif.</div>
+</div>
+<div class="admonition-boucle-perception-action admonition">
+<p class="admonition-title">Boucle perception/action</p>
+<div class="line-block">
+<div class="line">L’agent possède une fonction de décision <span class="math notranslate nohighlight">\(f_{d}:(O_{n} \rightarrow A)\)</span></div>
+</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(O\)</span> : Unité élémentaire de perception <em>(via des capteurs)</em>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(A\)</span> : Un ensemble d’actions <em>(via des actionneurs)</em>.</p></li>
+</ul>
+</div>
+<div class="line-block">
+<div class="line">Un agent rationnel doit sélectionner une action qui maximise sa mesure de performance.</div>
+</div>
+<div class="admonition-environnement-de-la-tache-peas admonition">
+<p class="admonition-title">Environnement de la tâche <em>(PEAS)</em></p>
+<ul class="simple">
+<li><p>Définir la mesure de performance.</p></li>
+<li><p>Définir l’environnement.</p></li>
+<li><p>Définir les capteurs.</p></li>
+<li><p>Définir les effecteurs.</p></li>
+</ul>
+</div>
+<div class="line-block">
+<div class="line">L’environnement peut être entièrement ou partiellement observable.</div>
+<div class="line">Il peut être déterministe ou stochastique.</div>
+<div class="line">Il peut être épisodique ou séquentiel.</div>
+<div class="line">Il peut être statique ou dynamique <em>(un environnement dynamique change pendant la délibération de l’agent)</em>.</div>
+<div class="line">Il peut être discret ou continu.</div>
+<div class="line">Il peut être mono-agent ou multi-agent.</div>
+</div>
+<div class="line-block">
+<div class="line">Un agent est la combinaison d’une architecture et d’un programme. Il existe 5 types de programmes :</div>
+</div>
+<ul class="simple">
+<li><p><strong>Agents réflexes simples</strong> : Sélection des actions en fonction de la perception courante.</p></li>
+<li><p><strong>Agents réflexes fondés sur des modèles</strong> : L’agent maintient un état interne qui dépend de la perception courante et de l’historique des perceptions. Il possède un modèle de l’environnement.</p></li>
+<li><p><strong>Agents fondés sur les buts</strong> : L’agent possède une information sur le but qui décrit les situations désirables. Combinaison de cette information avec l’information sur les résultats des actions possibles afin de choisir l’action qui satisfait le but.</p></li>
+<li><p><strong>Agents fondés sur l’utilité</strong> : L’agent possède une fonction d’utlité qui mesure le degré de satisfaction associé à l’état. Choisit la meilleure manière de réaliser le but.</p></li>
+<li><p><strong>Agents évolués capables d’apprentissage</strong> :</p>
+<ul>
+<li><p>Elément de performance : Décide de l’action en fonction des perceptions.</p></li>
+<li><p>Critic : Evalue le comportement de l’agent selon une mesure de performance.</p></li>
+<li><p>Learning element : Utilise l’évaluation du critic pour déterminer comment modifier l’élément de performance.</p></li>
+<li><p>Problem generator : Suggère des actions d’exploration.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="introduction-a-la-decision-sequentielle">
+<h3>Introduction à la décision séquentielle<a class="headerlink" href="#introduction-a-la-decision-sequentielle" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="line-block">
+<div class="line">Trouver un plan ou une séquence d’actions pour aller d’un état initial à un état but en respectant certains objectifs.</div>
+<div class="line">2 phases en planification : planification <em>(calcul d’un plan)</em> et exécution du plan.</div>
+</div>
+</section>
+<section id="formalisation-mathematique">
+<h3>Formalisation mathématique<a class="headerlink" href="#formalisation-mathematique" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="line-block">
+<div class="line">On se base sur un environnement stochastique.</div>
+</div>
+<section id="probleme-modele-mdp-markov-decision-process">
+<h4>Problème : Modèle MDP <em>(Markov Decision Process)</em><a class="headerlink" href="#probleme-modele-mdp-markov-decision-process" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="admonition-chaine-de-markov admonition">
+<p class="admonition-title">Chaîne de Markov</p>
+<ul class="simple">
+<li><p>Ensemble fini d’états : <span class="math notranslate nohighlight">\(S\)</span>.</p></li>
+<li><p>Fonction de transition : <span class="math notranslate nohighlight">\(T:S\times S \rightarrow [0;1]\)</span>.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[T(s,s') = P(s_{t+1}=s'|s_{t}=s)\]</div>
+</div>
+<div class="admonition-processus-decisionnel-markovien-mdp admonition">
+<p class="admonition-title">Processus Décisionnel Markovien (MDP)</p>
+<ul class="simple">
+<li><p>Ensemble fini d’états : <span class="math notranslate nohighlight">\(S\)</span>.</p></li>
+<li><p>Ensemble fini d’actions : <span class="math notranslate nohighlight">\(A\)</span>.</p></li>
+<li><p>Fonction de transition : <span class="math notranslate nohighlight">\(T:S\times A \times S \rightarrow [0;1]\)</span>.</p></li>
+<li><p>Fonction de récompense : <span class="math notranslate nohighlight">\(R:S\times A \times S \rightarrow \mathbb{R}\)</span>.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[T(s,a,s') = P(s_{t+1}=s'|s_{t}=s,a_{t}=a)\]</div>
+</div>
+<div class="admonition-propriete-de-markov admonition">
+<p class="admonition-title">Propriété de Markov</p>
+<div class="line-block">
+<div class="line">Les conséquences d’un action <span class="math notranslate nohighlight">\(a_{t}\)</span> dans un état <span class="math notranslate nohighlight">\(s_{t}\)</span> ne dépendent que de l’état courant <span class="math notranslate nohighlight">\(s_{t}\)</span>.</div>
+</div>
+</div>
+<figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="_images/ia-loop.png"><img alt="_images/ia-loop.png" src="_images/ia-loop.png" style="width: 252.0px; height: 112.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Boucle perception/action</span><a class="headerlink" href="#id2" title="Lien permanent vers cette image">#</a></p>
+</figcaption>
+</figure>
+<div class="line-block">
+<div class="line">Un épisode : <span class="math notranslate nohighlight">\(s_{0}, a_{0}, r_{1}, s_{1}, a_{1}, r_{2}, s_{2}, a_{2}, ...\)</span></div>
+</div>
+</section>
+<section id="solution-politique">
+<h4>Solution : Politique<a class="headerlink" href="#solution-politique" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="admonition-politique-math-pi admonition">
+<p class="admonition-title">Politique <span class="math notranslate nohighlight">\(\pi\)</span></p>
+<div class="line-block">
+<div class="line">L’agent doit déterminer quelle action faire dans chaque état : politique <span class="math notranslate nohighlight">\(\pi:S \rightarrow A\)</span> associe une (ou plusieurs) action(s) à exécuter dans chaque état.</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line">Si le choix de la meilleure décision dépend de l’instant <span class="math notranslate nohighlight">\(t\)</span> alors la politique est <em>non-stationnaire</em> <span class="math notranslate nohighlight">\(\pi_{t}\)</span>. Sinon elle est <em>stationnaire</em> <span class="math notranslate nohighlight">\(\forall t, \pi_{t}=\pi\)</span>.</div>
+<div class="line">L”<strong>horizon</strong> est le nombre de pas de temps sur lesquels l’agent raisonne pour prendre ses décisions <em>(peut être fini ou infini)</em>.</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<div class="line-block">
+<div class="line">On se base sur une politique stationnaire et un horizon infini.</div>
+</div>
+</div>
+</section>
+<section id="objectif-politique-optimale">
+<h4>Objectif : Politique optimale<a class="headerlink" href="#objectif-politique-optimale" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="admonition-politique-optimale-math-pi admonition">
+<p class="admonition-title">Politique optimale <span class="math notranslate nohighlight">\(\pi^{*}\)</span></p>
+<div class="line-block">
+<div class="line">Résoudre un MDP consiste à trouver une politique optimale <span class="math notranslate nohighlight">\(\pi^{*}\)</span> qui donne pour tout état l’action permettant de maximiser l’espérance de récompenses cumulées.</div>
+</div>
+<div class="math notranslate nohighlight">
+\[G = \sum_{t=0}^{\infty} \gamma^{t}r_{t+1}\]</div>
+</div>
+<div class="line-block">
+<div class="line">Compromis nécessaire entre récompenses immédiates et futures. Pondération des récompenses selon leur éloignement dans le futur.</div>
+</div>
+<div class="math notranslate nohighlight">
+\[G^{\gamma} = \sum_{t=0}^{\infty} \gamma^{t}r_{t+1}\]</div>
+</section>
+</section>
+<section id="fonction-de-valeur">
+<h3>Fonction de valeur<a class="headerlink" href="#fonction-de-valeur" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="admonition-fonction-de-valeur-math-v-pi admonition">
+<p class="admonition-title">Fonction de valeur <span class="math notranslate nohighlight">\(V^{\pi}\)</span></p>
+<div class="line-block">
+<div class="line">La fonction de valeur <span class="math notranslate nohighlight">\(V^{\pi}(s)\)</span> d’un état <span class="math notranslate nohighlight">\(s\)</span> est l’espérance de récompenses cumulées à partir de <span class="math notranslate nohighlight">\(s\)</span> en suivant la politique <span class="math notranslate nohighlight">\(\pi\)</span>.</div>
+</div>
+<div class="math notranslate nohighlight">
+\[V^{\pi}(s) = \mathbb{E}_{\pi}[\sum_{t=0}^{\infty} \gamma^{t}r_{t+1}|s_{0}=s]\]</div>
+</div>
+<div class="line-block">
+<div class="line"><span class="math notranslate nohighlight">\(\pi^{'} \geq \pi\)</span> ssi <span class="math notranslate nohighlight">\(V_{\pi^{'}}(s) \geq V_{\pi}(s) \forall s \in S\)</span>.</div>
+</div>
+<div class="math notranslate nohighlight">
+\[V^{*} = V^{\pi^{*}} = \max_{\pi} V^{\pi}\]</div>
+<div class="admonition-equation-de-bellman admonition">
+<p class="admonition-title">Equation de Bellman</p>
+<div class="math notranslate nohighlight">
+\[V^{\pi}(s) = \sum_{s' \in S} T(s,\pi(s),s')[R(s,\pi(s),s') + \gamma V^{\pi}(s')]\]</div>
+<div class="line-block">
+<div class="line">Optimalité d’optimalité de Bellman :</div>
+</div>
+<div class="math notranslate nohighlight">
+\[V^{*}(s) = \max_{a \in A} \sum_{s' \in S} T(s,a,s')[R(s,a,s') + \gamma V^{*}(s')]\]</div>
+</div>
+</section>
+<section id="resolution-d-un-mdp">
+<h3>Résolution d’un MDP<a class="headerlink" href="#resolution-d-un-mdp" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="admonition-value-iteration-bellman-1957 admonition">
+<p class="admonition-title">Value Iteration <em>(Bellman, 1957)</em></p>
+<ol class="arabic simple">
+<li><p>Initialisation arbitraire de <span class="math notranslate nohighlight">\(V_{0}(s) \forall s \in S\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(V_{k+1}(s) = \max_{a \in A} \sum_{s' \in S} T(s,a,s')[R(s,a,s') + \gamma V_{k}(s')]\)</span></p></li>
+<li><p>Répète jusqu’à convergence. Critère d’arrêt : <span class="math notranslate nohighlight">\(\max_{s \in S} |V_{k+1}(s) - V_{k}(s)| \lt \epsilon\)</span>.</p></li>
+</ol>
+</div>
+<div class="line-block">
+<div class="line">Extraction de la politique optimale : <span class="math notranslate nohighlight">\(\pi^{*}(s) = \arg\max_{a \in A} \sum_{s' \in S} T(s,a,s')[R(s,a,s') + \gamma V^{*}(s')]\)</span>.</div>
+</div>
+<div class="admonition-policy-iteration-howard-1960 admonition">
+<p class="admonition-title">Policy iteration <em>(Howard, 1960)</em></p>
+<ul class="simple">
+<li><p>Evaluation d’un politique <span class="math notranslate nohighlight">\(\pi\)</span> : calcul de <span class="math notranslate nohighlight">\(V^{\pi}\)</span>.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[V_{k+1}^{\pi}(s) = \sum_{s' \in S} T(s,\pi(s),s')[R(s,\pi(s),s') + \gamma V_{k}^{\pi}(s')]\]</div>
+<ul class="simple">
+<li><p>Amélioration d’une politique.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\forall s \in S, \pi^{'}(s) \leftarrow \arg\max_{a \in A} \sum_{s' \in S} T(s,a,s')[R(s,a,s') + \gamma V^{\pi}(s')]\]</div>
+</div>
+</section>
+<section id="extensions-des-mdp">
+<h3>Extensions des MDP<a class="headerlink" href="#extensions-des-mdp" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="line-block">
+<div class="line">Pour un MDP partiellement observable, l’agent n’agit qu’en fonction de son observation immédiate <span class="math notranslate nohighlight">\(\pi : S\rightarrow A\)</span>.</div>
+</div>
+<div class="admonition-systmes-multi-agent-sma admonition">
+<p class="admonition-title">Syst§mes Multi-Agent <em>(SMA)</em></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(n\)</span> nombre de robots.</p></li>
+<li><p><span class="math notranslate nohighlight">\(s \in S\)</span> état joint du SMA.</p></li>
+<li><p><span class="math notranslate nohighlight">\(a \in A\)</span> action jointe.</p></li>
+<li><p><span class="math notranslate nohighlight">\(T : S\times A \times S \rightarrow [0;1]\)</span> fonction de transition des <span class="math notranslate nohighlight">\(n\)</span> robots d’un état joint <span class="math notranslate nohighlight">\(s\)</span> à un état joint <span class="math notranslate nohighlight">\(s'\)</span> en suivant une action jointe <span class="math notranslate nohighlight">\(a\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(R : S \rightarrow \mathbb{R}\)</span> fonction de récompense sur l’état joint <span class="math notranslate nohighlight">\(s\)</span>.</p></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="apprentissage-par-renforcement">
+<h2>Apprentissage par renforcement<a class="headerlink" href="#apprentissage-par-renforcement" title="Lien permanent vers cette rubrique">#</a></h2>
+<p><em>Laëtitia Matignon</em></p>
+<div class="line-block">
+<div class="line"><strong>Apprentissage par renforcement</strong> (AR) : L’apprentissage est basé sur l’interaction avec l’environnement : l’apprenant est actif.</div>
+</div>
+<section id="notions-de-base">
+<h3>Notions de base<a class="headerlink" href="#notions-de-base" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="line-block">
+<div class="line">Nouvelles hypothèses : <span class="math notranslate nohighlight">\(T\)</span> et <span class="math notranslate nohighlight">\(R\)</span> sont inconnues. L’agent doit les apprendre en interagissant avec l’environnement.</div>
+<div class="line">Nous n’avons plus de planification hors-ligne.</div>
+</div>
+<div class="line-block">
+<div class="line">2 types d’AR :</div>
+</div>
+<ul class="simple">
+<li><p><strong>AR indirect</strong> (model-based) : L’agent apprend <span class="math notranslate nohighlight">\(T\)</span> et <span class="math notranslate nohighlight">\(R\)</span> par interactions. Il s’appuie sur cette connaissnace pour calculer une politique optimale avec des méthodes de planifications.</p></li>
+<li><p><strong>AR direct</strong> (model-free) : Construit une politique optimale en apprenant des fonctions spécifiques mais sans apprentissage direct de <span class="math notranslate nohighlight">\(T\)</span> et <span class="math notranslate nohighlight">\(R\)</span>.</p></li>
+</ul>
+</section>
+<section id="ar-passif">
+<h3>AR passif<a class="headerlink" href="#ar-passif" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\forall s \in S, V^{\pi}(s) = \mathbb{E}_{\pi}[\sum_{t=0}^{\infty} \gamma^{t}r_{t+1}|s_{0}=s]\]</div>
+<div class="line-block">
+<div class="line">L’agent réalise plusieurs épisodes en suivant la politique fixée <span class="math notranslate nohighlight">\(\pi\)</span>.</div>
+<div class="line">Il existe 3 algorithmes pour évaluer <span class="math notranslate nohighlight">\(V^{\pi}\)</span> à partir des épisodes :</div>
+</div>
+<ul>
+<li><p><strong>Monte-Carlo Prediction</strong> : La valeur d’un état <span class="math notranslate nohighlight">\(s\)</span> est la moyenne des récompenses obtenues sur tous les épisodes en partant de <span class="math notranslate nohighlight">\(s\)</span> et en suivant la politique <span class="math notranslate nohighlight">\(\pi\)</span>.</p>
+<div class="admonition-avantages admonition">
+<p class="admonition-title">Avantages</p>
+<ul class="simple">
+<li><p>Apprentissage en ligne, sans modèle.</p></li>
+<li><p>Pas de biais : les valeurs proviennent d’une interaction avec l’environnement.</p></li>
+</ul>
+</div>
+<div class="admonition-inconvenients admonition">
+<p class="admonition-title">Inconvénients</p>
+<ul class="simple">
+<li><p>On doit conserver les épisodes.</p></li>
+<li><p>Convergence très lente.</p></li>
+<li><p>Problème pour tout les épisodes de taille infinie.</p></li>
+<li><p>Forte variance : les valeurs d’un état peuvent être très différentes d’un épisode à l’autre.</p></li>
+</ul>
+</div>
+</li>
+<li><p><strong>Incremental Monte-Carlo Prediction</strong> : On réalise des épisodes complets réalisés dans l’environnement en suivant la politique <span class="math notranslate nohighlight">\(\pi\)</span>. A chaque fin d’épisode, on met à jour les états visités pendant l’épisode.</p>
+<div class="math notranslate nohighlight">
+\[V^{\pi}(s) = V^{\pi}(s) + \alpha (v(s) - V^{\pi}(s))\]</div>
+<div class="line-block">
+<div class="line">Avec <span class="math notranslate nohighlight">\(v(s) = r_{1} + \gamma r_{2} + \gamma^{2} r_{3} + ...\)</span> et <span class="math notranslate nohighlight">\(\alpha \in [0;1]\)</span> le pas d’apprentissage.</div>
+</div>
+<div class="admonition-avantages admonition">
+<p class="admonition-title">Avantages</p>
+<ul class="simple">
+<li><p>Apprentissage en ligne, sans modèle.</p></li>
+<li><p>Pas de biais : les valeurs proviennent d’une interaction avec l’environnement.</p></li>
+<li><p><span class="green">On doit conserver un seul épisode.</span></p></li>
+</ul>
+</div>
+<div class="admonition-inconvenients admonition">
+<p class="admonition-title">Inconvénients</p>
+<ul class="simple">
+<li><p>Convergence très lente.</p></li>
+<li><p>Problème pour tout les épisodes de taille infinie.</p></li>
+<li><p>Forte variance : les valeurs d’un état peuvent être très différentes d’un épisode à l’autre.</p></li>
+</ul>
+</div>
+</li>
+<li><p><strong>Temporal Difference Prediction</strong> : On réalise des épisodes complets réalisés dans l’environnement en suivant la politique <span class="math notranslate nohighlight">\(\pi\)</span>. Après chaque action exécutée par l’agent dans un état <span class="math notranslate nohighlight">\(s\)</span>, on applique la mise à jour suivante à l’état <span class="math notranslate nohighlight">\(s\)</span> :</p>
+<div class="math notranslate nohighlight">
+\[V^{\pi}(s) = (1 - \alpha) V^{\pi}(s) + \alpha (r + \gamma V^{\pi}(s'))\]</div>
+<div class="admonition-avantages admonition">
+<p class="admonition-title">Avantages</p>
+<ul class="simple">
+<li><p>Apprentissage en ligne, sans modèle.</p></li>
+<li><p><span class="green">Pas besoin de conserver tout l’épisode, mise à jour à chaque étape.</span></p></li>
+<li><p><span class="green">Convergence plus rapide avec le bootstrap.</span></p></li>
+<li><p><span class="green">Faible variance avec le bootstrap.</span></p></li>
+</ul>
+</div>
+<div class="admonition-inconvenients admonition">
+<p class="admonition-title">Inconvénients</p>
+<ul class="simple">
+<li><p><span class="red">Biais : Les valeurs ne sont pas toujours justes car on utilise le bootstrap pour l’échantillon.</span></p></li>
+</ul>
+</div>
+</li>
+</ul>
+</section>
+<section id="ar-actif">
+<h3>AR actif<a class="headerlink" href="#ar-actif" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="line-block">
+<div class="line"><span class="math notranslate nohighlight">\(\pi\)</span> n’est plus figée.</div>
+<div class="line">Il évolue un politique <span class="math notranslate nohighlight">\(\pi\)</span> puis met à jour <span class="math notranslate nohighlight">\(V^{\pi}(s)\)</span> selon <em>TD prediction</em>. Apreès chaque évaluation, il améliore la politique <span class="math notranslate nohighlight">\(\pi\)</span> suivie.</div>
+</div>
+<div class="admonition-fonction-de-valeur-d-action-math-q admonition">
+<p class="admonition-title">Fonction de valeur d’action <span class="math notranslate nohighlight">\(Q\)</span></p>
+<div class="line-block">
+<div class="line"><span class="math notranslate nohighlight">\(Q:S\times A \rightarrow \mathbb{R}\)</span>.</div>
+<div class="line"><span class="math notranslate nohighlight">\(Q(s, a)\)</span> est la valeur de l’action <span class="math notranslate nohighlight">\(a\)</span> dans l’état <span class="math notranslate nohighlight">\(s\)</span>.</div>
+<div class="line"><span class="math notranslate nohighlight">\(Q^{\pi}(s, a)\)</span> évalue le retour espéré lorsque l’on effecture l’action <span class="math notranslate nohighlight">\(a\)</span> dans l’état <span class="math notranslate nohighlight">\(s\)</span> puis on suit la politique <span class="math notranslate nohighlight">\(\pi\)</span> : <span class="math notranslate nohighlight">\(Q^{\pi}(s, a) = \mathbb{E}[\sum_{t=0}^{\infty} \gamma^{t}r_{t+1}|\pi, s_{t}=s, a_{t}=a]\)</span>.</div>
+<div class="line">Liens entre <span class="math notranslate nohighlight">\(V\)</span> et <span class="math notranslate nohighlight">\(Q\)</span> : <span class="math notranslate nohighlight">\(\forall s \in S, V(s) = \max_{a \in A} Q(s, a)\)</span>.</div>
+</div>
+</div>
+<section id="agent-glouton">
+<h4>Agent glouton<a class="headerlink" href="#agent-glouton" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="line-block">
+<div class="line">A chaque étape <span class="math notranslate nohighlight">\(&lt;s,a,s',r&gt;\)</span> :</div>
+</div>
+<ol class="arabic">
+<li><p>L’agent dans <span class="math notranslate nohighlight">\(s\)</span> suit sa politique <span class="math notranslate nohighlight">\(a=\pi(s)\)</span>.</p></li>
+<li><p>Il évalue cette politique avec mise à jour <em>TD prediction</em> :</p>
+<div class="math notranslate nohighlight">
+\[Q(s,a) \leftarrow (1 - \alpha) Q(s,a) + \alpha (r + \gamma \max_{b \in A} Q(s',b))\]</div>
+</li>
+<li><p>Après chaque mise à jour, il améliore sa politique :</p>
+<div class="math notranslate nohighlight">
+\[\pi(s) = greedy(Q(s, .)) = \arg\max_{a \in A} Q(s,a)\]</div>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<div class="line-block">
+<div class="line">Manque d’exploration.</div>
+</div>
+</div>
+</section>
+<section id="politique-epsilon-greedy">
+<h4>Politique <span class="math notranslate nohighlight">\(\epsilon\)</span>-greedy<a class="headerlink" href="#politique-epsilon-greedy" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="line-block">
+<div class="line">Explorer avec probabilité <span class="math notranslate nohighlight">\(\epsilon\)</span> et exploiter avec probabilité <span class="math notranslate nohighlight">\(1 - \epsilon\)</span>.</div>
+</div>
+<div class="admonition-algorithme-du-q-learning admonition">
+<p class="admonition-title">Algorithme du Q-learning</p>
+<div class="line-block">
+<div class="line">Construire une table des Q-valeurs et répéter pour chaque épisode :</div>
+</div>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(s \leftarrow\)</span> état initial.</p></li>
+<li><p>Répéter pour chaque étape dans l’épisode :</p>
+<ol class="arabic simple">
+<li><p>Choisir <span class="math notranslate nohighlight">\(a\)</span> selon une stratégie d’exploration.</p></li>
+<li><p>Exécuter <span class="math notranslate nohighlight">\(a\)</span> et observer <span class="math notranslate nohighlight">\(r\)</span> et <span class="math notranslate nohighlight">\(s'\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(Q(s,a) \leftarrow (1 - \alpha_{k}) Q(s,a) + \alpha_{k} (r + \gamma \max_{b \in A} Q(s',b))\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(s \leftarrow s'\)</span></p></li>
+</ol>
+</li>
+</ol>
+<div class="line-block">
+<div class="line">La suite <span class="math notranslate nohighlight">\(\alpha_{k}(s,a)\)</span> doit décroitre à chaque nouvelle visite de <span class="math notranslate nohighlight">\((s,a)\)</span>.</div>
+</div>
+</div>
+</section>
+</section>
+<section id="generalisation">
+<h3>Généralisation<a class="headerlink" href="#generalisation" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="line-block">
+<div class="line">Problème d’espace de mémoire pour les méthodes tabulaires ; de lenteur d’apprentissage ; et de discétisation.</div>
+</div>
+<section id="fusion-d-etats">
+<h4>Fusion d’états<a class="headerlink" href="#fusion-d-etats" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="line-block">
+<div class="line">Si des situations se ressemblent, on considère qu’elles correspondent au même état discret.</div>
+<div class="line">La politique définie sur l’espace des états fusionnés doit permettre à l’agent de prendre une décision markovienne <em>(qui ne dépend pas de l’état courant)</em>.</div>
+</div>
+<div class="line-block">
+<div class="line">Discrétisation de l’espace d’états experte, difficile à trouver.</div>
+</div>
+</section>
+<section id="id1">
+<h4>Généralisation<a class="headerlink" href="#id1" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="line-block">
+<div class="line">Le principe est d’utiliser une fonction de Q-valeurs continue plutôt qu’une table.</div>
+</div>
+</section>
+<section id="approximate-q-learning">
+<h4>Approximate Q-learning<a class="headerlink" href="#approximate-q-learning" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="line-block">
+<div class="line">La fonction de valeur <span class="math notranslate nohighlight">\(Q\)</span> est approximée par une fonction linéaire :</div>
+</div>
+<div class="math notranslate nohighlight">
+\[Q_{w}(s,a) = \sum_{i=1}^{n} w_{i} f_{i}(s,a)\]</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(n\)</span> features ou fonctions caractéristiques <span class="math notranslate nohighlight">\(f_{i}:S\times A \rightarrow \mathbb{R}\)</span> choisies.</p></li>
+<li><p><span class="math notranslate nohighlight">\(n\)</span> paramètres/poids <span class="math notranslate nohighlight">\(w_{i}\)</span> appris pour avoir la meilleure approximation de la fonction <span class="math notranslate nohighlight">\(Q\)</span>.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<div class="line-block">
+<div class="line">On stocke <span class="math notranslate nohighlight">\(n\)</span> poids au lieu des Q-valeurs (<span class="math notranslate nohighlight">\(n \lt\lt |S| \times |A|\)</span>).</div>
+</div>
+</div>
+<figure class="align-default" id="id3">
+<a class="reference internal image-reference" href="_images/ia-algoApproxQ.png"><img alt="_images/ia-algoApproxQ.png" src="_images/ia-algoApproxQ.png" style="width: 561.0px; height: 412.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Algorithme Approximate Q-learning</span><a class="headerlink" href="#id3" title="Lien permanent vers cette image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+</section>
+<section id="apprentissage-profond-par-renforcement-deep-rl">
+<h2>Apprentissage profond par renforcement <em>(Deep RL)</em><a class="headerlink" href="#apprentissage-profond-par-renforcement-deep-rl" title="Lien permanent vers cette rubrique">#</a></h2>
+<p><em>Laëtitia Matignon</em></p>
+<section id="deep-q-learning">
+<h3>Deep Q Learning<a class="headerlink" href="#deep-q-learning" title="Lien permanent vers cette rubrique">#</a></h3>
+<section id="qlearning-avec-nn-naif">
+<h4>QLearning avec NN naïf<a class="headerlink" href="#qlearning-avec-nn-naif" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="line-block">
+<div class="line">Approximation non-linéaire de la Q fonction <span class="math notranslate nohighlight">\(Q_{\omega}\)</span> avec <span class="math notranslate nohighlight">\(\omega\)</span> les poids d’un réseau de neurones.</div>
+</div>
+<ul class="simple">
+<li><p>Action <strong>Value</strong> Approximation : <span class="math notranslate nohighlight">\(Q_{\omega} : S \times A \rightarrow \mathbb{R}\)</span>.</p></li>
+<li><p>Action <strong>Vector</strong> Approximation : <span class="math notranslate nohighlight">\(Q_{\omega} : S \rightarrow \mathbb{R}^{A}\)</span>. Autant de sortie que d’actions.</p></li>
+</ul>
+<div class="line-block">
+<div class="line">On veut minimiser l’erreur sur les Q-valeurs. A chaque interaction <span class="math notranslate nohighlight">\((s,a,s',r)\)</span> :</div>
+</div>
+<ol class="arabic simple">
+<li><p>Prédiction pour la valeur de <span class="math notranslate nohighlight">\((s,a)\)</span> (forward pass) : <span class="math notranslate nohighlight">\(\hat{y} = q_{\omega}(s,a)\)</span>.</p></li>
+<li><p>Label/valeur cible de <span class="math notranslate nohighlight">\((s,a)\)</span> <em>inconnue</em> : estimation par amorçage (2nd forward pass) : <span class="math notranslate nohighlight">\(y = r + \gamma \max_{b \in A} q_{\omega}(s',b)\)</span>.</p></li>
+<li><p>Une itération de la descente de gradient :</p>
+<ol class="arabic simple">
+<li><p>Fonction de perte <em>MST loss</em> : <span class="math notranslate nohighlight">\(J_{\omega} = (y-\hat{y})^{2}\)</span>.</p></li>
+<li><p>Calcul du gradient de la fonction MSE par rapport à <span class="math notranslate nohighlight">\(\omega\)</span> : <span class="math notranslate nohighlight">\(\nabla_{\omega} J_{\omega} = -2(y-\hat{y})\nabla_{\omega}\hat{y}\)</span>.</p></li>
+<li><p>Mise à jour des poids selon descente de gradient, <span class="math notranslate nohighlight">\(\alpha \in [0;1]\)</span> le pas d’apprentissage : <span class="math notranslate nohighlight">\(\omega = \omega - \alpha \nabla_{\omega} J_{\omega}\)</span>.</p></li>
+</ol>
+</li>
+</ol>
+</section>
+<section id="experience-replay">
+<h4>Experience Replay<a class="headerlink" href="#experience-replay" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="admonition-replay-buffer admonition">
+<p class="admonition-title">Replay Buffer</p>
+<ul class="simple">
+<li><p>Mémorise les interactions rencontrées en suivant la politique courante.</p></li>
+<li><p>Tire aléatoirement un mini-batch d’interactions dans le buffer pour la mise à jour des poids du NN.</p></li>
+</ul>
+</div>
+<ul class="simple">
+<li><p>Réduite la corrélation entre interactions successives.</p></li>
+<li><p>Accélère l’apprentissage car mini-batch et chaque interation est potentiellement utilisée plusieurs fois.</p></li>
+<li><p>Réduction de l’oubli : réutilise des interactions rares ou anciennes.</p></li>
+</ul>
+</section>
+<section id="reseau-cible">
+<h4>Réseau cible<a class="headerlink" href="#reseau-cible" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="line-block">
+<div class="line">Figer la cible : Découpler les paramètres utilisés pour calculer la cible <span class="math notranslate nohighlight">\(\omega^{-}\)</span> et ceux mis à jour <span class="math notranslate nohighlight">\(\omega\)</span> :</div>
+</div>
+<div class="math notranslate nohighlight">
+\[\omega = \omega + \alpha (r + \gamma \max_{b \in A} q_{\omega^{-}}(s',b) - q_{\omega}(s,a))\nabla_{\omega}q_{\omega}(s,a)\]</div>
+</section>
+<section id="deep-q-network-dqn">
+<h4>Deep Q-Network (DQN)<a class="headerlink" href="#deep-q-network-dqn" title="Lien permanent vers cette rubrique">#</a></h4>
+<ul class="simple">
+<li><p>Fonction d’approximation non-linéaire pour fonction Q, avec autant de sorties du NN que d’actions.</p></li>
+<li><p>Apprentissage supervisée avec cible mouvante.</p></li>
+<li><p>Experience replay pour réduire la corrélation entre interactions successives dans un même épisode.</p></li>
+<li><p>Réseau cible pour réduire les corrélations dues à la cible <span class="math notranslate nohighlight">\(y\)</span> mouvante.</p></li>
+</ul>
+</section>
+</section>
+<section id="recherche-de-politique">
+<h3>Recherche de politique<a class="headerlink" href="#recherche-de-politique" title="Lien permanent vers cette rubrique">#</a></h3>
+<section id="v-based-vs-pi-based">
+<h4><span class="math notranslate nohighlight">\(V\)</span>-based vs <span class="math notranslate nohighlight">\(\pi\)</span>-based<a class="headerlink" href="#v-based-vs-pi-based" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="line-block">
+<div class="line">Avantages de <span class="math notranslate nohighlight">\(\pi\)</span>-based :</div>
+</div>
+<ul class="simple">
+<li><p>Simplicité.</p></li>
+<li><p>Pas de stratégies d’exploration/exploitation.</p></li>
+<li><p>Convergence : changement lisse des probabilités d’action.</p></li>
+<li><p>Possibilité d’avoir <span class="math notranslate nohighlight">\(A\)</span> continu.</p></li>
+</ul>
+<div class="line-block">
+<div class="line">Inconvénients <span class="math notranslate nohighlight">\(\pi\)</span>-based :</div>
+</div>
+<ul class="simple">
+<li><p>Risque de convergence vers un optimum local plutôt que global.</p></li>
+<li><p>Evaluation de la politique inefficace <em>(variance élevée, convergence lente)</em>.</p></li>
+<li><p>Pas sample-efficient : on policy, replay-buffer non utilisable.</p></li>
+</ul>
+</section>
+<section id="formalisation-du-probleme">
+<h4>Formalisation du problème<a class="headerlink" href="#formalisation-du-probleme" title="Lien permanent vers cette rubrique">#</a></h4>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(\pi_{\theta}\)</span> : politique paramétrique.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\tau_{i}\)</span> : une trajectoire <em>(séquence d’états-actions sur un horizon)</em>. <span class="math notranslate nohighlight">\(H:\tau = s_{0}, a_{0}, s_{1}, ..., s_{H}, a_{H}, s_{H+1}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(R(\tau_{i})\)</span> : somme des récompenses obtenues sur la trajectoire <span class="math notranslate nohighlight">\(\tau_{i}\)</span>. <span class="math notranslate nohighlight">\(R(\tau) = \sum_{t=0}^{\infty} \gamma^{t}r_{t}\)</span></p></li>
+<li><p><strong>Objectif</strong> : maximiser la fonction objectif.</p>
+<div class="math notranslate nohighlight">
+\[J(\theta) = \mathbb{E}_{\tau \sim \pi_{\theta}}[R(\tau)] = \sum_{\tau} P(\tau|\theta) R(\tau)\]</div>
+</li>
+<li><p>Les actions choisies par la politique <span class="math notranslate nohighlight">\(\pi_{\theta}\)</span> influencent les récompenses reçues par l’agent.</p></li>
+<li><p>Trouver les paramètres <span class="math notranslate nohighlight">\(\theta^{*}\)</span> qui maximisent la fonction objectif.</p>
+<div class="math notranslate nohighlight">
+\[\theta^{*} = \arg\max_{\theta} J(\theta) = \arg\max_{\theta} \sum_{\tau} P(\tau|\theta) R(\tau)\]</div>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<div class="line-block">
+<div class="line"><span class="math notranslate nohighlight">\(P(\tau|\theta)\)</span> est la probabilité de prendre la trajectoire <span class="math notranslate nohighlight">\(\tau\)</span> en suivant la politique <span class="math notranslate nohighlight">\(\pi_{\theta}\)</span>.</div>
+</div>
+</div>
+</section>
+</section>
+<section id="recherche-stochastique-de-pi">
+<h3>Recherche stochastique de <span class="math notranslate nohighlight">\(\pi\)</span><a class="headerlink" href="#recherche-stochastique-de-pi" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="admonition-algorithme-hill-climbing admonition">
+<p class="admonition-title">Algorithme <em>Hill Climbing</em></p>
+<ol class="arabic simple">
+<li><p>Intialiser <span class="math notranslate nohighlight">\(\theta\)</span> aléatoirement.</p></li>
+<li><p>Collecter un épisode avec <span class="math notranslate nohighlight">\(\theta\)</span>, et enregistre le retour <span class="math notranslate nohighlight">\(G\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\theta_{best} \leftarrow \theta\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(G_{best} \leftarrow G\)</span>.</p></li>
+<li><p>Répéter jusqu’à que l’environnement soit résolu :</p>
+<ol class="arabic simple">
+<li><p>Ajouter un peu de bruit aléatoire à <span class="math notranslate nohighlight">\(\theta_{best}\)</span> pour avoir des nouveaux poids <span class="math notranslate nohighlight">\(\theta_{new}\)</span>.</p></li>
+<li><p>Collecter un épisode avec <span class="math notranslate nohighlight">\(\theta_{new}\)</span>, et enregistre le retour <span class="math notranslate nohighlight">\(G_{new}\)</span>.</p></li>
+<li><p>Si <span class="math notranslate nohighlight">\(G_{new} \gt G_{best}\)</span> alors :</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(\theta_{best} \leftarrow \theta_{new}\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(G_{best} \leftarrow G_{new}\)</span>.</p></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</section>
+<section id="approches-par-gradient-de-pi">
+<h3>Approches par gradient de <span class="math notranslate nohighlight">\(\pi\)</span><a class="headerlink" href="#approches-par-gradient-de-pi" title="Lien permanent vers cette rubrique">#</a></h3>
+<ul>
+<li><p><strong>Objectif</strong> : Trouver les paramètres <span class="math notranslate nohighlight">\(\theta^{*}\)</span> qui maximisent la fonction objectif.</p>
+<div class="math notranslate nohighlight">
+\[\theta^{*} = \arg\max_{\theta} J(\theta) = \arg\max_{\theta} \sum_{\tau} P(\tau|\theta) R(\tau)\]</div>
+</li>
+<li><p><strong>Moyen</strong> : Amélioration directe de la politique avec remontée de gradient.</p>
+<div class="math notranslate nohighlight">
+\[\theta_{k+1} = \theta_{k} + \alpha \nabla_{\theta} J(\theta)\]</div>
+</li>
+<li><p><strong>Idée</strong> : Augmenter la probabilité des trajectoires qui ont un retour élevée.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Nécessite de calculer <span class="math notranslate nohighlight">\(\nabla_{\theta} J(\theta) \rightarrow\)</span> Policy Gradient Theorem.</p>
+</div>
+<section id="policy-gradient-theorem">
+<h4>Policy Gradient Theorem<a class="headerlink" href="#policy-gradient-theorem" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="line-block">
+<div class="line">Reformule le calcul du gradient sur des probabilités de trajectoires en gradient sur la politique.</div>
+</div>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\nabla_{\theta} J(\theta) = \mathbb{E}_{\tau}[\nabla_{\theta} \log P(\tau|\theta) R(\tau)]\\| Peut être réécrite :\end{aligned}\end{align} \]</div>
+<div class="math notranslate nohighlight">
+\[\nabla_{\theta} J(\theta) = \mathbb{E}_{\tau}[\sum_{t=0}^{H} \nabla_{\theta} \log \pi_{\theta}(a_{t}|s_{t}) R(\tau)]\]</div>
+<div class="line-block">
+<div class="line">Calcul du gradient = calcul de l’espérance : on réalise <span class="math notranslate nohighlight">\(m\)</span> trajectoires avec un agent qui suit <span class="math notranslate nohighlight">\(\pi_{\theta}\)</span>.</div>
+</div>
+<div class="math notranslate nohighlight">
+\[\nabla_{\theta} J(\theta) = \frac{1}{m} \sum_{i=1}^{m} \sum_{t=1}^{H} \nabla_{\theta} \log \pi_{\theta}(a_{t}^{(i)}|s_{t}^{(i)}) R(\tau^{(i)})\]</div>
+</section>
+<section id="algorithme-reinforce">
+<h4>Algorithme REINFORCE<a class="headerlink" href="#algorithme-reinforce" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="line-block">
+<div class="line">Application directe du <em>Policy Gradient Theorem</em> : estimation du gradient ave <span class="math notranslate nohighlight">\(m\)</span> trajectoires.</div>
+</div>
+<div class="admonition-algorithme admonition">
+<p class="admonition-title">Algorithme</p>
+<ol class="arabic simple">
+<li><p>Initialiser <span class="math notranslate nohighlight">\(\theta\)</span> aléatoirement.</p></li>
+<li><p>Initailiser <span class="math notranslate nohighlight">\(b\)</span> : baseline.</p></li>
+<li><p>Pour les itération=1,2,.. :</p>
+<ol class="arabic simple">
+<li><p>Collecteur un set de trajectoires suivant la politique courante.</p></li>
+<li><p>Pour chaque étape dans chaque trajectoire, calculer :</p>
+<ol class="arabic simple">
+<li><p>Le retour <span class="math notranslate nohighlight">\(R_{t} = \sum_{t^{'}=t}^{T-1} \gamma^{t^{'}-t} r_{t^{'}}\)</span>.</p></li>
+<li><p>L’avantage estimé <span class="math notranslate nohighlight">\(\hat{A}_{t} = R_{t} - b(s_{t})\)</span>.</p></li>
+</ol>
+</li>
+<li><p>Re-fit la baseline, en minimisant <span class="math notranslate nohighlight">\(||b(s_{t}) - R_{t}||^{2}\)</span>.</p></li>
+<li><p>Mettre à jour la politique.</p></li>
+</ol>
+</li>
+</ol>
+</div>
+</section>
+<section id="on-policy-vs-off-policy">
+<h4>On-policy vs Off-policy<a class="headerlink" href="#on-policy-vs-off-policy" title="Lien permanent vers cette rubrique">#</a></h4>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\pi_{target}\)</span> : politique que l’agent essaie d’apprendre (<span class="math notranslate nohighlight">\(\pi_{target} \approx \pi^{*}\)</span>).</p></li>
+<li><p><span class="math notranslate nohighlight">\(\pi_{behavior}\)</span> : politique utilisée pour collecter les trajectoires.</p></li>
+</ul>
+<div class="admonition-off-policy-q-learning-dqn admonition">
+<p class="admonition-title">Off-policy <em>(Q-learning/DQN)</em></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\pi_{target} \neq \pi_{behavior}\)</span>.</p></li>
+<li><p>On peut même avoir <span class="math notranslate nohighlight">\(\pi_{behavior}\)</span> complètement aléatoire, le Q-learning apprendra une <em>target policy</em> optimale.</p></li>
+<li><p><em>Replay buffer</em></p></li>
+</ul>
+</div>
+<div class="admonition-on-policy-reinforce admonition">
+<p class="admonition-title">On-policy <em>(REINFORCE)</em></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\pi_{target} = \pi_{behavior}\)</span>.</p></li>
+<li><p><em>Replay buffer</em> impossible.</p></li>
+</ul>
+</div>
+</section>
+<section id="actor-critic">
+<h4>Actor-Critic<a class="headerlink" href="#actor-critic" title="Lien permanent vers cette rubrique">#</a></h4>
+<ul class="simple">
+<li><p><strong>Policy-based</strong> (Actor <span class="math notranslate nohighlight">\(\pi\)</span>) : Apprend à agir.</p></li>
+<li><p><strong>Value-based</strong> (Critic <span class="math notranslate nohighlight">\(Q, V\)</span>) : Apprend à évaluer les valeurs des états/états-actions.</p></li>
+<li><p><strong>Actor-Critic</strong> : Combine les 2. Ajuste les probabilités des actions comme l’acteur, mais utilise un critic pour évaluer les bonnes et mauvaises actions prises plus rapidement.</p></li>
+</ul>
+<figure class="align-default" id="id4">
+<a class="reference internal image-reference" href="_images/ia-acAlgo.png"><img alt="_images/ia-acAlgo.png" src="_images/ia-acAlgo.png" style="width: 634.0px; height: 220.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Algorithme Actor-Critic vanilla</span><a class="headerlink" href="#id4" title="Lien permanent vers cette image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+</section>
+<section id="approche-bdi-belief-desire-intention">
+<h2>Approche BDI (Belief Desire Intention)<a class="headerlink" href="#approche-bdi-belief-desire-intention" title="Lien permanent vers cette rubrique">#</a></h2>
+<p><em>Nadia Kabachi</em></p>
+<div class="line-block">
+<div class="line">Pourquoi utiliser des systèmes multi-agents <em>(SMA)</em> ?</div>
+</div>
+<ul class="simple">
+<li><p>Résoudre un problème de manière distribué.</p></li>
+<li><p>Simulation de systèmes complexes.</p></li>
+<li><p>Gérer un maintenir un environnement de travail.</p></li>
+</ul>
+<div class="line-block">
+<div class="line">SMA est un système <span class="math notranslate nohighlight">\(&lt;O,E,A&gt;\)</span> où :</div>
+</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(O\)</span> est un ensemble d’objets.</p></li>
+<li><p><span class="math notranslate nohighlight">\(A\)</span> est un ensemble d’agents.</p></li>
+<li><p><span class="math notranslate nohighlight">\(O\)</span> et <span class="math notranslate nohighlight">\(A\)</span> sont immergés dans un environnement <span class="math notranslate nohighlight">\(E\)</span>.</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><span class="math notranslate nohighlight">\(SMA = Agents + Environnement + Interactions + Organisations\)</span> <em>(AEIO - Y. Demazeau, 1995)</em></div>
+</div>
+<section id="agents">
+<h3>Agents<a class="headerlink" href="#agents" title="Lien permanent vers cette rubrique">#</a></h3>
+<table class="table" id="id5">
+<caption><span class="caption-text">Cognitif vs Réactif</span><a class="headerlink" href="#id5" title="Lien permanent vers ce tableau">#</a></caption>
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Agent cognitif</p></th>
+<th class="head"><p>Agent réactif</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Représentation explicite de l’environnement</p></td>
+<td><p>Pas de représentation explicite</p></td>
+</tr>
+<tr class="row-odd"><td><p>Peut tenir compte de son passé</p></td>
+<td><p>Pas de mémoire locale</p></td>
+</tr>
+<tr class="row-even"><td><p>Agents complexes</p></td>
+<td><p>Fonctionnement stimulus/action</p></td>
+</tr>
+<tr class="row-odd"><td><p>Nombre d’agents réduit</p></td>
+<td><p>Nombre d’agents élevé</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition-quelques-proprietes admonition">
+<p class="admonition-title">Quelques propriétés</p>
+<ul class="simple">
+<li><p><strong>Agence faible</strong> :</p>
+<ul>
+<li><p><em>Autonomie</em> : Opère sans intervention externe.</p></li>
+<li><p><em>Sociabilité</em> : Interactions avec d’autres agents ou humains.</p></li>
+<li><p><em>Réactivitié</em> : Perception de l’environnement et réaction en conséquence.</p></li>
+<li><p><em>Pro-attitude</em> : Initiative d’actions.</p></li>
+</ul>
+</li>
+<li><p><strong>Agence forte</strong> : Agent doté d’un <em>état mental</em> <span class="math notranslate nohighlight">\(\rightarrow\)</span> Connaissances, Croyances, Intentions,  Désirs, Obligations, Engagements..(Emotions) (Agents BDI).</p></li>
+<li><p>Autres : Mobilité, Dévouement, Rationalité, Adaptabilité, …</p></li>
+</ul>
+</div>
+</section>
+<section id="architectures-et-fonctionnement-des-agents">
+<h3>Architectures et fonctionnement des agents<a class="headerlink" href="#architectures-et-fonctionnement-des-agents" title="Lien permanent vers cette rubrique">#</a></h3>
+<ul>
+<li><p>Les <strong>agents réactifs</strong> : Fonctionnement basé sur une simple correspondance entre les situations et les actions.</p>
+<ul class="simple">
+<li><p>Interagissent simplement avec leur environnement plutôt que de se le représenter et de raisonner dessus.</p></li>
+<li><p>Basés sur des règles de type (situation, action).</p></li>
+<li><p>Plusieurs comportements peuvent être lancés.</p></li>
+<li><p>Sélection de comportements non contradictoires.</p></li>
+<li><p>…</p></li>
+</ul>
+</li>
+<li><p>Les <strong>agents logiques</strong> : Fonctionnement basé sur des déductions.</p>
+<ul class="simple">
+<li><p>Modèlisation de l’environnement.</p></li>
+<li><p>Actions.</p></li>
+<li><p>Règles de comportement.</p></li>
+</ul>
+</li>
+<li><p>Les <strong>agents BDI</strong> : L’agent décide des actions à entreprendre à partir de ses états internes qui sont exprimés sous la forme de BDI.</p>
+<ul class="simple">
+<li><p><em>Believes</em> : Informations (faits) courantes qu’un agent possède à propos de l’environnement.</p></li>
+<li><p><em>Desires</em> : Buts à réaliser si possible.</p></li>
+<li><p><em>Plans</em> : connaissances qui déterminent comment certaines séquences de tests et d’actions permettent d’atteindre des buts ou bien réagir à certaines situations. <span class="math notranslate nohighlight">\(Plan=(condition d’invocation, condition sur le contexte, plan : when event if condition then action)\)</span></p></li>
+<li><p><em>Intentions</em> : Plans (et donc but) instanciés choisis pour une (éventuelle) exécution.</p></li>
+</ul>
+<div class="admonition-algorithme admonition">
+<p class="admonition-title">Algorithme</p>
+<div class="line-block">
+<div class="line">Fonction <span class="math notranslate nohighlight">\(agir(p:P):A\)</span></div>
+<div class="line">Début</div>
+</div>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(B := réviser\_les\_croyances(B, p)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(D := déterminer\_de\_nouveaux_buts(B, D, I)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(I := sélectionner\_les\_buts\_à\_tenter(B, D, I)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(renvoyer(action(un\_plan(I)))\)</span></p></li>
+</ol>
+<div class="line-block">
+<div class="line">Fin</div>
+</div>
+</div>
+</li>
+<li><p>Les <strong>agents ACA</strong> : Agents Conversationnels Animés. Vers la prise en compte des émotions.</p>
+<ul class="simple">
+<li><p>Capables d’interactions multimodales avec un usagé.</p></li>
+<li><p>Dotés d’une apparence effective face à l’usagé.</p></li>
+<li><p>Nécessite des capacité de raisonnement et des interaction multi-modale anthropocentrées.</p></li>
+<li><p>Vers les agents émotionnels : Modélisation interne de l’état émotionnel d’un agent ; les agents animés traduisent et montrent leur état émotionnel.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="architecture-bdi">
+<h3>Architecture BDI<a class="headerlink" href="#architecture-bdi" title="Lien permanent vers cette rubrique">#</a></h3>
+<figure class="align-default" id="id6">
+<a class="reference internal image-reference" href="_images/ia-bdi.png"><img alt="_images/ia-bdi.png" src="_images/ia-bdi.png" style="width: 477.0px; height: 360.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Architecture BDI</span><a class="headerlink" href="#id6" title="Lien permanent vers cette image">#</a></p>
+</figcaption>
+</figure>
+<div class="line-block">
+<div class="line">Différetntes fonctions :</div>
+</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(revc : B x P \rightarrow B\)</span> est la fonction de révision des croyances de l’agent  lorsqu’il reçoit de nouvelles perceptions sur l’environnement, où P représente l’ensemble des perceptions de l’agent; elle est réalisée par la composante Révision des croyances.</p></li>
+<li><p><span class="math notranslate nohighlight">\(options : D x I \rightarrow I\)</span> est la fonction qui représente le processus de décision de l’agent prenant en compte ses désirs et ses intentions courantes; cette fonction est réalisée par la composante Processus de décision.</p></li>
+<li><p><span class="math notranslate nohighlight">\(des : B x D x I \rightarrow D\)</span> est la fonction qui peut changer les désirs d’un agent si ses croyances ou intentions changent, pour maintenir la consistance des désirs de l’agent; cette fonction est également réalisée par la composante Processus de décision</p></li>
+<li><p><span class="math notranslate nohighlight">\(filtre : B x D x I \rightarrow I\)</span> est la fonction la plus importante car elle décide des intentions à poursuivre; elle est réalisée par la composante Filtre.</p></li>
+<li><p><span class="math notranslate nohighlight">\(plan : B x I \rightarrow PE\)</span> est la fonction qui transforme les plans partiels en plans exécutables, PE étant l’ensemble de ces plans ; elle peut utiliser, par exemple, une bibliothèque de plans, représentée par le module LibP dans la figure.</p></li>
+<li><p><span class="math notranslate nohighlight">\(Un plan\)</span> est une séquence d’actions à exécuter dans le temps</p></li>
+</ul>
+<div class="admonition-algorithme-de-controle-d-agent-bdi admonition">
+<p class="admonition-title">Algorithme de contrôle d’agent BDI</p>
+<div class="line-block">
+<div class="line">Soient B0, D0 et I0 les croyances, désirs et intentions initiales de l’agent.</div>
+</div>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(B := B0\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(D := D0\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(I := I0\)</span></p></li>
+<li><p>Répéter jusqu’à ce que l’agent soit arrêté :</p>
+<ol class="arabic simple">
+<li><p>Obtenir nouvelle perception <span class="math notranslate nohighlight">\(p\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(B := revc(B, P)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(I := options(D, I)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(D := des(B, D, I)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(I := filtre(B, D, I)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(PE := plan(B, I)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(executer(PE)\)</span></p></li>
+</ol>
+</li>
+</ol>
+</div>
+<p>Stratégies d’obligation :</p>
+<ul class="simple">
+<li><p><strong>Obligation aveugle</strong> : Un agent suivant cette stratégie va maintenir ses intentions jusqu’à ce qu’elles soient réalisées, plus précisément jusqu’à ce qu’il croie qu’elles sont réalisées.</p></li>
+<li><p><strong>Obligation limitée</strong> : Cette stratégie dit que l’agent va maintenir ses intentions ou bien jusqu’à ce qu’elles soient réalisées ou bien jusqu’à ce qu’il croie qu’elles ne sont plus  réalisables.</p></li>
+<li><p><strong>Obligation ouverte</strong> : Un agent ayant une stratégie d’obligation ouverte maintient ses intentions tant que ces intentions sont aussi ses désirs; une fois que l’agent a conclu que ses intentions ne sont plus réalisables, il ne les considère plus parmi ses désirs.</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="biml.html"
+       title="page précédente">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">précédent</p>
+        <p class="prev-next-title">BIML - Bio-Inspired Machine Learning</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenu
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mdp-et-planification-sous-incertitudes">MDP et Planification sous incertitudes</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notion-d-agent">Notion d’agent</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-a-la-decision-sequentielle">Introduction à la décision séquentielle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formalisation-mathematique">Formalisation mathématique</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#probleme-modele-mdp-markov-decision-process">Problème : Modèle MDP <em>(Markov Decision Process)</em></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#solution-politique">Solution : Politique</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#objectif-politique-optimale">Objectif : Politique optimale</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fonction-de-valeur">Fonction de valeur</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resolution-d-un-mdp">Résolution d’un MDP</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extensions-des-mdp">Extensions des MDP</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apprentissage-par-renforcement">Apprentissage par renforcement</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notions-de-base">Notions de base</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ar-passif">AR passif</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ar-actif">AR actif</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#agent-glouton">Agent glouton</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#politique-epsilon-greedy">Politique <span class="math notranslate nohighlight">\(\epsilon\)</span>-greedy</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generalisation">Généralisation</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#fusion-d-etats">Fusion d’états</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Généralisation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#approximate-q-learning">Approximate Q-learning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apprentissage-profond-par-renforcement-deep-rl">Apprentissage profond par renforcement <em>(Deep RL)</em></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deep-q-learning">Deep Q Learning</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#qlearning-avec-nn-naif">QLearning avec NN naïf</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#experience-replay">Experience Replay</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reseau-cible">Réseau cible</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deep-q-network-dqn">Deep Q-Network (DQN)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recherche-de-politique">Recherche de politique</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#v-based-vs-pi-based"><span class="math notranslate nohighlight">\(V\)</span>-based vs <span class="math notranslate nohighlight">\(\pi\)</span>-based</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#formalisation-du-probleme">Formalisation du problème</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recherche-stochastique-de-pi">Recherche stochastique de <span class="math notranslate nohighlight">\(\pi\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#approches-par-gradient-de-pi">Approches par gradient de <span class="math notranslate nohighlight">\(\pi\)</span></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#policy-gradient-theorem">Policy Gradient Theorem</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#algorithme-reinforce">Algorithme REINFORCE</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#on-policy-vs-off-policy">On-policy vs Off-policy</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#actor-critic">Actor-Critic</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#approche-bdi-belief-desire-intention">Approche BDI (Belief Desire Intention)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#agents">Agents</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#architectures-et-fonctionnement-des-agents">Architectures et fonctionnement des agents</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#architecture-bdi">Architecture BDI</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Par Axel
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023, Axel.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

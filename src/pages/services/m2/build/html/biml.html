@@ -1,0 +1,1213 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="fr" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>BIML - Bio-Inspired Machine Learning &#8212; Documentation M2 courses recap </title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/translations.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'biml';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="IA - intelligent Agents" href="ia.html" />
+    <link rel="prev" title="DM - Data Mining" href="dm.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="fr"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Passer au contenu principal</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Documentation M2 courses recap </p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="aic.html">AIC - Artificial Intelligence and Cognition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ccg.html">CCG - Combinatoire, Complexité et Graphes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taa.html">TAA - Techniques d’apprentissage automatique</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dm.html">DM - Data Mining</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">BIML - Bio-Inspired Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ia.html">IA - intelligent Agents</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Téléchargez cette page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/biml.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Télécharger le fichier source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimer au format PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Mode plein écran"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="clair/sombre" aria-label="clair/sombre" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>BIML - Bio-Inspired Machine Learning</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenu </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-aux-reseaux-de-neurones">Introduction aux réseaux de neurones</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#principes-generaux-de-l-apprentissage-profond">Principes généraux de l’apprentissage profond</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#neurone-artificiel">Neurone artificiel</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perceptron-multi-couches">Perceptron (Multi Couches)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reseaux-convolutionnels">Réseaux Convolutionnels</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#architectures">Architectures</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#panorama-general-du-domaine-et-trucs-astuces">Panorama général du domaine et <em>Trucs &amp; Astuces</em></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#limitations-de-l-apprentissage-profond">Limitations de l’apprentissage profond</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#connexion-residuelle">Connexion résiduelle</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#couche-de-batch-norm">Couche de <em>Batch Norm</em></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-neural-network-gnn">Graph Neural Network (GNN)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#intro">Intro</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#convolution">Convolution</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#intuition-sur-les-couches">Intuition sur les couches</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#convolution-de-graphe">Convolution de graphe</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gcn-equation">GCN equation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gcn-step-by-step-sans-caracteristiques-seulement-stucture">GCN : step by step <em>(Sans caractéristiques : seulement stucture)</em></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#phase-avant">Phase avant</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#phase-arriere">Phase arrière</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gat">GAT</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-autoencoder">Graph Autoencoder</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#variantes">Variantes</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#link-prediction">Link prediction</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#transductive-inductive">Transductive/Inductive</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#graphe-multi-partite">Graphe multi-partite</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deep-learning-for-natural-language-processing-nlp">Deep Learning for Natural Language Processing (NLP)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#word-encoding">Word encoding</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#premiere-idee">Première idée</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#one-hot-encoding-lettres">One-hot encoding (lettres)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#one-hot-encoding-mots">One-hot encoding (mots)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#word-embedding">Word embedding</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rnn-nlp">RNN &amp; NLP</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#seq2seq">Seq2Seq</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformer">Transformer</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="biml-bio-inspired-machine-learning">
+<h1>BIML - Bio-Inspired Machine Learning<a class="headerlink" href="#biml-bio-inspired-machine-learning" title="Lien permanent vers cette rubrique">#</a></h1>
+<p>Dispensé par : <em>Mathieu Lefort</em>, <em>Rémy Cazabet</em> et <em>Frédéric Armetta</em> (2023 - Sept.Nov)</p>
+<section id="introduction-aux-reseaux-de-neurones">
+<h2>Introduction aux réseaux de neurones<a class="headerlink" href="#introduction-aux-reseaux-de-neurones" title="Lien permanent vers cette rubrique">#</a></h2>
+<p><em>Mathieu Lefort</em></p>
+<section id="principes-generaux-de-l-apprentissage-profond">
+<h3>Principes généraux de l’apprentissage profond<a class="headerlink" href="#principes-generaux-de-l-apprentissage-profond" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="admonition-objectifs-de-l-apprentissage admonition">
+<p class="admonition-title">Objectifs de l’apprentissage</p>
+<div class="line-block">
+<div class="line">Qu’attendre d’un système apprenant</div>
+</div>
+<ul class="simple">
+<li><p><strong>Mémorisation</strong> : Retrouver la réponse à une entrée déjà vue.</p></li>
+<li><p><strong>Généralisation</strong> : Retrouver la réponse à une entrée jamais vue.</p></li>
+<li><p><strong>Hypothèses</strong> : Fonction localement continue, rasoir d’Occam.</p></li>
+<li><p><strong>Techniques</strong> : Ensemble d’apprentissage/validation/test, régularisation, …</p></li>
+</ul>
+</div>
+<div class="line-block">
+<div class="line">Différents types d’apprentissage :</div>
+</div>
+<ul class="simple">
+<li><p><strong>Supervisé</strong> : <span class="math notranslate nohighlight">\(y = f(x)\)</span> avec <span class="math notranslate nohighlight">\(x \in X\)</span> et <span class="math notranslate nohighlight">\(y \in Y\)</span>.</p>
+<ul>
+<li><p><em>Régression</em> : <span class="math notranslate nohighlight">\(Y\)</span> continu, typiquement <span class="math notranslate nohighlight">\(\mathbb{R}^{n}\)</span>.</p></li>
+<li><p><em>Classification</em> : <span class="math notranslate nohighlight">\(Y\)</span> discret.</p></li>
+<li><p><em>En pratique</em> : <span class="math notranslate nohighlight">\(f(x) = \sum_{i=1}^{n}(a_{i}^{T} \cdot x + b_{i})\phi (x, \theta_{i})\)</span> avec <span class="math notranslate nohighlight">\(\phi\)</span> une fonction non linéaire paramétrée par <span class="math notranslate nohighlight">\(\theta_{i}, b_{i} \in \mathbb{R}^{card(Y)}\)</span> et <span class="math notranslate nohighlight">\(a_{i} \in \mathbb{R}^{card(Y)\times card(X)}\)</span>.</p></li>
+</ul>
+</li>
+<li><p><strong>Non supervisé</strong> : <span class="math notranslate nohighlight">\(f(x)\)</span> avec <span class="math notranslate nohighlight">\(x \in X\)</span>.</p>
+<ul>
+<li><p><em>Clustering</em> : Regroupement des entrées par groupes.</p></li>
+<li><p><em>Génératif</em> : Apprentissage de la distribution <span class="math notranslate nohighlight">\(p(x)\)</span> (par ex. <span class="math notranslate nohighlight">\(x=f(\tilde{x})\)</span>).</p></li>
+</ul>
+</li>
+<li><p>Par renforcement, par imitation, …</p></li>
+</ul>
+<section id="neurone-artificiel">
+<h4>Neurone artificiel<a class="headerlink" href="#neurone-artificiel" title="Lien permanent vers cette rubrique">#</a></h4>
+<ul>
+<li><p>Inspiration biologique :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}y = \begin{cases}
+        1 &amp; \text{si } \sum_{i=1}^{n}w_{i}x_{i} - \theta &gt; 0 \\
+        0 &amp; \text{sinon}
+\end{cases}\end{split}\]</div>
+</li>
+<li><p>Le neurone en apprentissage automatique :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}y = \begin{cases}
+        1 &amp; \text{si } \sum_{i=0}^{n}w_{i}x_{i} - \theta &gt; 0 = w^{T}x &gt; 0 \\
+        0 &amp; \text{sinon}
+\end{cases}\end{split}\]</div>
+</li>
+</ul>
+</section>
+</section>
+<section id="perceptron-multi-couches">
+<h3>Perceptron (Multi Couches)<a class="headerlink" href="#perceptron-multi-couches" title="Lien permanent vers cette rubrique">#</a></h3>
+<p>Détailler dans le cours d’apprentissage profond : <a class="reference internal" href="taa.html#pmc"><span class="std std-ref">3ème modèle : Perceptron</span></a>.</p>
+<div class="admonition-proprietes-du-pmc admonition">
+<p class="admonition-title">Propriétés du PMC</p>
+<ul class="simple">
+<li><p>Approximateur universel (avec fonction d’activation sigmoïde ou gaussienne entre autres).</p></li>
+<li><p>Convergence potentiellement peu efficace (non convexe, espace de haute dimension, gradient évanescent ou non borné, …).</p></li>
+</ul>
+</div>
+</section>
+<section id="reseaux-convolutionnels">
+<h3>Réseaux Convolutionnels<a class="headerlink" href="#reseaux-convolutionnels" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="line-block">
+<div class="line">Pour les images, on utilise des réseaux convolutionnels.</div>
+</div>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="_images/biml-cnnConv.png"><img alt="_images/biml-cnnConv.png" src="_images/biml-cnnConv.png" style="width: 506.0px; height: 401.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Convolution (rappel)</span><a class="headerlink" href="#id1" title="Lien permanent vers cette image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="_images/biml-cnnConvNeuron.png"><img alt="_images/biml-cnnConvNeuron.png" src="_images/biml-cnnConvNeuron.png" style="width: 481.0px; height: 365.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Neurone de convolution</span><a class="headerlink" href="#id2" title="Lien permanent vers cette image">#</a></p>
+</figcaption>
+</figure>
+<div class="line-block">
+<div class="line">Les différentes couches sont :</div>
+</div>
+<ul>
+<li><p><strong>Convolution</strong> :</p>
+<figure class="align-default" id="id3">
+<a class="reference internal image-reference" href="_images/biml-cnnConvLayer.png"><img alt="_images/biml-cnnConvLayer.png" src="_images/biml-cnnConvLayer.png" style="width: 483.0px; height: 330.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Couche de convolution</span><a class="headerlink" href="#id3" title="Lien permanent vers cette image">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p><strong>Padding</strong> :</p>
+<figure class="align-default" id="id4">
+<a class="reference internal image-reference" href="_images/biml-cnnPadding.png"><img alt="_images/biml-cnnPadding.png" src="_images/biml-cnnPadding.png" style="width: 494.0px; height: 402.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Padding</span><a class="headerlink" href="#id4" title="Lien permanent vers cette image">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p><strong>Stride</strong> :</p>
+<figure class="align-default" id="id5">
+<a class="reference internal image-reference" href="_images/biml-cnnStride.png"><img alt="_images/biml-cnnStride.png" src="_images/biml-cnnStride.png" style="width: 495.0px; height: 409.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Stride</span><a class="headerlink" href="#id5" title="Lien permanent vers cette image">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p><strong>Pooling</strong> :</p>
+<figure class="align-default" id="id6">
+<a class="reference internal image-reference" href="_images/biml-cnnPool.png"><img alt="_images/biml-cnnPool.png" src="_images/biml-cnnPool.png" style="width: 483.0px; height: 244.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Pooling</span><a class="headerlink" href="#id6" title="Lien permanent vers cette image">#</a></p>
+</figcaption>
+</figure>
+</li>
+</ul>
+<section id="architectures">
+<h4>Architectures<a class="headerlink" href="#architectures" title="Lien permanent vers cette rubrique">#</a></h4>
+<ul>
+<li><p>LeCun (1989) : LeNet-5</p>
+<figure class="align-default" id="id7">
+<a class="reference internal image-reference" href="_images/biml-cnnLeNet5.png"><img alt="_images/biml-cnnLeNet5.png" src="_images/biml-cnnLeNet5.png" style="width: 671.0px; height: 207.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">LeNet-5</span><a class="headerlink" href="#id7" title="Lien permanent vers cette image">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Krizhevsky et al. (2012) : AlexNet</p>
+<figure class="align-default" id="id8">
+<a class="reference internal image-reference" href="_images/biml-cnnAlexNet.png"><img alt="_images/biml-cnnAlexNet.png" src="_images/biml-cnnAlexNet.png" style="width: 363.0px; height: 115.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">AlexNet</span><a class="headerlink" href="#id8" title="Lien permanent vers cette image">#</a></p>
+</figcaption>
+</figure>
+</li>
+</ul>
+<div class="admonition-bilan-des-reseaux-convolutionnels admonition">
+<p class="admonition-title">Bilan des réseaux convolutionnels</p>
+<ul class="simple">
+<li><p>De la convolution pour son invariance à la translation et partage de poids.</p></li>
+<li><p>Du <em>pooling</em> pour réduire les dimensionnalités.</p></li>
+<li><p>Un perceptron à la fin car plus de structure spatiale en haut niveau.</p></li>
+<li><p>Architecture transposable à la 1D (audio), à la 3D (vidéo), aux graphes, …</p></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="panorama-general-du-domaine-et-trucs-astuces">
+<h3>Panorama général du domaine et <em>Trucs &amp; Astuces</em><a class="headerlink" href="#panorama-general-du-domaine-et-trucs-astuces" title="Lien permanent vers cette rubrique">#</a></h3>
+<p><a class="reference external" href="https://www.asimovinstitute.org/neural-network-zoo/">Le zoo des réseaux de neurones</a>.</p>
+<ul class="simple">
+<li><p>Traitement des données :</p>
+<ul>
+<li><p>Equilibrage/représentativité des données <em>penser aux biais</em>.</p></li>
+<li><p>Augmentation des données.</p></li>
+<li><p>Données centées normées : <span class="math notranslate nohighlight">\(\frac{x-\bar{x}}{\sigma(x)}\)</span>.</p></li>
+<li><p>Utilisation de mini batchs.</p></li>
+</ul>
+</li>
+<li><p>Choix du modèle :</p>
+<ul>
+<li><p>Type d’architecture suivant les données / le problème.</p></li>
+<li><p>Choix de la fonction d’activation.</p></li>
+</ul>
+</li>
+<li><p>Apprentissage :</p>
+<ul>
+<li><p>Fonction de coût :</p>
+<ul>
+<li><p><strong>Régression</strong> : Erreur quadratique moyenne (MSE). <span class="math notranslate nohighlight">\(\frac{1}{2}\sum_{x,i}(t_{i}-y_{i})^{2}\)</span></p></li>
+<li><p><strong>Classification</strong> : Entropie croisée. <span class="math notranslate nohighlight">\(\sum_{x}-log\frac{e^{yt}}{\sum_{i}e^{yi}}\)</span></p></li>
+</ul>
+</li>
+<li><p>Régularisation : <span class="math notranslate nohighlight">\(+||w||\)</span> dans la fonction de coût.</p></li>
+<li><p>Bruitage / <em>drop out</em> : mise à 0 de certaines valeurs.</p></li>
+<li><p>Choix de l’optimiseur :</p>
+<ul>
+<li><p><strong>SGD</strong> : La base.</p></li>
+<li><p><strong>momentum</strong> : Rajout d’inertie dans le gradient.</p></li>
+<li><p><strong>Adagrad</strong> : Adaptation du taux d’apprentissage (en fonction du gradient).</p></li>
+<li><p><strong>Adam</strong> : Combinaison des 2 points précédents.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Obtenir les meilleurs performance :</p>
+<ul>
+<li><p><strong>Hyperparamètrage</strong> : on part d’un réglage <em>de base</em> …</p>
+<ul>
+<li><p>pour le MLP : une grande 1ère couche, puis taille décroissante.</p></li>
+<li><p>pour le CNN : augmentation du nombre de canaux à chaque couche (qui <em>compense</em> la réduction de la taille de la carte de features).</p></li>
+</ul>
+</li>
+<li><p>… et ensuite on cherche empiriquement (grid search, random search, …) ce qui marche sur le jeu de validation.</p></li>
+<li><p><strong>Fine tuning</strong> : on part d’un modèle <em>générique</em> pré appris et on l’adapte localement à nos données.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="limitations-de-l-apprentissage-profond">
+<h3>Limitations de l’apprentissage profond<a class="headerlink" href="#limitations-de-l-apprentissage-profond" title="Lien permanent vers cette rubrique">#</a></h3>
+<ul class="simple">
+<li><p>Surapprentissage</p></li>
+<li><p>Bruit</p></li>
+<li><p>Biais</p></li>
+<li><p>Oubli catastrophique (oubli des anciennes données)</p></li>
+</ul>
+<section id="connexion-residuelle">
+<h4>Connexion résiduelle<a class="headerlink" href="#connexion-residuelle" title="Lien permanent vers cette rubrique">#</a></h4>
+<ul class="simple">
+<li><p>Activations sautes des couches.</p></li>
+<li><p>Gradient important remonte via les connections résiduelles.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\rightarrow\)</span> réduit le <em>vanishing gradient problem</em>.</p></li>
+</ul>
+</section>
+<section id="couche-de-batch-norm">
+<h4>Couche de <em>Batch Norm</em><a class="headerlink" href="#couche-de-batch-norm" title="Lien permanent vers cette rubrique">#</a></h4>
+<ul class="simple">
+<li><p>Normaliser les activations, puis change moyenne et variance à l’aide des paramètres apprenables.</p></li>
+<li><p>Permet d’entraîner des réseaux plus profonds et plus rapidement.</p></li>
+<li><p>Peut aider à stabiliser l’apprentissage.</p></li>
+</ul>
+<p><a class="reference external" href="https://fr.wikipedia.org/wiki/R%C3%A9seau_neuronal_r%C3%A9siduel#:~:text=Un%20r%C3%A9seau%20neuronal%20r%C3%A9siduel%20(%20ResNet,que%20les%20r%C3%A9seaux%20neuronaux%20pr%C3%A9c%C3%A9dents.">ResNet</a>.</p>
+</section>
+</section>
+</section>
+<section id="graph-neural-network-gnn">
+<span id="gnn"></span><h2>Graph Neural Network (GNN)<a class="headerlink" href="#graph-neural-network-gnn" title="Lien permanent vers cette rubrique">#</a></h2>
+<p><em>Rémy Cazabet</em></p>
+<section id="intro">
+<h3>Intro<a class="headerlink" href="#intro" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="line-block">
+<div class="line">Les réseaux de neuronnes sont super efficaces sur les données structurées, et les graphes sont des données purement structurés.</div>
+<div class="line"><strong>GCN</strong> : Graph Convolutional Network. Une adaption de la convolution sur les images pour les graphes.</div>
+</div>
+<section id="convolution">
+<h4>Convolution<a class="headerlink" href="#convolution" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="line-block">
+<div class="line">Extrait des caractéristiques de « haut niveau ».</div>
+<div class="line">La convolution est définie par les poids de son noyau (qui peuvent être appris).</div>
+<div class="line">La convolution d’une image peut être vu comme un cas spécial d’une opération de graphe.</div>
+</div>
+<div class="admonition-differences-entre-image-et-graphe admonition">
+<p class="admonition-title">Différences entre image et graphe</p>
+<ul class="simple">
+<li><p>Dans les réseaux, il n’y a pas le même nombre de voisins pour chaque noeuds.</p></li>
+<li><p>La représentation matricielle : C’est le même objet mais l’interpretation change. La position d’un noeud (d’un graphe) dans la matrice n’a pas de signification.</p></li>
+</ul>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/biml-gcnRepresentation.png"><img alt="_images/biml-gcnRepresentation.png" src="_images/biml-gcnRepresentation.png" style="width: 381.0px; height: 140.0px;" /></a>
+</figure>
+</div>
+<div class="mydefinition admonition">
+<p class="admonition-title">Définition</p>
+<div class="line-block">
+<div class="line">L’interprétation du <strong>message passing</strong> est que tout les noeuds envoient leur informations à leur voisins.</div>
+<div class="line">La convolution combine les informations des voisins d’un noeud et de ses informations pour créer une nouvelle caractéristique.</div>
+</div>
+</div>
+</section>
+<section id="intuition-sur-les-couches">
+<h4>Intuition sur les couches<a class="headerlink" href="#intuition-sur-les-couches" title="Lien permanent vers cette rubrique">#</a></h4>
+<ul class="simple">
+<li><p>Convolution dans les <strong>images</strong> :</p>
+<ol class="arabic simple">
+<li><p>Calcule une somme pondérée des valeurs des voisins.</p></li>
+<li><p>Souvent suivi d’un pooling.</p></li>
+</ol>
+</li>
+<li><p>Convolution dans les <strong>graphes</strong> : Les poids ne peuvent pas être appris directement.</p>
+<ol class="arabic simple">
+<li><p>La moyenne des caractéristiques des voisins (comme un pooling).</p></li>
+<li><p>Calcule la somme pondérée des caractéristiques des voisins.</p></li>
+</ol>
+</li>
+</ul>
+<p>Une convolution sur les graphes peut être vu comme une couche linéaire avec :</p>
+<ul class="simple">
+<li><p>En entrée : La moyenne des caractéristiques des voisins.</p></li>
+<li><p>En sortie : Une imbrication du nombre de dimensions.</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<ul class="simple">
+<li><p>Les items d’un dataset d’image sont indépendentes les unes des autres.</p></li>
+<li><p>Pas les graphes. On peut traiter les noeuds indépendemment mais les caractéristiques ne doivent pas être cachés. Seulement les cibles peuvent être découpées en train/test.</p></li>
+</ul>
+</div>
+</section>
+<section id="convolution-de-graphe">
+<h4>Convolution de graphe<a class="headerlink" href="#convolution-de-graphe" title="Lien permanent vers cette rubrique">#</a></h4>
+<figure class="align-default" id="id9">
+<a class="reference internal image-reference" href="_images/biml-gcnGCN.png"><img alt="_images/biml-gcnGCN.png" src="_images/biml-gcnGCN.png" style="width: 517.0px; height: 192.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Stacking convolution layers</span><a class="headerlink" href="#id9" title="Lien permanent vers cette image">#</a></p>
+</figcaption>
+</figure>
+<div class="line-block">
+<div class="line">Chaque couches de convolution permet de dépendre des noeuds plus loin dans le réseaux.</div>
+</div>
+<ol class="arabic simple">
+<li><p>Les résultats dépendent des voisins.</p></li>
+<li><p>Les résultats dépendent des voisins des voisins.</p></li>
+<li><p>…</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Similaire aux convolutions dans les images.</p>
+</div>
+</section>
+</section>
+<section id="gcn-equation">
+<h3>GCN equation<a class="headerlink" href="#gcn-equation" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="math notranslate nohighlight">
+\[H^{(l+1)} = f(H^{(l)}, A) = \sigma(\hat{D}^{-\frac{1}{2}}\hat{A}\hat{D}^{-\frac{1}{2}}H^{(l)}W^{(l)})\]</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(H^{(l)}\)</span> : Matrice des caractéristiques des noeuds à la couche <span class="math notranslate nohighlight">\(l\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(A\)</span> : Matrice d’adjacence du graphe. <span class="math notranslate nohighlight">\((\hat{A} = A + I)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\hat{D}\)</span> : Matrice diagonale des degrés des noeuds.</p></li>
+<li><p><span class="math notranslate nohighlight">\(W^{(l)}\)</span> : Matrice des poids de la couche <span class="math notranslate nohighlight">\(l\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\sigma\)</span> : Fonction d’activation (souvent relu).</p></li>
+</ul>
+<figure class="align-default" id="id10">
+<a class="reference internal image-reference" href="_images/biml-gcnKarataClub.png"><img alt="_images/biml-gcnKarataClub.png" src="_images/biml-gcnKarataClub.png" style="width: 281.0px; height: 183.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Graphe : Karate Club</span><a class="headerlink" href="#id10" title="Lien permanent vers cette image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id11">
+<a class="reference internal image-reference" href="_images/biml-gcnAdj.png"><img alt="_images/biml-gcnAdj.png" src="_images/biml-gcnAdj.png" style="width: 238.0px; height: 235.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Matrice d’adjacence <span class="math notranslate nohighlight">\(\hat{A}\)</span></span><a class="headerlink" href="#id11" title="Lien permanent vers cette image">#</a></p>
+</figcaption>
+</figure>
+<div class="admonition-normalisation-de-la-matrice-d-adjacence admonition">
+<p class="admonition-title">Normalisation de la matrice d’adjacence</p>
+<figure class="align-default" id="id12">
+<a class="reference internal image-reference" href="_images/biml-gcnDAdj.png"><img alt="_images/biml-gcnDAdj.png" src="_images/biml-gcnDAdj.png" style="width: 257.0px; height: 263.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Moyenne <span class="math notranslate nohighlight">\(D^{-1}\hat{A}\)</span></span><a class="headerlink" href="#id12" title="Lien permanent vers cette image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id13">
+<a class="reference internal image-reference" href="_images/biml-gcnDAdjD.png"><img alt="_images/biml-gcnDAdjD.png" src="_images/biml-gcnDAdjD.png" style="width: 257.0px; height: 263.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Moyenne par degrés <span class="math notranslate nohighlight">\(\hat{D}^{-\frac{1}{2}}\hat{A}\hat{D}^{-\frac{1}{2}}\)</span></span><a class="headerlink" href="#id13" title="Lien permanent vers cette image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<p>Chaque imbrication est calculée comme :</p>
+<div class="math notranslate nohighlight">
+\[h_{i}^{l+1} = \sum_{j \in N_{i}} \frac{1}{\sqrt{deg(i)}\sqrt{deg(j)}}h_{j}^{l}W^{T}\]</div>
+<p><span class="math notranslate nohighlight">\(h_{j}^{l}\)</span> : Caractéristiques du noeud <span class="math notranslate nohighlight">\(j\)</span> à l’ancienne couche.</p>
+</section>
+<section id="gcn-step-by-step-sans-caracteristiques-seulement-stucture">
+<h3>GCN : step by step <em>(Sans caractéristiques : seulement stucture)</em><a class="headerlink" href="#gcn-step-by-step-sans-caracteristiques-seulement-stucture" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="line-block">
+<div class="line">Taille de la matrice <span class="math notranslate nohighlight">\(W\)</span> par couches :</div>
+</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}W_{0} : d_{0} \times d_{1} \\
+W_{1} : d_{1} \times d_{2} \\
+... \\
+W_{n} : d_{n} \times d_{n+1}\end{split}\]</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(d_{0}\)</span> : Nombre de caractéristiques par noeuds dans le graphe d’origine.</p></li>
+<li><p><span class="math notranslate nohighlight">\(d_{n+1}\)</span> : Nombre de caractéristiques voulues.</p></li>
+</ul>
+<section id="phase-avant">
+<h4>Phase avant<a class="headerlink" href="#phase-avant" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="line-block">
+<div class="line">On regarde ce qu’il se passe sans apprentissage des poids.</div>
+<div class="line">On observe une structure gardée malgrés des poids aléatoires. Ceci grâce aux structures locales.</div>
+</div>
+</section>
+<section id="phase-arriere">
+<h4>Phase arrière<a class="headerlink" href="#phase-arriere" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="line-block">
+<div class="line">Pour apprendre les poids, on utilise de la <strong>rétropropagation</strong>.</div>
+</div>
+<div class="admonition-resume admonition">
+<p class="admonition-title">Résumé</p>
+<ul class="simple">
+<li><p>Une fonction de <strong>perte</strong> est définie pour comparer les valeurs calculées et les vrais labels.</p></li>
+<li><p>La <strong>dérivée</strong> de la fonction de perte est calculée par rapport aux poids.</p></li>
+<li><p>Les poids sont mis à jour en utilisant la <strong>descente de gradient</strong>.</p></li>
+</ul>
+</div>
+<div class="line-block">
+<div class="line">On définit un objectif semi-supervisé :</div>
+</div>
+<ul class="simple">
+<li><p>Les labels sont connus seulement pour quelques noeuds.</p></li>
+<li><p>On choisit une fonction de perte pour de la classification binaire.</p></li>
+</ul>
+</section>
+</section>
+<section id="gat">
+<h3>GAT<a class="headerlink" href="#gat" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="line-block">
+<div class="line"><strong>GAT</strong> : Graph ATtention Network.</div>
+<div class="line">Le principe des GAT et de permettre aux noeuds de choisir les noeuds voisins les plus importants.</div>
+</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}h_{i}^{l+1} = \sum_{j \in N_{i}} \alpha_{ij}h_{j}^{l}W^{t}\\
+\alpha_{ij} attention from i to j.\end{split}\]</div>
+<ol class="arabic">
+<li><p>Une matrice d’attention apprenable qui convertit les imbrications de noeuds vers des nouvelles imbrications pour l’attention.</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(z_{i} = Wh_{i}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(W\)</span> : Matrice de poids apprenable.</p></li>
+<li><p><span class="math notranslate nohighlight">\(h_{i}\)</span> : Caractéristiques du noeud <span class="math notranslate nohighlight">\(i\)</span>.</p></li>
+</ul>
+<p>On ne veut pas que les imbrications soient combinées avec la position dans le graphe ou la manière dont il se comporte pour l’attention des autres.</p>
+</li>
+<li><p>Concaténer les deux imbrications.</p>
+<div class="line-block">
+<div class="line"><span class="math notranslate nohighlight">\(z_{i} || z_{j}\)</span></div>
+<div class="line"><span class="math notranslate nohighlight">\([a,b,c]||[f,e,d] = [a,b,c,f,e,d]\)</span></div>
+<div class="line"><span class="math notranslate nohighlight">\(e_{ij} = a^{T}[z_{i}||z_{j}]\)</span></div>
+</div>
+</li>
+<li><p>Ajouter une fonction d’activation.</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(e_{ij} = ReLu(a^{T}[z_{i}||z_{j}])\)</span></p></li>
+</ul>
+</li>
+<li><p>Normalisation softmax.</p>
+<ul class="simple">
+<li><p>On a des scores d’attention non normalisés.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\alpha_{ij} = softmax(e_{ij}) = \frac{exp(e_{ij})}{\sum_{k \in N_{i}}exp(e_{ik})}\)</span></p></li>
+</ul>
+</li>
+</ol>
+<div class="line-block">
+<div class="line">Une seule couche peut ne pas être assez performant. Nous venons de créer une tête d’attention.</div>
+<div class="line">On combine plusieurs têtes d’attention pour créer une couche. On peut le voir comme les différents canaux d’une convolution.</div>
+</div>
+</section>
+<section id="graph-autoencoder">
+<h3>Graph Autoencoder<a class="headerlink" href="#graph-autoencoder" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="line-block">
+<div class="line"><strong>Autoencoder</strong> : Un réseau de neuronne non-supervisé qui essaye de reconstruire son entrée. Composé d’un codeur et d’un décodeur. Au milieu, il y a une brique qui représente les données et on la contraint à être petite.</div>
+</div>
+<figure class="align-default" id="id14">
+<a class="reference internal image-reference" href="_images/biml-gcnAE.png"><img alt="_images/biml-gcnAE.png" src="_images/biml-gcnAE.png" style="width: 439.0px; height: 311.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Autoencoder</span><a class="headerlink" href="#id14" title="Lien permanent vers cette image">#</a></p>
+</figcaption>
+</figure>
+<div class="line-block">
+<div class="line"><strong>Graph Autoencoder</strong> : Un autoencoder pour les graphes.</div>
+</div>
+<div class="admonition-architecture-classique admonition">
+<p class="admonition-title">Architecture classique</p>
+<ul class="simple">
+<li><p><strong>Encodeur</strong> : Des couches de GCN.</p></li>
+<li><p><strong>Décodeur</strong> : Un <em>dot product</em> entre les embeddings, plus une activation.</p></li>
+<li><p>On minimise la <em>binary cross entropy</em> entre les matrices d’adjacences d’entrées et de sorties.</p></li>
+</ul>
+</div>
+<section id="variantes">
+<h4>Variantes<a class="headerlink" href="#variantes" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="line-block">
+<div class="line"><strong>VAE</strong> : Variational Autoencoder. Une amélioration des AE.</div>
+</div>
+<div class="admonition-limites-des-ae admonition">
+<p class="admonition-title">Limites des AE</p>
+<ul class="simple">
+<li><p>Pauvre continuité.</p></li>
+<li><p>Pauvre complétude.</p></li>
+</ul>
+</div>
+<div class="line-block">
+<div class="line">La solution des VAE et d’encoder les données dans un espace latent plutôt que sur un seul point.</div>
+</div>
+<figure class="align-default" id="id15">
+<a class="reference internal image-reference" href="_images/biml-gcnVAE.png"><img alt="_images/biml-gcnVAE.png" src="_images/biml-gcnVAE.png" style="width: 694.0px; height: 280.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">VAE</span><a class="headerlink" href="#id15" title="Lien permanent vers cette image">#</a></p>
+</figcaption>
+</figure>
+<div class="line-block">
+<div class="line">Le modèle est entrainé comme suit :</div>
+</div>
+<ol class="arabic simple">
+<li><p>Les entrées sont encodées sur un espace latent comme une distribution gaussienne.</p></li>
+<li><p>Un point de l’espace latent est échantillonné.</p></li>
+<li><p>Le point est décodé pour reconstruire les entrées.</p></li>
+<li><p>La perte est calculée entre les entrées et les sorties.</p></li>
+<li><p>La perte est rétropropagée pour mettre à jour les poids.</p></li>
+</ol>
+<div class="line-block">
+<div class="line"><strong>VGAE</strong> : Variational Graph Autoencoder. Une adaptation pour les graphes.</div>
+</div>
+<ul class="simple">
+<li><p>Couche 1 : Un GCN.</p></li>
+<li><p>Couche 2 : 2 GCN en parallèle (un pour apprendre le <em>centroid</em> et un pour la <em>variance</em>).</p></li>
+<li><p>Pour décoder : On prend un point aléatoire de la <em>multivariate gaussian</em>.</p></li>
+</ul>
+</section>
+</section>
+<section id="link-prediction">
+<h3>Link prediction<a class="headerlink" href="#link-prediction" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="line-block">
+<div class="line">Quels liens sont manquants ou vont apparaître dans le futur.</div>
+<div class="line">Objectif binaire : lien ou pas lien.</div>
+<div class="line">En utilisant un VGAE : dot product entre les embeddings des noeuds.</div>
+<div class="line">Score de prédiction : le résultat du dot product sur le vecteurs de noeuds.</div>
+</div>
+<section id="transductive-inductive">
+<h4>Transductive/Inductive<a class="headerlink" href="#transductive-inductive" title="Lien permanent vers cette rubrique">#</a></h4>
+<ul class="simple">
+<li><p><strong>Transductive</strong> : On a accès à tout le graphe. On cache une partie des labels.</p></li>
+<li><p><strong>Inductive</strong> : Entraînement sur un set de noeuds/graphes. Le résultat est appliqué sur des noeuds/graphes inconnus.</p></li>
+</ul>
+</section>
+<section id="graphe-multi-partite">
+<h4>Graphe multi-partite<a class="headerlink" href="#graphe-multi-partite" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="line-block">
+<div class="line">On ne peut pas apprendre un seul GCN sur des noeuds différents.</div>
+<div class="line">On apprend plusieurs couches. Chacunes pour les noeuds spécifiques.</div>
+</div>
+</section>
+</section>
+</section>
+<section id="deep-learning-for-natural-language-processing-nlp">
+<h2>Deep Learning for Natural Language Processing (NLP)<a class="headerlink" href="#deep-learning-for-natural-language-processing-nlp" title="Lien permanent vers cette rubrique">#</a></h2>
+<div class="line-block">
+<div class="line"><em>Frédéric Armetta</em></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<div class="line-block">
+<div class="line">Beaucoup de screen de slides, pas forcément de notes</div>
+</div>
+</div>
+<section id="introduction">
+<h3>Introduction<a class="headerlink" href="#introduction" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="line-block">
+<div class="line">Applications du NLP :</div>
+</div>
+<ul class="simple">
+<li><p><strong>Classification</strong> : Analyse de sentiments ; classifications de textes ; détection de spam ; …</p></li>
+<li><p><strong>Génération</strong> : Prédiction de mots ; Résumé de textes ; …</p></li>
+<li><p><strong>Tagging</strong> : Part-of-speech tagging ; spell checking ; …</p></li>
+<li><p>étendus à la reconnaissance vocale, la reconnaissance de caractères, …</p></li>
+</ul>
+<ol class="arabic simple">
+<li><p><strong>Apprentissage auto-supervisé</strong> : Un énorme dataset pour faire apprendre le réseau.</p></li>
+<li><p><strong>Fine tuning</strong> : Spécialise pour une tâche spécifique, pour faire apprendre les dernières couches.</p></li>
+</ol>
+</section>
+<section id="word-encoding">
+<h3>Word encoding<a class="headerlink" href="#word-encoding" title="Lien permanent vers cette rubrique">#</a></h3>
+<section id="premiere-idee">
+<h4>Première idée<a class="headerlink" href="#premiere-idee" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="line-block">
+<div class="line">On encode chaque mots ou caractères entre 0 et 1.</div>
+<div class="line"><em>Difficile de séparer 26 lettres, vraiment dur pour des milliers de mots.</em></div>
+</div>
+</section>
+<section id="one-hot-encoding-lettres">
+<h4>One-hot encoding (lettres)<a class="headerlink" href="#one-hot-encoding-lettres" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="line-block">
+<div class="line">On encode chaque lettre par un vecteur de 26 dimensions avec 0 de partout et 1 à la position de la lettre.</div>
+</div>
+</section>
+<section id="one-hot-encoding-mots">
+<h4>One-hot encoding (mots)<a class="headerlink" href="#one-hot-encoding-mots" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="line-block">
+<div class="line">On fait la même chose mais pour les mots.</div>
+<div class="line"><strong>Problème</strong> : Ca ne garde aucune sémantique.</div>
+</div>
+</section>
+<section id="word-embedding">
+<span id="biml-we"></span><h4>Word embedding<a class="headerlink" href="#word-embedding" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="line-block">
+<div class="line">Transforme les mots en vecteurs de k-dimensions.</div>
+</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}h_{(k,1)} = W_{(k,n)}\cdot X_{(n,1)} \\
+h_{i} = \sum_{j=1}^{n}W_{ij}\cdot X_{j}\end{split}\]</div>
+<div class="line-block">
+<div class="line"><strong>Word2Vec</strong> pour apprendre <span class="math notranslate nohighlight">\(W_{(k,n)}\)</span> :</div>
+</div>
+<ul class="simple">
+<li><p><strong>CBOW</strong> : Prédit un mot grâce à la proximité des mots.</p></li>
+<li><p><strong>Skip-gram</strong> : Prédit les mots voisins grâce à un mot.</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><strong>GloVe</strong> : Utilise les statistiques de co-occurence des mots.</div>
+</div>
+<div class="admonition-proprietes-du-word-embedding admonition">
+<p class="admonition-title">Propriétés du <em>Word Embedding</em></p>
+<ul class="simple">
+<li><p><strong>Similarité</strong> : Les mots similaires sont proches dans l’espace.</p></li>
+<li><p><strong>Translation</strong> : Ex. on a un vecteur de roi vers homme, qui est le même que celui de reine vers femme.</p></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="rnn-nlp">
+<h3>RNN &amp; NLP<a class="headerlink" href="#rnn-nlp" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="line-block">
+<div class="line"><strong>RNN</strong> : Réseau de neurones récurrents.</div>
+<div class="line">Comme encodeur : intègre une mémoire (<em>internal state</em>) qui permet de garder une trace des mots précédents. Comme décodeur : génère un mot à la fois grâce à la mémoire.</div>
+<div class="line">Pour le NLP : l’encodeur construit une représentation pour une phrase/document et construit une représentation pour chaque mot dépendant du contexte ; le décodeur génère du texte.</div>
+</div>
+<figure class="align-default" id="id16">
+<a class="reference internal image-reference" href="_images/biml-nlpRNN.png"><img alt="_images/biml-nlpRNN.png" src="_images/biml-nlpRNN.png" style="width: 561.0px; height: 163.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Recurrent Neural Network</span><a class="headerlink" href="#id16" title="Lien permanent vers cette image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id17">
+<a class="reference internal image-reference" href="_images/biml-nlpLSTM.png"><img alt="_images/biml-nlpLSTM.png" src="_images/biml-nlpLSTM.png" style="width: 579.0px; height: 368.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Long Short Term Memory</span><a class="headerlink" href="#id17" title="Lien permanent vers cette image">#</a></p>
+</figcaption>
+</figure>
+<p><em>(Il présente plusieurs modèles mais bon OSEF…)</em></p>
+</section>
+<section id="seq2seq">
+<h3>Seq2Seq<a class="headerlink" href="#seq2seq" title="Lien permanent vers cette rubrique">#</a></h3>
+<figure class="align-default" id="id18">
+<a class="reference internal image-reference" href="_images/biml-nlpS2S.png"><img alt="_images/biml-nlpS2S.png" src="_images/biml-nlpS2S.png" style="width: 579.0px; height: 166.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Sequence 2 Sequence model</span><a class="headerlink" href="#id18" title="Lien permanent vers cette image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id19">
+<a class="reference internal image-reference" href="_images/biml-nlpTeacherForcing.png"><img alt="_images/biml-nlpTeacherForcing.png" src="_images/biml-nlpTeacherForcing.png" style="width: 579.0px; height: 335.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Teacher Forcing</span><a class="headerlink" href="#id19" title="Lien permanent vers cette image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id20">
+<a class="reference internal image-reference" href="_images/biml-nlpAM.png"><img alt="_images/biml-nlpAM.png" src="_images/biml-nlpAM.png" style="width: 579.0px; height: 165.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Attention Mechanism</span><a class="headerlink" href="#id20" title="Lien permanent vers cette image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id21">
+<a class="reference internal image-reference" href="_images/biml-nlpAM2.png"><img alt="_images/biml-nlpAM2.png" src="_images/biml-nlpAM2.png" style="width: 199.0px; height: 162.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Attention function</span><a class="headerlink" href="#id21" title="Lien permanent vers cette image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="transformer">
+<h3>Transformer<a class="headerlink" href="#transformer" title="Lien permanent vers cette rubrique">#</a></h3>
+<figure class="align-default" id="id22">
+<a class="reference internal image-reference" href="_images/biml-nlpSA.png"><img alt="_images/biml-nlpSA.png" src="_images/biml-nlpSA.png" style="width: 555.0px; height: 376.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Self-Attention</span><a class="headerlink" href="#id22" title="Lien permanent vers cette image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id23">
+<a class="reference internal image-reference" href="_images/biml-nlpQKV.png"><img alt="_images/biml-nlpQKV.png" src="_images/biml-nlpQKV.png" style="width: 327.0px; height: 431.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Queries, Keys, Values</span><a class="headerlink" href="#id23" title="Lien permanent vers cette image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id24">
+<a class="reference internal image-reference" href="_images/biml-nlpTransformer.png"><img alt="_images/biml-nlpTransformer.png" src="_images/biml-nlpTransformer.png" style="width: 497.0px; height: 385.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Transformer</span><a class="headerlink" href="#id24" title="Lien permanent vers cette image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id25">
+<a class="reference internal image-reference" href="_images/biml-nlpMH.png"><img alt="_images/biml-nlpMH.png" src="_images/biml-nlpMH.png" style="width: 429.0px; height: 399.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Multi-Head Attention</span><a class="headerlink" href="#id25" title="Lien permanent vers cette image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id26">
+<a class="reference internal image-reference" href="_images/biml-nlpTransformerModel.png"><img alt="_images/biml-nlpTransformerModel.png" src="_images/biml-nlpTransformerModel.png" style="width: 242.0px; height: 423.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Transformer Model</span><a class="headerlink" href="#id26" title="Lien permanent vers cette image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id27">
+<a class="reference internal image-reference" href="_images/biml-nlpLearning.png"><img alt="_images/biml-nlpLearning.png" src="_images/biml-nlpLearning.png" style="width: 444.0px; height: 429.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Learning</span><a class="headerlink" href="#id27" title="Lien permanent vers cette image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="dm.html"
+       title="page précédente">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">précédent</p>
+        <p class="prev-next-title">DM - Data Mining</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="ia.html"
+       title="page suivante">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">IA - intelligent Agents</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenu
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-aux-reseaux-de-neurones">Introduction aux réseaux de neurones</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#principes-generaux-de-l-apprentissage-profond">Principes généraux de l’apprentissage profond</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#neurone-artificiel">Neurone artificiel</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perceptron-multi-couches">Perceptron (Multi Couches)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reseaux-convolutionnels">Réseaux Convolutionnels</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#architectures">Architectures</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#panorama-general-du-domaine-et-trucs-astuces">Panorama général du domaine et <em>Trucs &amp; Astuces</em></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#limitations-de-l-apprentissage-profond">Limitations de l’apprentissage profond</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#connexion-residuelle">Connexion résiduelle</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#couche-de-batch-norm">Couche de <em>Batch Norm</em></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-neural-network-gnn">Graph Neural Network (GNN)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#intro">Intro</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#convolution">Convolution</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#intuition-sur-les-couches">Intuition sur les couches</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#convolution-de-graphe">Convolution de graphe</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gcn-equation">GCN equation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gcn-step-by-step-sans-caracteristiques-seulement-stucture">GCN : step by step <em>(Sans caractéristiques : seulement stucture)</em></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#phase-avant">Phase avant</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#phase-arriere">Phase arrière</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gat">GAT</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-autoencoder">Graph Autoencoder</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#variantes">Variantes</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#link-prediction">Link prediction</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#transductive-inductive">Transductive/Inductive</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#graphe-multi-partite">Graphe multi-partite</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deep-learning-for-natural-language-processing-nlp">Deep Learning for Natural Language Processing (NLP)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#word-encoding">Word encoding</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#premiere-idee">Première idée</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#one-hot-encoding-lettres">One-hot encoding (lettres)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#one-hot-encoding-mots">One-hot encoding (mots)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#word-embedding">Word embedding</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rnn-nlp">RNN &amp; NLP</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#seq2seq">Seq2Seq</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformer">Transformer</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Par Axel
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023, Axel.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,1167 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="fr" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>CCG - Combinatoire, Complexité et Graphes &#8212; Documentation M2 courses recap </title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/translations.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ccg';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="TAA - Techniques d’apprentissage automatique" href="taa.html" />
+    <link rel="prev" title="AIC - Artificial Intelligence and Cognition" href="aic.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="fr"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Passer au contenu principal</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Documentation M2 courses recap </p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="aic.html">AIC - Artificial Intelligence and Cognition</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">CCG - Combinatoire, Complexité et Graphes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taa.html">TAA - Techniques d’apprentissage automatique</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dm.html">DM - Data Mining</a></li>
+<li class="toctree-l1"><a class="reference internal" href="biml.html">BIML - Bio-Inspired Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ia.html">IA - intelligent Agents</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Téléchargez cette page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/ccg.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Télécharger le fichier source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimer au format PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Mode plein écran"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="clair/sombre" aria-label="clair/sombre" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>CCG - Combinatoire, Complexité et Graphes</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenu </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#complexite">Complexité</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complexite-d-un-algorithme">Complexité d’un algorithme</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complexite-d-un-probleme-classe-de-complexite">Complexité d’un problème : classe de complexité</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#classe-p">Classe P</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#classe-np">Classe NP</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#classe-np-complet">Classe NP-complet</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#classe-np-difficile">Classe NP-difficile</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemples-de-problemes-complexes">Exemples de problèmes complexes</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sat">SAT</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#csps">CSPs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#probleme-dans-les-graphes">Problème dans les graphes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#probleme-de-planification">Problème de planification</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transition-de-phases">Transition de phases</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#approches-completes">Approches complètes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#approches-incompletes">Approches incomplètes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#voisinage-et-paysage">Voisinage et paysage</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recherche-locale">Recherche locale</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gloutonne-ou-greedy-local-search">Gloutonne (ou <em>greedy local search</em>)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#random-walk">Random Walk</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#threshold-accepting">Threshold Accepting</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#simulated-annealing">Simulated Annealing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#taboue">Taboue</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reactive">Réactive</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recherche-a-voisinage-variable-variable-neighborhood-search-vns">Recherche à voisinage variable (<em>Variable Neighborhood Search (VNS)</em>)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recherche-a-tres-grand-voisinage-very-large-neighborhood-search-vlns">Recherche à très grand voisinage (<em>Very Large Neighborhood Search (VLNS)</em>)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pso-et-ga">PSO et GA</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#optimisation-par-essaim-de-particules-particle-swarm-optimization-pso">Optimisation par essaim de particules (<em>Particle Swarm Optimization (PSO)</em>)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#algorithmes-genetiques-genetic-algorithms-ga">Algorithmes génétiques (<em>Genetic Algorithms (GA)</em>)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gloutons">Gloutons</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-concevoir-un-algorithme-glouton">Comment concevoir un algorithme glouton ?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#approche-1-parmi-les-meilleurs">Approche <em>1 parmi les meilleurs</em></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#approche-probabiliste">Approche <em>probabiliste</em></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#algorithmes-par-estimation-de-distribution-estimation-of-distribution-algorithms-eda">Algorithmes par estimation de distribution (<em>Estimation of Distribution Algorithms (EDA)</em>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ant-colony-optimization-aco">Ant Colony Optimization (ACO)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#construction-de-la-solution-par-une-fourmi">Construction de la solution par une fourmi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mise-a-jour-des-traces-de-pheromone">Mise-à-jour des traces de phéromone</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#influence-des-parametres">Influence des paramètres</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#indicateurs-d-exploration-intensification">Indicateurs d’exploration/intensification</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exploration-rightsquigarrow-taux-de-re-echantillonnage">Exploration <span class="math notranslate nohighlight">\(\rightsquigarrow\)</span> Taux de ré-échantillonnage</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#intensification-rightsquigarrow-taux-de-similarite">Intensification <span class="math notranslate nohighlight">\(\rightsquigarrow\)</span> Taux de similarité</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemes-de-la-recherches-de-sous-ensembles">Problèmes de la recherches de sous-ensembles</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#algorithme-generique">Algorithme générique</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#a-chaque-cycle">A chaque cycle</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#a-la-fin-de-chaque-cycle">A la fin de chaque cycle</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="ccg-combinatoire-complexite-et-graphes">
+<h1>CCG - Combinatoire, Complexité et Graphes<a class="headerlink" href="#ccg-combinatoire-complexite-et-graphes" title="Lien permanent vers cette rubrique">#</a></h1>
+<p><em>Samba Ndojh NDIAYE</em></p>
+<section id="complexite">
+<h2>Complexité<a class="headerlink" href="#complexite" title="Lien permanent vers cette rubrique">#</a></h2>
+<section id="complexite-d-un-algorithme">
+<h3>Complexité d’un algorithme<a class="headerlink" href="#complexite-d-un-algorithme" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="line-block">
+<div class="line">Complexité en temps : estimation du nombre d’instructions</div>
+<div class="line">Complexité en espace : estimation de l’espace mémoire</div>
+</div>
+<div class="line-block">
+<div class="line"><span class="math notranslate nohighlight">\(\mathcal{O}(f(n)) \leadsto \exists c,n_{0}\,tq\,\forall n &gt; n_{0},nb_instructions\,&lt;\,c.f(n)\)</span></div>
+</div>
+<div class="admonition-exemples-de-complexites admonition">
+<p class="admonition-title">Exemples de complexités</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\mathcal{O}(log(n))\)</span> : logarithmique</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mathcal{O}(n)\)</span> : linéaire</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mathcal{O}(n^{k})\)</span> : polynomial</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mathcal{O}(k^{n})\)</span> : exponentiel</p></li>
+</ul>
+</div>
+</section>
+<section id="complexite-d-un-probleme-classe-de-complexite">
+<h3>Complexité d’un problème : classe de complexité<a class="headerlink" href="#complexite-d-un-probleme-classe-de-complexite" title="Lien permanent vers cette rubrique">#</a></h3>
+<p>Complexité du meilleur algorithme résolvant l’instance la plus difficile du problème X.</p>
+<section id="classe-p">
+<h4>Classe P<a class="headerlink" href="#classe-p" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="line-block">
+<div class="line">Il existe un algorithme polynomial résolvant X.</div>
+<div class="line"><span class="math notranslate nohighlight">\(Complexité\,de\,X&lt;\mathcal{O}(n^{k})\)</span></div>
+</div>
+<div class="admonition-exemples-de-problemes admonition">
+<p class="admonition-title">Exemples de problèmes</p>
+<ul class="simple">
+<li><p>Rechercher un élément dans un tableau</p></li>
+<li><p>Tier un tableau, un fichier, une liste…</p></li>
+<li><p>Rechercher un plus court chemin entre 2 sommets d’un graphe</p></li>
+</ul>
+</div>
+</section>
+<section id="classe-np">
+<h4>Classe NP<a class="headerlink" href="#classe-np" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="line-block">
+<div class="line">Il existe un algorithme non-déterministe polynomial résolvant X.</div>
+<div class="line"><span class="math notranslate nohighlight">\(P\subseteq NP\)</span></div>
+</div>
+<div class="admonition-machine-de-turing-non-deterministe admonition">
+<p class="admonition-title">Machine de Turing non déterministe</p>
+<ul class="simple">
+<li><p>exécute un nombre fini d’alternatives en parallèle</p></li>
+<li><p><span class="math notranslate nohighlight">\(X\in NP \Rightarrow vérif(X)\in P\)</span></p></li>
+</ul>
+</div>
+</section>
+<section id="classe-np-complet">
+<h4>Classe NP-complet<a class="headerlink" href="#classe-np-complet" title="Lien permanent vers cette rubrique">#</a></h4>
+<p>Un problème NP-complet est un problème algorithmique pour lequel aucune solution rapide (en temps polynomial) n’est connue pour sa recherche, mais toute solution proposée peut être vérifiée rapidement.</p>
+<div class="admonition-verifie-ces-proprietes admonition">
+<p class="admonition-title">Vérifie ces propriétés</p>
+<ul class="simple">
+<li><p>Il est possible de vérifier une solution efficacement (en temps polynomial) ; la classe des problèmes vérifiant cette propriété est notée NP</p></li>
+<li><p>Tous les problèmes de la classe NP se ramènent à celui-ci via une réduction polynomiale ; cela signifie que le problème est au moins aussi difficile que tous les autres problèmes de la classe NP</p></li>
+</ul>
+</div>
+<div class="admonition-demonstration-de-np-completude admonition">
+<p class="admonition-title">Démonstration de NP-complétude</p>
+<ul class="simple">
+<li><p>Montrer que X est dans NP</p></li>
+<li><p>Trouver une procédure polynomiale pour transformer un problème NP-complet en X</p></li>
+</ul>
+</div>
+</section>
+<section id="classe-np-difficile">
+<h4>Classe NP-difficile<a class="headerlink" href="#classe-np-difficile" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="line-block">
+<div class="line">Un problème NP-difficile est un problème au moins aussi difficile que ceux de la classe NP. (X pas forcément dans NP)</div>
+<div class="line"><span class="math notranslate nohighlight">\(NPcomplet\subset NPdifficile\)</span></div>
+</div>
+<div class="line-block">
+<div class="line">Problème indécidable : il n’existe pas d’algorithme résolvant le problème.</div>
+<div class="line">Exemple : problème de l’arrêt</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Pour en savoir plus : <a class="reference external" href="https://complexityzoo.net/Complexity_Zoo">Le zoo des compléxités</a>.</p>
+</div>
+</section>
+</section>
+</section>
+<section id="exemples-de-problemes-complexes">
+<h2>Exemples de problèmes complexes<a class="headerlink" href="#exemples-de-problemes-complexes" title="Lien permanent vers cette rubrique">#</a></h2>
+<section id="sat">
+<h3>SAT<a class="headerlink" href="#sat" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="line-block">
+<div class="line">Problème de satisfiabilité booléenne.</div>
+</div>
+<ul class="simple">
+<li><p>Problème de décision : peut-on satisfaire toutes les clause ? <span class="math notranslate nohighlight">\(\rightsquigarrow\)</span> NP-complet dans le cas général et polynomial si toutes les clause ont au plus 2 littéraux.</p></li>
+<li><p>Problème d’optimisation : quel est le plus grand nombre de clause satisfaites ? <span class="math notranslate nohighlight">\(\rightsquigarrow\)</span> NP-difficile.</p></li>
+<li><p>Espace de recherche : <span class="math notranslate nohighlight">\(O(2^{n})\)</span> où <span class="math notranslate nohighlight">\(n\)</span> est le nombre de variables.</p></li>
+</ul>
+</section>
+<section id="csps">
+<h3>CSPs<a class="headerlink" href="#csps" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="line-block">
+<div class="line">Problème de satisfaction de contraintes défini par <span class="math notranslate nohighlight">\((X, C, D)\)</span>.</div>
+</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(X = {X_{1}, ..., X_{n}}\)</span> : ensemble des variables.</p></li>
+<li><p><span class="math notranslate nohighlight">\(D(X_{i})\)</span> : domaine de <span class="math notranslate nohighlight">\(X_{i}\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(C = {C_{1}, ..., C_{m}}\)</span> : ensemble des contraintes.</p></li>
+</ul>
+<div class="line-block">
+<div class="line">On obtient donc :</div>
+</div>
+<ul class="simple">
+<li><p>Problème de décision : peut-on satisfaire toutes les contraintes ? <span class="math notranslate nohighlight">\(\rightsquigarrow\)</span> NP-complet dans le cas général, polynomial dans certains cas et parfois indécidable.</p></li>
+<li><p>Problème d’optimisation : quel est le plus grand nombre de contraintes satisfaites ? <span class="math notranslate nohighlight">\(\rightsquigarrow\)</span> NP-difficile.</p></li>
+<li><p>Espace de recherche : <span class="math notranslate nohighlight">\(k^{n}\)</span> si <span class="math notranslate nohighlight">\(|X| = n\)</span> et <span class="math notranslate nohighlight">\(|D(X_{i})| = k, \forall X_{i} \in X\)</span>.</p></li>
+</ul>
+</section>
+<section id="probleme-dans-les-graphes">
+<h3>Problème dans les graphes<a class="headerlink" href="#probleme-dans-les-graphes" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="line-block">
+<div class="line">Exemple de problèmes ploynomiaux :</div>
+</div>
+<ul class="simple">
+<li><p>Déterminer les sous-ensembles de sommets connectés.</p></li>
+<li><p>Trouver le plus court chemin entre 2 sommets.</p></li>
+<li><p>Trouver un chemin passant 1 fois par chaque arc (Eulérien).</p></li>
+<li><p>Connecter un ensemble de sommets au plus faible coût.</p></li>
+<li><p>Maximiser un flot de véhicule dans un réseau de transport.</p></li>
+</ul>
+<div class="line-block">
+<div class="line">Exemple de problèmes NP-complets/NP-difficiles :</div>
+</div>
+<ul class="simple">
+<li><p>Trouver un plus court cycle Hamiltonien.</p></li>
+<li><p>Trouver <span class="math notranslate nohighlight">\(k\)</span> sommets connectés 2 à 2 par des arrêtes.</p></li>
+<li><p>Colorier les sommets.</p></li>
+<li><p>Partitionner les sommets.</p></li>
+<li><p>Comparer des graphes.</p></li>
+</ul>
+</section>
+<section id="probleme-de-planification">
+<h3>Problème de planification<a class="headerlink" href="#probleme-de-planification" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="line-block">
+<div class="line">Défini par :</div>
+</div>
+<ul class="simple">
+<li><p>Un ensemble (potentiellement infini) d’états <span class="math notranslate nohighlight">\(E\)</span>.</p></li>
+<li><p>Un état initial <span class="math notranslate nohighlight">\(E_{0} \in E\)</span>.</p></li>
+<li><p>Un ensemble d’états finaux <span class="math notranslate nohighlight">\(F \subset E\)</span>.</p></li>
+<li><p>Un ensemble d’opérations <span class="math notranslate nohighlight">\(O\)</span> permettant de passer d’un état à un autre.</p></li>
+</ul>
+<div class="line-block">
+<div class="line">Un plan est une séquence d’opérations permettant de passer de l’état initial à un état final.</div>
+</div>
+<ul class="simple">
+<li><p>Problème de décision : existe-t-il un plan ? <span class="math notranslate nohighlight">\(\rightsquigarrow\)</span> Algorithme polynomial.</p></li>
+<li><p>Problème d’optimisation : quel est le plus court plan ?</p></li>
+</ul>
+</section>
+</section>
+<section id="transition-de-phases">
+<h2>Transition de phases<a class="headerlink" href="#transition-de-phases" title="Lien permanent vers cette rubrique">#</a></h2>
+<div class="line-block">
+<div class="line">La difficulté d’un problème n’est pas la même en fonction de la taille de l’instance.</div>
+<div class="line">Par exemple, cela peut dépendre du nombre de variables <span class="math notranslate nohighlight">\(n\)</span> et du nombre de clauses <span class="math notranslate nohighlight">\(p\)</span>. On peut donc faire des études de satisfiabilité <span class="math notranslate nohighlight">\(\frac{p}{n}\)</span>.</div>
+<div class="line">La <strong>transition de phases</strong> correspond à un pic de difficulté dans la résolution et est indépendant de l’algorithme utilisé. La transition de phases se trouve là où le taux de satisfiabilité est de 50%.</div>
+</div>
+<div class="line-block">
+<div class="line">On estime le taux de <em>constrainedness</em> <span class="math notranslate nohighlight">\(\kappa\)</span> d’une instance :</div>
+</div>
+<ul class="simple">
+<li><p>Soit <span class="math notranslate nohighlight">\(2^{n}\)</span> l’espace de recherche de l’instance.</p></li>
+<li><p>Soit <span class="math notranslate nohighlight">\(p\)</span> le nombre de solutions estimé de l’instance.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\kappa = 1-\frac{log_{2}(p)}{n}\)</span></p></li>
+</ul>
+<div class="line-block">
+<div class="line">La transition de phases se trouvent là où <span class="math notranslate nohighlight">\(\kappa = 1\)</span>.</div>
+</div>
+<ul class="simple">
+<li><p>Si <span class="math notranslate nohighlight">\(\kappa \approx 0\)</span> : l’instance est sous-contraintes.</p></li>
+<li><p>Si <span class="math notranslate nohighlight">\(\kappa \approx 1\)</span> : l’instance est critique.</p></li>
+<li><p>Si <span class="math notranslate nohighlight">\(\kappa \approx \infty\)</span> : l’instance est sur-contraintes.</p></li>
+</ul>
+<p><a class="reference external" href="https://www.ijcai.org/Proceedings/91-1/Papers/052.pdf">Pour en savoir plus</a> : Where the really hard problems are ? <em>(P. Cheeseman, B. Kanefsky et W.M. Taylor, [IJCAI’1991])</em></p>
+</section>
+<section id="approches-completes">
+<h2>Approches complètes<a class="headerlink" href="#approches-completes" title="Lien permanent vers cette rubrique">#</a></h2>
+</section>
+<section id="approches-incompletes">
+<h2>Approches incomplètes<a class="headerlink" href="#approches-incompletes" title="Lien permanent vers cette rubrique">#</a></h2>
+<div class="line-block">
+<div class="line">Résolution de problèmes de satisfaction <span class="math notranslate nohighlight">\(\rightarrow\)</span> recherche de la combinaison <em>maximisant la satisfaction</em>.</div>
+<div class="line">Exploration optimiste de l’espace de recherche <span class="math notranslate nohighlight">\(E\)</span>.</div>
+</div>
+<ul class="simple">
+<li><p><strong>Intensifier</strong> la recherche autour des zones prometteuses.</p></li>
+<li><p><strong>Diversifier</strong> la recherche pour explorer de nouvelles zones.</p></li>
+</ul>
+<div class="line-block">
+<div class="line">Qualité améliorée au fil du temps. Mais pas de garantie d’optimalité… Mais une complexité polynomiale.</div>
+</div>
+<ul class="simple">
+<li><p>Approches basées sur le <strong>voisinage</strong> : Nouvelles combinaisons construites à partir de combinaisons existantes.</p></li>
+<li><p>Approches basées sur la <strong>construction</strong> : Nouvelles combinaisons construites à l’aide de modèles.</p></li>
+</ul>
+<div class="admonition-principe-general admonition">
+<p class="admonition-title">Principe général</p>
+<ul class="simple">
+<li><p>Génération de une ou plusieurs combinaisons initiales.</p></li>
+<li><p>Tant que la qualité est insuffisante et que le temps maximum n’est pas atteint : On créer une plusieurs nouvelles combinaisons à partir d’une ou plusieurs combinaisons existantes.</p></li>
+</ul>
+</div>
+<div class="line-block">
+<div class="line">Trois instanciations de ce modèle :</div>
+</div>
+<ul class="simple">
+<li><p><strong>Recherche locale</strong> : Sélection de la combinaison créée ; création d’une combinaison par mouvement.</p></li>
+<li><p><strong>Optimisation par essaim de particules (PSO)</strong> : Création de combinaisons par déplacement / vitesse ; mise à jour de la vitesse.</p></li>
+<li><p><strong>Algorithmes génétiques</strong> : Sélection des meilleures combinaisons de la génération ; création de combinaisons par croisement + mutation.</p></li>
+</ul>
+</section>
+<section id="voisinage-et-paysage">
+<h2>Voisinage et paysage<a class="headerlink" href="#voisinage-et-paysage" title="Lien permanent vers cette rubrique">#</a></h2>
+<div class="admonition-definition-d-un-graphe-de-voisinage-math-g-e-v admonition">
+<p class="admonition-title">Définition d’un graphe de voisinage <span class="math notranslate nohighlight">\(G=(E,V)\)</span></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(E\)</span> : Ensemble de combinaisons (espace de recherche).</p></li>
+<li><p><span class="math notranslate nohighlight">\(A\)</span> : Une approche incomplète basée sur le voisinage.</p></li>
+<li><p><span class="math notranslate nohighlight">\(V={(e_{i},e_{j}) | A peut visiter e_{j} à partir de e_{i}}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(V(e_{i}) = {e_{j} | (e_{i},e_{j})\in V}\)</span> : Notation pour le voisinage d’une combinaison de <span class="math notranslate nohighlight">\(e_{i}\)</span>.</p></li>
+</ul>
+<div class="line-block">
+<div class="line">En général <span class="math notranslate nohighlight">\(V\)</span> n’est pas orienté. et <span class="math notranslate nohighlight">\(G\)</span> doit être connexe.</div>
+</div>
+</div>
+<div class="admonition-definition-d-un-paysage-de-recherche admonition">
+<p class="admonition-title">Définition d’un paysage de recherche</p>
+<div class="line-block">
+<div class="line">Un problème d’optimisation <span class="math notranslate nohighlight">\(P=(E, f)\)</span> et un graphe de voisinage <span class="math notranslate nohighlight">\(G=(E,V)\)</span>.</div>
+</div>
+</div>
+<div class="admonition-definitions admonition">
+<p class="admonition-title">Définitions</p>
+<ul class="simple">
+<li><p><strong>Optimum local</strong> : Un point dont tous les voisins sont moins bons.</p></li>
+<li><p><strong>Plateau</strong> : Ensemble de points connexes dans le graphe <span class="math notranslate nohighlight">\(G=(E,V)\)</span> ayant tous la même valeur pour <span class="math notranslate nohighlight">\(f\)</span>.</p></li>
+<li><p><strong>Bassin d’attraction d’un optimum local</strong> : Point que l’on peut atteindre depuis <span class="math notranslate nohighlight">\(e\)</span> (le minimum local) sans jamais monter.</p></li>
+</ul>
+</div>
+<ul class="simple">
+<li><p>Paysage avec un seul optimum local et pas de plateau <span class="math notranslate nohighlight">\(\rightarrow\)</span> stratégie : <em>intensifier</em>.</p></li>
+<li><p>Paysage rugueux : nombreux optima et distribution uniforme <span class="math notranslate nohighlight">\(\rightarrow\)</span> stratégie : <em>diversifier</em>. Pas de corrélation entre qualité et distance à l’optimum global.</p></li>
+<li><p>Paysage de type <em>masif central</em> <span class="math notranslate nohighlight">\(\rightarrow\)</span> stratégie : <em>intensifier</em> et <em>diversifier</em>.</p></li>
+</ul>
+</section>
+<section id="recherche-locale">
+<h2>Recherche locale<a class="headerlink" href="#recherche-locale" title="Lien permanent vers cette rubrique">#</a></h2>
+<div class="admonition-algorithme-recherche-local-math-e-v-f admonition">
+<p class="admonition-title">Algorithme Recherche Local <span class="math notranslate nohighlight">\((E, V, f)\)</span></p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(e\)</span> <span class="math notranslate nohighlight">\(\leftarrow\)</span> une combinaison de <span class="math notranslate nohighlight">\(E\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(e*\)</span> <span class="math notranslate nohighlight">\(\leftarrow\)</span> <span class="math notranslate nohighlight">\(e\)</span></p></li>
+<li><p>Tant que <span class="math notranslate nohighlight">\(f(e*)\)</span> <span class="math notranslate nohighlight">\(\lt\)</span> borne et temps maximum non atteint</p>
+<ol class="arabic simple">
+<li><p>Choisir <span class="math notranslate nohighlight">\(e' \in V(e)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(e\)</span> <span class="math notranslate nohighlight">\(\leftarrow\)</span> <span class="math notranslate nohighlight">\(e'\)</span></p></li>
+<li><p>Si <span class="math notranslate nohighlight">\(f(e) \lt f(e*)\)</span> Alors <span class="math notranslate nohighlight">\(e*\)</span> <span class="math notranslate nohighlight">\(\leftarrow\)</span> <span class="math notranslate nohighlight">\(e\)</span></p></li>
+</ol>
+</li>
+<li><p>Retourner <span class="math notranslate nohighlight">\(e*\)</span></p></li>
+</ol>
+</div>
+<div class="line-block">
+<div class="line">Différentes stratégies pour choisir <span class="math notranslate nohighlight">\(e' \in V(e)\)</span></div>
+</div>
+<section id="gloutonne-ou-greedy-local-search">
+<h3>Gloutonne (ou <em>greedy local search</em>)<a class="headerlink" href="#gloutonne-ou-greedy-local-search" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="line-block">
+<div class="line">Choisir une combinaison <span class="math notranslate nohighlight">\(e' \in V(e) \; tq \; f(e') \geq f(e)\)</span>.</div>
+</div>
+<ul class="simple">
+<li><p><strong>Best improvment</strong> : choisir le voisin qui maximise <span class="math notranslate nohighlight">\(f\)</span>.</p></li>
+<li><p><strong>First improvment</strong> : choisir le premier voisin qui améliore <span class="math notranslate nohighlight">\(f\)</span>.</p></li>
+</ul>
+</section>
+<section id="random-walk">
+<h3>Random Walk<a class="headerlink" href="#random-walk" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="line-block">
+<div class="line">Introduire la probabilité <span class="math notranslate nohighlight">\(p_{noise}\)</span> de choisir un mouvement aléatoire.</div>
+</div>
+<ol class="arabic simple">
+<li><p>Soit <span class="math notranslate nohighlight">\(x\)</span> un nombre tiré aléatoirement entre 0 et 1.</p></li>
+<li><p>Si <span class="math notranslate nohighlight">\(x \leq p_{noise}\)</span> alors choisir un voisin aléatoire de <span class="math notranslate nohighlight">\(e' \in V(e)\)</span> (<em>diversification</em>).</p></li>
+<li><p>Sinon choisir <span class="math notranslate nohighlight">\(e' \in V(e)\)</span> qui maximise <span class="math notranslate nohighlight">\(f\)</span> (<em>intensification</em>).</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(p_{noise} = 0\)</span> : recherche locale gloutonne.</p></li>
+<li><p><span class="math notranslate nohighlight">\(p_{noise} = 1\)</span> : recherche locale aléatoire.</p></li>
+</ul>
+<div class="line-block">
+<div class="line">En général, <span class="math notranslate nohighlight">\(0.01 \leq p_{noise} \leq 0.1\)</span>.</div>
+</div>
+</div>
+</section>
+<section id="threshold-accepting">
+<h3>Threshold Accepting<a class="headerlink" href="#threshold-accepting" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="line-block">
+<div class="line">Introduire un seuil d’aléatoire pur <span class="math notranslate nohighlight">\(\tau\)</span>.</div>
+<div class="line">Choisir le premier voisin tel que <span class="math notranslate nohighlight">\(f(e') - f(e) \gt \tau\)</span>.</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\tau \rightarrow -\infty\)</span> : aléatoire pure.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\tau \geq 0\)</span> : les mouvements dégradants la solution sont interdits.</p></li>
+</ul>
+</div>
+</section>
+<section id="simulated-annealing">
+<h3>Simulated Annealing<a class="headerlink" href="#simulated-annealing" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="line-block">
+<div class="line">Introduire une température <span class="math notranslate nohighlight">\(T\)</span> qui décroit à chaque mouvement.</div>
+<div class="line">Choisir le premier voisin <span class="math notranslate nohighlight">\(e \in V(e)\)</span> tel que soit :</div>
+</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(f(e') \geq f(e)\)</span> : <em>intensification</em>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(x \lt e^{\frac{f(e') - f(e)}{T}}\)</span> : <em>diversification</em>. Où <span class="math notranslate nohighlight">\(x\)</span> est un nombre aléatoire entre 0 et 1.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(T \rightarrow \infty\)</span> : aléatoire pure.</p></li>
+<li><p><span class="math notranslate nohighlight">\(T \rightarrow 0\)</span> : glouton pure.</p></li>
+</ul>
+</div>
+</section>
+<section id="taboue">
+<h3>Taboue<a class="headerlink" href="#taboue" title="Lien permanent vers cette rubrique">#</a></h3>
+<ol class="arabic simple">
+<li><p>Introduire une liste taboue <span class="math notranslate nohighlight">\(l\)</span> initialisée à vide.</p></li>
+<li><p>On ajoute le dernier mouvement à chaque itération (<em>ne garder que les :math:`k` derniers mouvements</em>).</p></li>
+<li><p>Choisir la combinaison <span class="math notranslate nohighlight">\(e' \in V(e)\)</span> qui maximise <span class="math notranslate nohighlight">\(f\)</span> et n’est pas dans <span class="math notranslate nohighlight">\(l\)</span>.</p></li>
+</ol>
+</section>
+<section id="reactive">
+<h3>Réactive<a class="headerlink" href="#reactive" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="line-block">
+<div class="line">Comme pour la recherche <strong>taboue</strong>, mais avec une table de hachage pour mémoriser les clefs des combinaisons visitées et pouvoir modifier la taille de la liste taboue en fonction.</div>
+<div class="line">Peu de collision <span class="math notranslate nohighlight">\(\rightarrow\)</span> rétrécissement de la liste et inversement pour beaucoup de collisions.</div>
+</div>
+</section>
+<section id="recherche-a-voisinage-variable-variable-neighborhood-search-vns">
+<h3>Recherche à voisinage variable (<em>Variable Neighborhood Search (VNS)</em>)<a class="headerlink" href="#recherche-a-voisinage-variable-variable-neighborhood-search-vns" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="line-block">
+<div class="line">Soient <span class="math notranslate nohighlight">\(V^{1}, V^{2}, ..., V^{k}\)</span> des voisinages de <span class="math notranslate nohighlight">\(e\)</span>.</div>
+<div class="line"><span class="math notranslate nohighlight">\(V^{t}(e)\)</span> : voisins de <span class="math notranslate nohighlight">\(e\)</span> dans le voisinage <span class="math notranslate nohighlight">\(V^{t}\)</span>.</div>
+<div class="line">En général : <span class="math notranslate nohighlight">\(|V^{t}(e)| \gt |V^{t-1}(e)|\)</span>.</div>
+</div>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(t \; \leftarrow \; 1\)</span></p></li>
+<li><p>Tant que <span class="math notranslate nohighlight">\(max{\frac{f(e'')}{e''} \in V^{t}(e)} \; : \; t \; \leftarrow \; t+1\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(e'\)</span> <span class="math notranslate nohighlight">\(\leftarrow\)</span> meilleure combinaison de <span class="math notranslate nohighlight">\(V^{t}(e)\)</span></p></li>
+</ol>
+</section>
+<section id="recherche-a-tres-grand-voisinage-very-large-neighborhood-search-vlns">
+<h3>Recherche à très grand voisinage (<em>Very Large Neighborhood Search (VLNS)</em>)<a class="headerlink" href="#recherche-a-tres-grand-voisinage-very-large-neighborhood-search-vlns" title="Lien permanent vers cette rubrique">#</a></h3>
+<ul class="simple">
+<li><p>Définir un voisinage très large.</p></li>
+<li><p>Utiliser une approche complète pour explorer ce voisinage.</p></li>
+<li><p>Approche gloutonne <span class="math notranslate nohighlight">\(\rightarrow\)</span> <em>intensification</em>.</p></li>
+<li><p>Très grand voisinage <span class="math notranslate nohighlight">\(\rightarrow\)</span> <em>diversification</em>.</p></li>
+</ul>
+</section>
+</section>
+<section id="pso-et-ga">
+<h2>PSO et GA<a class="headerlink" href="#pso-et-ga" title="Lien permanent vers cette rubrique">#</a></h2>
+<section id="optimisation-par-essaim-de-particules-particle-swarm-optimization-pso">
+<h3>Optimisation par essaim de particules (<em>Particle Swarm Optimization (PSO)</em>)<a class="headerlink" href="#optimisation-par-essaim-de-particules-particle-swarm-optimization-pso" title="Lien permanent vers cette rubrique">#</a></h3>
+<ul class="simple">
+<li><p><strong>Essaim initial</strong> : Générer un ensemble <span class="math notranslate nohighlight">\(P\)</span> de <span class="math notranslate nohighlight">\(n\)</span> combinaisons et une vitesse initiale <span class="math notranslate nohighlight">\(v_{i}\)</span> pour chaque combinaison <span class="math notranslate nohighlight">\(e_{i} \in P\)</span>.</p></li>
+<li><p>Tant que la qualité est insuffisante et le temps maximum n’est pas atteint :</p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(\forall e_{i} \in P\)</span> :</p>
+<ol class="arabic simple">
+<li><p>Modifier la vitesse de <span class="math notranslate nohighlight">\(e_{i}\)</span> : <span class="math notranslate nohighlight">\(v_{i} \leftarrow \omega v_{i}+c_{1}f_{1}(best_{i} - e_{i})+c_{2}f_{2}(best_{V(e_{i})} - e_{i})\)</span></p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(\omega\)</span> : inertie.</p></li>
+<li><p><span class="math notranslate nohighlight">\(c_{1}, c_{2}\)</span> : accélération.</p></li>
+<li><p><span class="math notranslate nohighlight">\(f_{1}, f_{2}\)</span> : nombres aléatoires <span class="math notranslate nohighlight">\(\in [0, 1]\)</span>.</p></li>
+</ul>
+</li>
+<li><p>Déplacer <span class="math notranslate nohighlight">\(e_{i}\)</span> en fonction de <span class="math notranslate nohighlight">\(v_{i}\)</span> (<span class="math notranslate nohighlight">\(e_{i} \leftarrow e_{i} + v_{i}\)</span>).</p></li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="algorithmes-genetiques-genetic-algorithms-ga">
+<h3>Algorithmes génétiques (<em>Genetic Algorithms (GA)</em>)<a class="headerlink" href="#algorithmes-genetiques-genetic-algorithms-ga" title="Lien permanent vers cette rubrique">#</a></h3>
+<ul class="simple">
+<li><p><strong>Population initiale</strong> : Générer un ensemble <span class="math notranslate nohighlight">\(P\)</span> de <span class="math notranslate nohighlight">\(n\)</span> combinaisons.</p></li>
+<li><p>Tant que la qualité est insuffisante et le temps maximum n’est pas atteint :</p>
+<ol class="arabic simple">
+<li><p><strong>Sélection</strong> d’un ensemble <span class="math notranslate nohighlight">\(P' \subseteq P\)</span> de combinaisons.</p></li>
+<li><p><strong>Croisement</strong> de <span class="math notranslate nohighlight">\(P'\)</span> pour générer un ensemble <span class="math notranslate nohighlight">\(P''\)</span> de combinaisons.</p></li>
+<li><p><strong>Mutation</strong> de <span class="math notranslate nohighlight">\(P''\)</span> pour générer un ensemble <span class="math notranslate nohighlight">\(P'''\)</span> de combinaisons.</p></li>
+<li><p><strong>Mise à jour</strong> de <span class="math notranslate nohighlight">\(P\)</span> par <span class="math notranslate nohighlight">\(P'''\)</span>.</p></li>
+</ol>
+</li>
+</ul>
+</section>
+</section>
+<section id="gloutons">
+<h2>Gloutons<a class="headerlink" href="#gloutons" title="Lien permanent vers cette rubrique">#</a></h2>
+<div class="admonition-principe-general admonition">
+<p class="admonition-title">Principe général</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(e \; \leftarrow\)</span> combinaison vide.</p></li>
+<li><p><span class="math notranslate nohighlight">\(Cand \; \leftarrow\)</span> ensemble des composants de combinaisons.</p></li>
+<li><p>Tand que <span class="math notranslate nohighlight">\(Cand \neq \varnothing\)</span> :</p>
+<ol class="arabic simple">
+<li><p>Choisir le meilleur composant <span class="math notranslate nohighlight">\(c \in Cand\)</span> et l’ajouter à <span class="math notranslate nohighlight">\(e\)</span>.</p></li>
+<li><p>Mettre à jour <span class="math notranslate nohighlight">\(Cand\)</span> en fonction de <span class="math notranslate nohighlight">\(c\)</span>.</p></li>
+</ol>
+</li>
+<li><p>Retourner <span class="math notranslate nohighlight">\(e\)</span>.</p></li>
+</ol>
+</div>
+<section id="comment-concevoir-un-algorithme-glouton">
+<h3>Comment concevoir un algorithme glouton ?<a class="headerlink" href="#comment-concevoir-un-algorithme-glouton" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="line-block">
+<div class="line">3 points à définir :</div>
+</div>
+<ul class="simple">
+<li><p>Identifier les composants de combinaisons.</p></li>
+<li><p>Définir une fonction mettant à jour l’ensemble des candidats par rapport à une combinaison partielle.</p></li>
+<li><p>Définir une fonction heuristique évaluant la qualité d’un composant par rapport à une combinaison partielle.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<div class="line-block">
+<div class="line">Ajouter un peu d’aléatoire pour diversifier la recherche.</div>
+</div>
+</div>
+</section>
+<section id="approche-1-parmi-les-meilleurs">
+<h3>Approche <em>1 parmi les meilleurs</em><a class="headerlink" href="#approche-1-parmi-les-meilleurs" title="Lien permanent vers cette rubrique">#</a></h3>
+<ul class="simple">
+<li><p>Sélectionner les <span class="math notranslate nohighlight">\(k\)</span> meilleurs composants.</p></li>
+<li><p>Choisir aléatoirement l’un d’entre eux.</p></li>
+</ul>
+</section>
+<section id="approche-probabiliste">
+<h3>Approche <em>probabiliste</em><a class="headerlink" href="#approche-probabiliste" title="Lien permanent vers cette rubrique">#</a></h3>
+<ul class="simple">
+<li><p>Probabilité de choisir <span class="math notranslate nohighlight">\(c_{i} \in Cand\)</span> : <span class="math notranslate nohighlight">\(p(c_{i}) = \frac{h(c_{i})^{\alpha}}{\sum_{c_{k} \in Cand} h(c_{k})^{\alpha}}\)</span>.</p></li>
+<li><p>Tirer un nombre aléatoire <span class="math notranslate nohighlight">\(x \in [0, 1]\)</span>.</p></li>
+<li><p>Choisir <span class="math notranslate nohighlight">\(c_{i} \; tq \; \sum_{j \lt i}p(c_{j}) \lt x \leq \sum_{j \leq i}p(c_{j})\)</span>.</p></li>
+</ul>
+</section>
+</section>
+<section id="algorithmes-par-estimation-de-distribution-estimation-of-distribution-algorithms-eda">
+<h2>Algorithmes par estimation de distribution (<em>Estimation of Distribution Algorithms (EDA)</em>)<a class="headerlink" href="#algorithmes-par-estimation-de-distribution-estimation-of-distribution-algorithms-eda" title="Lien permanent vers cette rubrique">#</a></h2>
+<div class="line-block">
+<div class="line">Approche évolutionniste.</div>
+</div>
+<div class="admonition-principe-general admonition">
+<p class="admonition-title">Principe général</p>
+<ol class="arabic simple">
+<li><p>Génération d’une population initiale <span class="math notranslate nohighlight">\(P(0)\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(t \; \leftarrow \; 0\)</span></p></li>
+<li><p>Tant que la solution optimale n’est pas trouvée et que <span class="math notranslate nohighlight">\(t \lt t_{max}\)</span> :</p>
+<ol class="arabic simple">
+<li><p>Sélectionner <span class="math notranslate nohighlight">\(S(t) /subseteq P(t)\)</span> de solutions <em>prometteuses</em>.</p></li>
+<li><p>Construire un modèle probabiliste <span class="math notranslate nohighlight">\(M(t)\)</span> à partir de <span class="math notranslate nohighlight">\(S(t)\)</span>.</p></li>
+<li><p>Générer de nouvelles solutions <span class="math notranslate nohighlight">\(N(t)\)</span> à partir de <span class="math notranslate nohighlight">\(M(t)\)</span>.</p></li>
+<li><p>Créer une nouvelle population <span class="math notranslate nohighlight">\(P(t+1) \subseteq S(t) \cup N(t)\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(t \; \leftarrow \; t+1\)</span></p></li>
+</ol>
+</li>
+</ol>
+</div>
+<div class="line-block">
+<div class="line">Compromis entre simplicité et qualité.</div>
+</div>
+</section>
+<section id="ant-colony-optimization-aco">
+<h2>Ant Colony Optimization (ACO)<a class="headerlink" href="#ant-colony-optimization-aco" title="Lien permanent vers cette rubrique">#</a></h2>
+<div class="admonition-modelisation-mathematique-deneubourg-et-al-1990 admonition">
+<p class="admonition-title">Modélisation mathématique (Deneubourg et al., 1990)</p>
+<ul class="simple">
+<li><p>Modèle stochastique de la dynamique de la colonie.</p></li>
+<li><p>Identifier les mécanismes permettant aux fourmis de s’auto-organiser pour résoudre le problème de la recherche d’un plus court chemin.</p>
+<ul>
+<li><p>Le probabilité de choix d’un chemin dépend du taux de phéromone déposé sur ce chemin <span class="math notranslate nohighlight">\(\rightsquigarrow\)</span> qui dépend du nombre de fourmis l’empruntant.</p></li>
+<li><p>Evaporation de la phéromone.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="admonition-principe-general admonition">
+<p class="admonition-title">Principe général</p>
+<ol class="arabic simple">
+<li><p>Initialisation des traces de phéromone.</p></li>
+<li><p>Répéter jusqu’à trouver la solution optimale ou atteindre une stagnation :</p>
+<ol class="arabic simple">
+<li><p>Chaque fourmit fournit une solution.</p></li>
+<li><p>Mise-à-jour des traces de phéromone.</p></li>
+</ol>
+</li>
+</ol>
+</div>
+<section id="construction-de-la-solution-par-une-fourmi">
+<h3>Construction de la solution par une fourmi<a class="headerlink" href="#construction-de-la-solution-par-une-fourmi" title="Lien permanent vers cette rubrique">#</a></h3>
+<ul class="simple">
+<li><p>Soit <span class="math notranslate nohighlight">\(C\)</span> début de la solution et <span class="math notranslate nohighlight">\(Cand\)</span> les candidats.</p></li>
+<li><p>Choisir <span class="math notranslate nohighlight">\(v_{j} \in Cand\)</span> selon la probabilité <span class="math notranslate nohighlight">\(p(v_{j})\)</span>.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[p(v_{j}) = \frac{[\tau_{C}(v_{j})]^{\alpha} \cdot [\eta_{C}(v_{j})]^{\beta}}{\sum_{v_{k} \in Cand}[ \tau_{C}(v_{k})]^{\alpha} \cdot [\eta_{C}(v_{k})]^{\beta}}\]</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\tau_{C}(v_{j})\)</span> : facteur phéromonal.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\eta_{C}(v_{j})\)</span> : facteur heuristique.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\alpha, \beta\)</span> : poids des facteurs (<em>paramètres</em>).</p></li>
+</ul>
+</section>
+<section id="mise-a-jour-des-traces-de-pheromone">
+<h3>Mise-à-jour des traces de phéromone<a class="headerlink" href="#mise-a-jour-des-traces-de-pheromone" title="Lien permanent vers cette rubrique">#</a></h3>
+<ul class="simple">
+<li><p><strong>Evaporer</strong> : Multiplier les traces de phéromones par <span class="math notranslate nohighlight">\((1-\rho)\)</span> <span class="math notranslate nohighlight">\(\rightsquigarrow\)</span> <span class="math notranslate nohighlight">\(\rho\)</span> : taux d’évaporation.</p></li>
+<li><p><strong>Récompenser</strong> : Ajouter de la phéromone sur les composants des meilleurs solutions proportionnellement à la qualité.</p></li>
+</ul>
+</section>
+<section id="influence-des-parametres">
+<h3>Influence des paramètres<a class="headerlink" href="#influence-des-parametres" title="Lien permanent vers cette rubrique">#</a></h3>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\tau_{min}, \tau_{max}\)</span> : taux de phéromone minimum et maximum <span class="math notranslate nohighlight">\(\rightsquigarrow\)</span> l’intensification augmente quand <span class="math notranslate nohighlight">\(\tau_{max} - \tau_{min}\)</span> augmente.</p></li>
+<li><p><span class="math notranslate nohighlight">\(nbAnts\)</span> : nombre de fourmis <span class="math notranslate nohighlight">\(\rightsquigarrow\)</span> la diversification augmente quand <span class="math notranslate nohighlight">\(nbAnts\)</span> augmente.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\alpha\)</span> : poids du facteur phéromonal <span class="math notranslate nohighlight">\(\rightsquigarrow\)</span> l’intensification augmente quand <span class="math notranslate nohighlight">\(\alpha\)</span> augmente.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\rho\)</span> : taux d’évaporation <span class="math notranslate nohighlight">\(\rightsquigarrow\)</span> la diversification augmente quand <span class="math notranslate nohighlight">\(\rho\)</span> augmente.</p></li>
+</ul>
+</section>
+<section id="indicateurs-d-exploration-intensification">
+<h3>Indicateurs d’exploration/intensification<a class="headerlink" href="#indicateurs-d-exploration-intensification" title="Lien permanent vers cette rubrique">#</a></h3>
+<section id="exploration-rightsquigarrow-taux-de-re-echantillonnage">
+<h4>Exploration <span class="math notranslate nohighlight">\(\rightsquigarrow\)</span> Taux de ré-échantillonnage<a class="headerlink" href="#exploration-rightsquigarrow-taux-de-re-echantillonnage" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="math notranslate nohighlight">
+\[Taux = \frac{nb\;solutions\;calculées - nb\;solutions\;différentes}{nb\;solutions\;calculées}\]</div>
+<ul class="simple">
+<li><p>Exploration maximale <span class="math notranslate nohighlight">\(\Leftarrow 0 \leq\)</span> taux <span class="math notranslate nohighlight">\(\leq 1 \Rightarrow\)</span> Stagnation</p></li>
+</ul>
+</section>
+<section id="intensification-rightsquigarrow-taux-de-similarite">
+<h4>Intensification <span class="math notranslate nohighlight">\(\rightsquigarrow\)</span> Taux de similarité<a class="headerlink" href="#intensification-rightsquigarrow-taux-de-similarite" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}Taux = similarité\; moyenne\; des \; solutions \; calculées \; S\\\rightsquigarrow moyenne \; des \; similarites \; des \; paires \; de \; solutions \; de \; S\\\rightsquigarrow similarité \; de \; 2 \; solutions = taux \; de \;composants \; communs\end{aligned}\end{align} \]</div>
+<ul class="simple">
+<li><p>Augmentation du Taux <span class="math notranslate nohighlight">\(\rightsquigarrow\)</span> Intensification</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="problemes-de-la-recherches-de-sous-ensembles">
+<h2>Problèmes de la recherches de sous-ensembles<a class="headerlink" href="#problemes-de-la-recherches-de-sous-ensembles" title="Lien permanent vers cette rubrique">#</a></h2>
+<div class="admonition-definition admonition">
+<p class="admonition-title">Définition</p>
+<div class="line-block">
+<div class="line">Une <strong>problème de sous-ensembles</strong> (Subset problem <em>(ss-problem)</em>) est défini par <span class="math notranslate nohighlight">\((S, S_{C}, f)\)</span> tel que :</div>
+</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(S\)</span> : ensemble d’objets candidats.</p></li>
+<li><p><span class="math notranslate nohighlight">\(S_{C} \subseteq P(S)\)</span> : ensemble des sous-ensembles consistants.</p></li>
+<li><p><span class="math notranslate nohighlight">\(f : S_{C} \rightarrow \mathbb{R}\)</span> : fonction objectif.</p></li>
+</ul>
+<div class="line-block">
+<div class="line">Le but est de trouver <span class="math notranslate nohighlight">\(S^{*} \in S_{C}\)</span> tel que <span class="math notranslate nohighlight">\(f(S^{*})\)</span> soit maximale.</div>
+</div>
+</div>
+<div class="admonition-exemples admonition">
+<p class="admonition-title">Exemples</p>
+<ul class="simple">
+<li><p>Problème du sac à dos (<em>Knapsack problem (KP)</em>).</p></li>
+<li><p>Problème de la couverture par ensembles (<em>Set covering problem (SCP)</em>).</p></li>
+<li><p>Problème de satisfaction de contraintes (<em>Constraint satisfaction problem (CSP)</em>).</p></li>
+<li><p>Recherche de cliques maximales (<em>Maximum clique problem (MCP)</em>).</p></li>
+</ul>
+</div>
+<ul class="simple">
+<li><p>Stratégie <strong>vertex</strong> : Apprendre les bons objets. Phéromones associés aux objets <span class="math notranslate nohighlight">\(\tau(i) \rightsquigarrow\)</span> intérêt de choisir <span class="math notranslate nohighlight">\(i\)</span>.</p></li>
+<li><p>Stratégie <strong>clique</strong> : Apprendre les bonnes paires d’objets. Phéromones associés aux paires <span class="math notranslate nohighlight">\(\tau(i,j) \rightsquigarrow\)</span> intérêt de choisir <span class="math notranslate nohighlight">\(i\)</span> avec <span class="math notranslate nohighlight">\(j\)</span>.</p></li>
+</ul>
+<section id="algorithme-generique">
+<h3>Algorithme générique<a class="headerlink" href="#algorithme-generique" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="line-block">
+<div class="line">Paramètré par :</div>
+</div>
+<ul class="simple">
+<li><p>Un problème à résoudre <span class="math notranslate nohighlight">\((S, S_{C}, f)\)</span>.</p></li>
+<li><p>Une stratégie phéromonale <span class="math notranslate nohighlight">\(\Phi \in {vertex, clique}\)</span>.</p></li>
+</ul>
+<section id="a-chaque-cycle">
+<h4>A chaque cycle<a class="headerlink" href="#a-chaque-cycle" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="line-block">
+<div class="line">Chaque fourmi construit un sous-ensemble avec un probabilité <span class="math notranslate nohighlight">\(p(i)\)</span> d’ajouter un objet <span class="math notranslate nohighlight">\(o_{i} \in Candidats\)</span> au sous-ensemble <span class="math notranslate nohighlight">\(S_{k}\)</span>.</div>
+</div>
+<div class="math notranslate nohighlight">
+\[p(i) = \frac{[\tau_{factor}(o_{i}, S_{k})]^{\alpha} \cdot [\eta_{factor}(o_{i}, S_{k})]^{\beta}}{\sum_{o_{j} \in Candidats}[\tau_{factor}(o_{j}, S_{k})]^{\alpha} \cdot [\eta_{factor}(o_{j}, S_{k})]^{\beta}}\]</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\tau_{factor}(o_{i}, S_{k})\)</span> : Dépend de la stratégie <span class="math notranslate nohighlight">\(\Phi\)</span>.</p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(\Phi = vertex\)</span> : <span class="math notranslate nohighlight">\(\tau_{factor}(o_{i}, S_{k}) = \tau(o_{i})\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\Phi = clique\)</span> : <span class="math notranslate nohighlight">\(\tau_{factor}(o_{i}, S_{k}) = \sum_{o_{j} \in S_{k}} \tau(o_{j}, o_{i})\)</span>.</p></li>
+</ul>
+</li>
+<li><p><span class="math notranslate nohighlight">\(\eta_{factor}(o_{i}, S_{k})\)</span> : Dépend du problème à résoudre.</p></li>
+</ul>
+</section>
+<section id="a-la-fin-de-chaque-cycle">
+<h4>A la fin de chaque cycle<a class="headerlink" href="#a-la-fin-de-chaque-cycle" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="line-block">
+<div class="line">Récompense des meilleurs sous-ensembles. Composants de <span class="math notranslate nohighlight">\(S_{k}\)</span> récompensés suivant la stratégie <span class="math notranslate nohighlight">\(\Phi\)</span>.</div>
+</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\Phi = vertex\)</span> : Dépôt sur les sommets.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\Phi = clique\)</span> : Dépôt sur les arêtes de la clique.</p></li>
+</ul>
+</section>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="aic.html"
+       title="page précédente">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">précédent</p>
+        <p class="prev-next-title">AIC - Artificial Intelligence and Cognition</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="taa.html"
+       title="page suivante">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">TAA - Techniques d’apprentissage automatique</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenu
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#complexite">Complexité</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complexite-d-un-algorithme">Complexité d’un algorithme</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complexite-d-un-probleme-classe-de-complexite">Complexité d’un problème : classe de complexité</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#classe-p">Classe P</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#classe-np">Classe NP</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#classe-np-complet">Classe NP-complet</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#classe-np-difficile">Classe NP-difficile</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemples-de-problemes-complexes">Exemples de problèmes complexes</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sat">SAT</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#csps">CSPs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#probleme-dans-les-graphes">Problème dans les graphes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#probleme-de-planification">Problème de planification</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transition-de-phases">Transition de phases</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#approches-completes">Approches complètes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#approches-incompletes">Approches incomplètes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#voisinage-et-paysage">Voisinage et paysage</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recherche-locale">Recherche locale</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gloutonne-ou-greedy-local-search">Gloutonne (ou <em>greedy local search</em>)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#random-walk">Random Walk</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#threshold-accepting">Threshold Accepting</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#simulated-annealing">Simulated Annealing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#taboue">Taboue</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reactive">Réactive</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recherche-a-voisinage-variable-variable-neighborhood-search-vns">Recherche à voisinage variable (<em>Variable Neighborhood Search (VNS)</em>)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recherche-a-tres-grand-voisinage-very-large-neighborhood-search-vlns">Recherche à très grand voisinage (<em>Very Large Neighborhood Search (VLNS)</em>)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pso-et-ga">PSO et GA</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#optimisation-par-essaim-de-particules-particle-swarm-optimization-pso">Optimisation par essaim de particules (<em>Particle Swarm Optimization (PSO)</em>)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#algorithmes-genetiques-genetic-algorithms-ga">Algorithmes génétiques (<em>Genetic Algorithms (GA)</em>)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gloutons">Gloutons</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-concevoir-un-algorithme-glouton">Comment concevoir un algorithme glouton ?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#approche-1-parmi-les-meilleurs">Approche <em>1 parmi les meilleurs</em></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#approche-probabiliste">Approche <em>probabiliste</em></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#algorithmes-par-estimation-de-distribution-estimation-of-distribution-algorithms-eda">Algorithmes par estimation de distribution (<em>Estimation of Distribution Algorithms (EDA)</em>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ant-colony-optimization-aco">Ant Colony Optimization (ACO)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#construction-de-la-solution-par-une-fourmi">Construction de la solution par une fourmi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mise-a-jour-des-traces-de-pheromone">Mise-à-jour des traces de phéromone</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#influence-des-parametres">Influence des paramètres</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#indicateurs-d-exploration-intensification">Indicateurs d’exploration/intensification</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exploration-rightsquigarrow-taux-de-re-echantillonnage">Exploration <span class="math notranslate nohighlight">\(\rightsquigarrow\)</span> Taux de ré-échantillonnage</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#intensification-rightsquigarrow-taux-de-similarite">Intensification <span class="math notranslate nohighlight">\(\rightsquigarrow\)</span> Taux de similarité</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemes-de-la-recherches-de-sous-ensembles">Problèmes de la recherches de sous-ensembles</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#algorithme-generique">Algorithme générique</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#a-chaque-cycle">A chaque cycle</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#a-la-fin-de-chaque-cycle">A la fin de chaque cycle</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Par Axel
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023, Axel.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
