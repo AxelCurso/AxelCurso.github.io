@@ -7,7 +7,7 @@ Welcome to M2 courses recap
 ===========================
 
 .. toctree::
-	:maxdepth: 4
+	:maxdepth: 3
 	:caption: Contents:
 
 	aic
@@ -16,6 +16,7 @@ Welcome to M2 courses recap
 	dm
 	biml
 	ia
+	dv
 
 .. Indices and tables
 .. ==================
