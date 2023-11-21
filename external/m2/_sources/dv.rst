@@ -150,3 +150,26 @@ Mapping + visualisation pipeline
 	:scale: 50 %
 
 	Intéraction humaine
+
+Visualiser le temps
+===================
+
+.. admonition:: Modèle de temps de Aigner
+
+	*	**Scale** : Ordinal, discrete, continuous
+	*	**Scope** : Point-based, interval-based
+	*	**Arrangement** : Linear, cyclic
+	*	**Viewpoint** : Ordered, branching, multiple perspectives
+
+| Les différentes tâches :
+
+#.	Existence d'un élément de donée.
+#.	Localisation temporelle
+#.	Interval temporel
+#.	Texture temporelle (i.e. fréquence)
+
+| On peut faire des opérations entre les séquences temporelles : égalité ; avant/après ; touche ; chevauche ; pendant ; démarre ; termine.
+
+.. note::
+	| Faire attention aux échelles (i.e. logarithmique, linéaire).
+

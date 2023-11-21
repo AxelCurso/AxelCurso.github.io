@@ -17,6 +17,7 @@ Welcome to M2 courses recap
 	biml
 	ia
 	dv
+	eiah
 
 .. Indices and tables
 .. ==================
