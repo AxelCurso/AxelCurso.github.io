@@ -1,8 +1,11 @@
 =========================================
 CCG - Combinatoire, Complexité et Graphes
 =========================================
+| Dispensé par : *Samba Ndojh NDIAYE* et *Hamamache KHEDDOUCI* (2023.2024 - Sept.Jan)
 
-*Samba Ndojh NDIAYE*
+.. note::
+	* Samba Ndojh NDIAYE : Combinatoire et Complexité
+	* Hamamache KHEDDOUCI : Graphes et Combinatoire
 
 Complexité
 ==========
@@ -513,3 +516,193 @@ A la fin de chaque cycle
 
 *	:math:`\Phi = vertex` : Dépôt sur les sommets.
 *	:math:`\Phi = clique` : Dépôt sur les arêtes de la clique.
+
+Graphes et Combinatoire
+=======================
+
+Définitions et exemples
+-----------------------
+
+| Un **graphe** est un couple :math:`G=(V,E)` où :
+
+*	:math:`V` est un ensemble de sommets.
+*	:math:`E` est un ensemble d'arêtes.
+
+| Un **graphe orienté** est un couple :math:`G=(V,A)` où :
+
+*	:math:`V` est un ensemble de sommets.
+*	:math:`A` est un ensemble d'arcs.
+
+| Un **multigraphe** *(orienté)* est un couple :math:`G=(V,E)` où :
+
+*	:math:`V` est un ensemble de sommets.
+*	:math:`E` est un ensemble d'arêtes.
+
+.. figure:: img/ccg-multigraphe.png
+	:width: 50%
+	:align: center
+
+	Multigraphe
+
+| Un **graphe valué** est un couple :math:`G=(V,E)` où :
+
+*	:math:`V` est un ensemble de sommets.
+*	:math:`E` est un ensemble d'arêtes.
+*	Les arêtes ou les sommets sont valués.
+
+.. admonition:: Définition du degré
+
+	* Le degré d'un sommet est le nombre de voisins.
+	* Le degré maximum d'un graphe est le degré le plus grand du graphe.
+	* Le degré minimum d'un graphe est le degré le plus petit du graphe.
+
+.. admonition:: Définition d'une chaîne
+
+	| Une suite consécutive d'arêtes :math:`(v_{0}, v_{1}), (v_{1}, v_{2}), ..., (v_{n-1}, v_{n})` est une chaîne de longueur :math:`n`.
+	| La distance entre deux sommets :math:`v_{i}` et :math:`v_{j}` est la longueur de la plus courte chaîne entre :math:`v_{i}` et :math:`v_{j}`.
+	| Le diamètre d'un graphe est la distance maximale entre deux sommets du graphe.
+
+.. admonition:: Définition d'un cycle
+
+	| Un cycle est une chaîne fermée.
+	| Un cycle est hamiltonien si il passe une et une seule fois par chaque arête.
+
+.. admonition:: Définition de la connexité
+
+	| Un graphe est connexe si il existe une chaîne entre chaque paire de sommets.
+	| Si le graphe n'est pas connexe, il est composé de composantes connexes.
+	| Un graphe est k-connexe si entre toute paire de sommets il existe k chaînes disjointes.
+
+.. admonition:: Autre définitions
+
+	*	Graphe complet :math:`K_{n}\; \rightarrow \;` Graphe à :math:`n` sommets tous connectés.
+	*	Graphe biparti :math:`K_{n,m}\; \rightarrow \;` Graphe à :math:`n` sommets connectés à :math:`m` sommets.
+	*	Ensemble stable ou ensemble de sommets indépendants : ensemble de sommets non connectés entre eux.
+	*	Arbre.
+	*	Etoile : graphe connexe à un sommet central connecté à tous les autres sommets.
+	*	Graphe régulier : tous les sommets ont le même degré.
+	*	Graphe planaire : peut être dessiné sans que les arêtes se croisent.
+	*	...
+
+Graphes (statiques)
+-------------------
+
+Structures dans les graphes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+| Décomposition d'un graphe :math:`G` en sous graphes :math:`(H_{1}, H_{2}, ..., H_{k})` de :math:`G` tel que : :math:`G = \bigcup_{i=1}^{k} H_{i}`.
+
+Décomposition en sommets
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. admonition:: Décomposition modulaire
+
+	* 	Soit :math:`X` dans :math:`V(G)`. On dit que :math:`X` est un module si pour tout :math:`y \in V(G) \setminus X`, soit :math:`y` est relié à tous les sommets de :math:`X`, soit :math:`y` n'est relié à aucun sommet de :math:`X`.
+	*	Un module est trivial s'il est égal à :math:`\varnothing` ou à :math:`V(G)` ou à un singleton :math:`\{x\}`.
+	*	Un graphe est premier si il ne comporte que des modules triviaux.
+	*	Un module **fort** est un module qui ne chevaux pas avec un autre module.
+
+| La décomposition modulaire est solvable en temps polynomial *(bcp d'algos en O(n\*m))*.
+| Utile pour un codage compact des graphes.
+| Utile pour la résolution de problèmes NP-complets dans certaines classes de graphes.
+
+.. admonition:: Clustering
+
+	*	:math:`C = {X_{1}, ..., X_{k}}` est une couverture de :math:`G` si :math:`\bigcup_{i=1}^{k} X_{i} = V(G)` et chaque :math:`X_{i}` est connexe.
+	*	Le rayons des clusters (taille) et la sparsité (interactions entre clusters) sont des paramètres importants.
+
+Décomposition en arêtes
+^^^^^^^^^^^^^^^^^^^^^^^
+
+| Combien de copies :math:`S` peut-on placer dans :math:`G` sans que deux copies de :math:`S` ne se chevauchent ?
+
+.. admonition:: Définition du placement de :math:`H_{1}, H_{2}, ..., H_{k}` dans :math:`G`
+
+	*	:math:`E(G) = \bigcup_{i=1}^{k} E(H'_{i}) \cup R`
+	*	avec :math:`H'_{i}` isomorphe à :math:`H_{i}` et :math:`R` un ensemble d'arêtes restantes.
+
+	Remarques :
+
+		*	Si :math:`R = \varnothing` alors :math:`G` est un graphe de H-decomposition.
+		*	Si :math:`H_{1} = H_{2} = ... = H_{k}` k-placement de :math:`H` dans :math:`G`.
+
+.. admonition:: Théorème *(Woźniak, 1991)*
+
+	| Il existe un 2-placement :math:`\sigma` de T (non-étoile) dans :math:`K_{n}` tel que pour tout :math:`x` de :math:`T`, :math:`dist_{T}(x, \sigma(x)) \leq 3`.
+
+	| Corrollaire : Il existe un 2-placement de T (non étoile) dans :math:`T^{7}`.
+
+.. admonition:: Théorème (Kheddouci, Saclé & Woźniak, 2000)
+
+	| Deux copies arête-disjointes d'un arbre :math:`T` non-étoile sont plaçables dans :math:`T^{4}`.
+
+	| Conjecture : Deux copies arête-disjointes d’un arbre :math:`T` non-étoile sont plaçables dans :math:`T^{3}`.
+
+Paramètres de graphes
+~~~~~~~~~~~~~~~~~~~~~
+
+| Le paramètre d'un graphe est une évaluation sur les sommest et/ou les arêtes du graphe.
+
+Paramètre de colorations
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+| **Coloration d’un graphe** : affecter une couleur à chaque sommet de sorte que deux sommets reliés par une arête aient des couleurs différentes.
+| **Problème de coloration** : trouver la plus petite valeur de :math:`k` telle que le graphe soit k-coloriable, notée :math:`\chi`.
+| C'est un problème NP-difficile.
+
+Coloration forte
+""""""""""""""""
+
+| :math:`C` est une coloration propre :math:`C_{1}, C_{2}, ..., C_{k}` tel que :math:`\forall u \in V(G), \exists i \in {1, ..., k}` : :math:`u` est adjacent à tous les sommets de :math:`C_{i}`.
+
+*	Un graphe :math:`G` est fortement :math:`k`-colorable s'il admet une coloration propre à :math:`k` couleurs.
+*	Un graphe (simple et connexe) est **strictement fortement k-colorable** s'il admet une k-coloration forte et que :math:`\forall i \in {1, ..., k}, C_{i} \neq \varnothing`.
+
+.. note::
+	| Le **strict strong k-coloring** est NP-complet pour :math:`k \geq 3`.
+
+.. admonition:: Idée d'algorithme de construction de coloration forte
+
+	*	Chercher les sous-graphes bipartis complets ou les étoiles dans le graphe.
+	*	Commencer par les étoiles (sommets de degré 1).
+	*	Puis, construire les bipartis complets.
+
+| La k-coloration forte d’un arbre est équivalent à une décomposition minimum de l’arbre en étoiles.
+
+b-coloration
+""""""""""""
+
+| **k-coloration propre dominante** : :math:`\forall i \in {1..k}, \exists x_{i}` adjacent à toutes les couleurs sauf :math:`i`.
+| **Nombre b-chromatique** : :math:`\varphi(G)` est le plus grand entier :math:`k` tel que :math:`G` admet une k-coloration propre dominante.
+
+Coloration de Grundy
+""""""""""""""""""""
+
+| **Coloration de Grundy** : Coloration propre telle que :math:`\forall c \in C` :math:`c` est adjacent à au moins un sommet de chaque couleur plus petite que :math:`c`.
+
+Paramètre en vrac
+^^^^^^^^^^^^^^^^^
+
+*	**Ensemble de sommets indépendants** : MIS (Maximum Independent Set).
+*	**Feedback Vertex set (FVS)** : ensemble minimum de sommets à retirer d’un graphe pour casser tous les cycles.
+
+Graphes dynamiques
+------------------
+
+| Défini par :math:`G_{t} = (V_{t}, E_{t})` où :math:`V_{t}` et :math:`E_{t}` sont des ensembles de sommets et d'arêtes à l'instant :math:`t`.
+
+.. admonition:: Définition
+
+	*	:math:`G_{t+1} = G_{t} \pm` {sommets, arêtes}.
+	*	Suite de graphe : :math:`G_{0}, G_{1}, ..., G_{n}`.
+
+	.. math::
+		G_{0} \rightarrow_{\sigma_{0,1}} G_{1} \rightarrow_{\sigma_{1,2}} G_{2} \rightarrow_{\sigma_{2,3}} ... \rightarrow_{\sigma_{n-1,n}} G_{n}
+
+	*	Les proprétés classiques deviennent des propriétés temporelles.
+
+| Utilisation d'algorithme dynamique. Etant donné un algorithme :math:`A` fonctionnant sur :math:`G_{t}`, comment :math:`A` fonctionne sur :math:`G_{t+1}` sans tout recalculer ?
+| L'algorithme doit gérer : ajout/suppression d'arêtes, ajout/suppression de sommets.
+
+| Le protocole auto-stabilisant a été introduit par Dijkstra en 1973.
+| Il garantie la convergence vers un état légitime dans un temps fini sans intervention extérieure.

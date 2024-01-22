@@ -1,0 +1,607 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="fr" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>AI4IoTR - Artifical Intelligence for Internet of Things and Robotics &#8212; Documentation M2 courses recap </title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/translations.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ai4iotr';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="prev" title="EIAH - Environnements Informatiques pour l’Apprentissage Humain" href="eiah.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="fr"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Passer au contenu principal</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Documentation M2 courses recap </p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="aic.html">AIC - Artificial Intelligence and Cognition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ccg.html">CCG - Combinatoire, Complexité et Graphes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taa.html">TAA - Techniques d’apprentissage automatique</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dm.html">DM - Data Mining</a></li>
+<li class="toctree-l1"><a class="reference internal" href="biml.html">BIML - Bio-Inspired Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ia.html">IA - intelligent Agents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dv.html">DV - Data Visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="eiah.html">EIAH - Environnements Informatiques pour l’Apprentissage Humain</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">AI4IoTR - Artifical Intelligence for Internet of Things and Robotics</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Téléchargez cette page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/ai4iotr.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Télécharger le fichier source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimer au format PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Mode plein écran"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="clair/sombre" aria-label="clair/sombre" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>AI4IoTR - Artifical Intelligence for Internet of Things and Robotics</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenu </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iot-ia">IoT &amp; IA</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iot-kesako">IoT, késako ?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">IoT &amp; IA</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iot-ethique">IoT &amp; Ethique</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tendances-et-defis">Tendances et défis</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objets-communicants">Objets communicants</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anatomie-d-un-objet-communicant">Anatomie d’un objet communicant</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quelle-demarche-de-conception">Quelle démarche de conception ?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analyse-des-besoins">Analyse des besoins</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#processus-de-developpement">Processus de développement</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#validation">Validation</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <style> .green {color:#60aa00; font-weight:bold; font-size:16px} </style>
+    <style> .red {color:#aa0060; font-weight:bold; font-size:16px} </style><section id="ai4iotr-artifical-intelligence-for-internet-of-things-and-robotics">
+<h1>AI4IoTR - Artifical Intelligence for Internet of Things and Robotics<a class="headerlink" href="#ai4iotr-artifical-intelligence-for-internet-of-things-and-robotics" title="Lien permanent vers cette rubrique">#</a></h1>
+<div class="line-block">
+<div class="line">Dispensé par : <em>Lionel Médini</em> et <em>Laeticia Matignon</em> (2023 - Nov.Jan)</div>
+</div>
+<section id="iot-ia">
+<h2>IoT &amp; IA<a class="headerlink" href="#iot-ia" title="Lien permanent vers cette rubrique">#</a></h2>
+<div class="line-block">
+<div class="line"><em>Lionel Médini</em></div>
+</div>
+<section id="iot-kesako">
+<h3>IoT, késako ?<a class="headerlink" href="#iot-kesako" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="admonition-definition-iot admonition">
+<p class="admonition-title">Définition <strong>IoT</strong></p>
+<div class="line-block">
+<div class="line">L’<strong>internet des objets</strong> est un ensemble d’objets connectés et de technologies de réseaux qui, à l’exclusion des stations de travail, des tablettes, des téléphones portables et des smartphones, se conjuguent en associant :</div>
+</div>
+<ul class="simple">
+<li><p>des objets physiques qui possèdent des capteurs connectés, éventuellement dotés de capacités de calcul et qui sont en mesure d’interagir avec leur environnement ;</p></li>
+<li><p>des réseaux de communication numériques filaires ou non filaires qui permettent de communiquer les données issues de ces objets ;</p></li>
+<li><p>des espaces de stockage distants pour les données recueillies ;</p></li>
+<li><p>des applications de traitement des données qui engagent des processus décisionnels à même de rétroagir sur des objets physiques inanimés ou vivants.</p></li>
+</ul>
+</div>
+<div class="admonition-quelques-definitions admonition">
+<p class="admonition-title">Quelques définitions</p>
+<ul class="simple">
+<li><p><strong>Système observé</strong> : Any real world entity from which a property is measured.</p></li>
+<li><p><strong>Grandeur physique</strong> : An aspect of a feature of interest that can be measured and is intrinsic to and cannot exist without the feature.</p></li>
+<li><p><strong>Phénomène physique</strong> : In scientific usage, a phenomenon is any event that is observable, including the use of instrumentation to observe, record, or compile data. Especially in physics, the study of a phenomenon may be described as measurements related to matter, energy, or time.</p></li>
+<li><p><strong>Observation</strong> : Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest.</p></li>
+<li><p><strong>Action</strong> : Carries out an (Actuation) Procedure to change the state of the world.</p></li>
+</ul>
+</div>
+<div class="line-block">
+<div class="line">On utilise des capteurs et actionneurs pour interagir avec le monde.</div>
+<div class="line">Un <strong>Système Cyber-Physique</strong> (CPS) interagit avec son environnement dans lequel il prend des données, les traite et au travers d’une boucle de rétroaction, contrôle ou influence le processus auquel il est associé.</div>
+<div class="line">Un <strong>jumeau virtuel</strong> (Digital Twin, DT) est un modèle virtuel pour représenter l’objet physique. Sert à lancer des simulations ou étudier des erreurs de performances. On peut mettre dans l’objet physique ce que nous avons appris.</div>
+</div>
+<div class="line-block">
+<div class="line">2 typologies d’objets :</div>
+</div>
+<ul class="simple">
+<li><p>Objets <strong>chipless</strong> : Reconnus à l’aide de tag RFID, QR codes, analyse d’image, … Modèle de comportement déporté.</p></li>
+<li><p>Objets <strong>smart</strong> : Communicants et/ou intelligents. Modèle de comportement (partiellement) embarqué. Intégrés à un ensemble plus vaste.</p></li>
+</ul>
+<div class="line-block">
+<div class="line">Un écosystème IoT d’objets dans la vie de tous les jours :</div>
+</div>
+<ul class="simple">
+<li><p>Quatified self</p></li>
+<li><p>E-santé, médecine préventive, confort</p></li>
+<li><p>Maison connectée</p></li>
+<li><p>Animaux de compagnie, plantes</p></li>
+<li><p>Jouets, loisirs, …</p></li>
+<li><p>Le coin des geeks/projets open-source</p></li>
+<li><p>…</p></li>
+</ul>
+<div class="line-block">
+<div class="line">De nombreux domaines applicatifs :</div>
+</div>
+<ul class="simple">
+<li><p>Industrie</p></li>
+<li><p>E-commerce</p></li>
+<li><p>Agriculture</p></li>
+<li><p>Transport</p></li>
+<li><p>Santé</p></li>
+<li><p>Energie</p></li>
+<li><p>Smart city/smart building</p></li>
+</ul>
+<div class="admonition-differents-modeles-d-iot admonition">
+<p class="admonition-title">Différents modèles d’IoT</p>
+<ul class="simple">
+<li><p><strong>Embarqué</strong> sur l’objet</p></li>
+<li><p><strong>Edge/Fog</strong> : intelligence répartie</p></li>
+<li><p><strong>Cloud</strong> : intelligence déportée</p></li>
+</ul>
+</div>
+</section>
+<section id="id1">
+<h3>IoT &amp; IA<a class="headerlink" href="#id1" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="line-block">
+<div class="line"><strong>Intelligence ambiante</strong> consiste en essayant de rendre invisible l’interface entre l’homme et la machine.</div>
+<div class="line">Par <strong>smart-</strong> on entend un avancement technologique, une conscience environnementale et de l’interactivité.</div>
+<div class="line">Le but du <strong>machine learning</strong> est de prédire l’évolution d’un paramètre, ou la réponse à une question.</div>
+<div class="line">L”<strong>intelligence distribuée</strong> est le fait de contrôler un grand nombre d’objets interconnectés.</div>
+</div>
+</section>
+<section id="iot-ethique">
+<h3>IoT &amp; Ethique<a class="headerlink" href="#iot-ethique" title="Lien permanent vers cette rubrique">#</a></h3>
+<ol class="arabic simple">
+<li><p>Action humaine et contrôle humain</p>
+<ul class="simple">
+<li><p>Droits fondamentaux</p></li>
+<li><p>Action humaine</p></li>
+<li><p>Contrôle humain</p></li>
+</ul>
+</li>
+<li><p>Robustesse technique et fiabilité</p>
+<ul class="simple">
+<li><p>Prévention de toute atteinte aux données ou aux services dans le monde <em>cyber</em> <span class="math notranslate nohighlight">\(\rightarrow\)</span> IA.</p></li>
+<li><p>Prévention de toute atteinte aux humains et à l’environnement <em>physique</em> <span class="math notranslate nohighlight">\(\rightarrow\)</span> IoT.</p></li>
+</ul>
+</li>
+<li><p>Respect de la vie privée et gouvernance des données</p>
+<ul class="simple">
+<li><p>Respect de la vie privée et protection des données</p></li>
+<li><p>Qualité et intégrité des données</p></li>
+<li><p>Accès aux données</p></li>
+</ul>
+</li>
+<li><p>Transparence</p>
+<ul class="simple">
+<li><p>Traçabilité</p></li>
+<li><p>Explicabilité</p></li>
+<li><p>Communication</p></li>
+</ul>
+</li>
+<li><p>Diversité, non-discrimination et équité</p>
+<ul class="simple">
+<li><p>Lutte contre les biais</p></li>
+<li><p>Accessibilité</p></li>
+<li><p>Conception universelle</p></li>
+<li><p>Intégration des parties prenantes</p></li>
+</ul>
+</li>
+<li><p>Bien-être sociétal et environnemental</p>
+<ul class="simple">
+<li><p>IA durable et respectueuse de l’environnement</p></li>
+<li><p>Incidences sociales</p></li>
+<li><p>Société et démocratie</p></li>
+</ul>
+</li>
+<li><p>Responsabilité</p>
+<ul class="simple">
+<li><p>Auditabilité</p></li>
+<li><p>Réduction au minimum et documentation des incidences négatives</p></li>
+<li><p>Arbitrages</p></li>
+<li><p>Recours</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="tendances-et-defis">
+<h3>Tendances et défis<a class="headerlink" href="#tendances-et-defis" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="line-block">
+<div class="line">De nouvelles applications et défis :</div>
+</div>
+<ul class="simple">
+<li><p>Miniaturisation et passage à l’échelle</p></li>
+<li><p>Communication : 5g ?</p></li>
+<li><p>Interface Humain-Objet (IHO)</p></li>
+</ul>
+<div class="line-block">
+<div class="line">Vers le <strong>Web des Objets</strong> (WoT) : standardisation des protocoles et interfaces, découvrabilité des objets, coopération entre objets hétérogènes.</div>
+</div>
+</section>
+</section>
+<section id="objets-communicants">
+<h2>Objets communicants<a class="headerlink" href="#objets-communicants" title="Lien permanent vers cette rubrique">#</a></h2>
+<div class="line-block">
+<div class="line"><em>Lionel Médini</em></div>
+</div>
+<div class="line-block">
+<div class="line">Le but est de se placer dans une démarche de conception au niveau applicatif et de comprendre les différences avec une démarche de conception logicielle.</div>
+</div>
+<section id="anatomie-d-un-objet-communicant">
+<h3>Anatomie d’un objet communicant<a class="headerlink" href="#anatomie-d-un-objet-communicant" title="Lien permanent vers cette rubrique">#</a></h3>
+</section>
+<section id="quelle-demarche-de-conception">
+<h3>Quelle démarche de conception ?<a class="headerlink" href="#quelle-demarche-de-conception" title="Lien permanent vers cette rubrique">#</a></h3>
+</section>
+<section id="analyse-des-besoins">
+<h3>Analyse des besoins<a class="headerlink" href="#analyse-des-besoins" title="Lien permanent vers cette rubrique">#</a></h3>
+</section>
+<section id="processus-de-developpement">
+<h3>Processus de développement<a class="headerlink" href="#processus-de-developpement" title="Lien permanent vers cette rubrique">#</a></h3>
+</section>
+<section id="validation">
+<h3>Validation<a class="headerlink" href="#validation" title="Lien permanent vers cette rubrique">#</a></h3>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="eiah.html"
+       title="page précédente">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">précédent</p>
+        <p class="prev-next-title">EIAH - Environnements Informatiques pour l’Apprentissage Humain</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenu
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iot-ia">IoT &amp; IA</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iot-kesako">IoT, késako ?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">IoT &amp; IA</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iot-ethique">IoT &amp; Ethique</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tendances-et-defis">Tendances et défis</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objets-communicants">Objets communicants</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anatomie-d-un-objet-communicant">Anatomie d’un objet communicant</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quelle-demarche-de-conception">Quelle démarche de conception ?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analyse-des-besoins">Analyse des besoins</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#processus-de-developpement">Processus de développement</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#validation">Validation</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Par Axel
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023, Axel.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -144,6 +144,7 @@
 <li class="toctree-l1"><a class="reference internal" href="ia.html">IA - intelligent Agents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dv.html">DV - Data Visualization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="eiah.html">EIAH - Environnements Informatiques pour l’Apprentissage Humain</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ai4iotr.html">AI4IoTR - Artifical Intelligence for Internet of Things and Robotics</a></li>
 </ul>
 
     </div>
@@ -354,6 +355,29 @@ document.write(`
 </li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graphes-et-combinatoire">Graphes et Combinatoire</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions-et-exemples">Définitions et exemples</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#graphes-statiques">Graphes (statiques)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#structures-dans-les-graphes">Structures dans les graphes</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#decomposition-en-sommets">Décomposition en sommets</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#decomposition-en-aretes">Décomposition en arêtes</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#parametres-de-graphes">Paramètres de graphes</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#parametre-de-colorations">Paramètre de colorations</a><ul class="nav section-nav flex-column">
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#coloration-forte">Coloration forte</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#b-coloration">b-coloration</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#coloration-de-grundy">Coloration de Grundy</a></li>
+</ul>
+</li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#parametre-en-vrac">Paramètre en vrac</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#graphes-dynamiques">Graphes dynamiques</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -367,7 +391,16 @@ document.write(`
                   
   <section id="ccg-combinatoire-complexite-et-graphes">
 <h1>CCG - Combinatoire, Complexité et Graphes<a class="headerlink" href="#ccg-combinatoire-complexite-et-graphes" title="Lien permanent vers cette rubrique">#</a></h1>
-<p><em>Samba Ndojh NDIAYE</em></p>
+<div class="line-block">
+<div class="line">Dispensé par : <em>Samba Ndojh NDIAYE</em> et <em>Hamamache KHEDDOUCI</em> (2023.2024 - Sept.Jan)</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>Samba Ndojh NDIAYE : Combinatoire et Complexité</p></li>
+<li><p>Hamamache KHEDDOUCI : Graphes et Combinatoire</p></li>
+</ul>
+</div>
 <section id="complexite">
 <h2>Complexité<a class="headerlink" href="#complexite" title="Lien permanent vers cette rubrique">#</a></h2>
 <section id="complexite-d-un-algorithme">
@@ -1003,6 +1036,249 @@ document.write(`
 </section>
 </section>
 </section>
+<section id="graphes-et-combinatoire">
+<h2>Graphes et Combinatoire<a class="headerlink" href="#graphes-et-combinatoire" title="Lien permanent vers cette rubrique">#</a></h2>
+<section id="definitions-et-exemples">
+<h3>Définitions et exemples<a class="headerlink" href="#definitions-et-exemples" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="line-block">
+<div class="line">Un <strong>graphe</strong> est un couple <span class="math notranslate nohighlight">\(G=(V,E)\)</span> où :</div>
+</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(V\)</span> est un ensemble de sommets.</p></li>
+<li><p><span class="math notranslate nohighlight">\(E\)</span> est un ensemble d’arêtes.</p></li>
+</ul>
+<div class="line-block">
+<div class="line">Un <strong>graphe orienté</strong> est un couple <span class="math notranslate nohighlight">\(G=(V,A)\)</span> où :</div>
+</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(V\)</span> est un ensemble de sommets.</p></li>
+<li><p><span class="math notranslate nohighlight">\(A\)</span> est un ensemble d’arcs.</p></li>
+</ul>
+<div class="line-block">
+<div class="line">Un <strong>multigraphe</strong> <em>(orienté)</em> est un couple <span class="math notranslate nohighlight">\(G=(V,E)\)</span> où :</div>
+</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(V\)</span> est un ensemble de sommets.</p></li>
+<li><p><span class="math notranslate nohighlight">\(E\)</span> est un ensemble d’arêtes.</p></li>
+</ul>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/ccg-multigraphe.png"><img alt="_images/ccg-multigraphe.png" src="_images/ccg-multigraphe.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-text">Multigraphe</span><a class="headerlink" href="#id1" title="Lien permanent vers cette image">#</a></p>
+</figcaption>
+</figure>
+<div class="line-block">
+<div class="line">Un <strong>graphe valué</strong> est un couple <span class="math notranslate nohighlight">\(G=(V,E)\)</span> où :</div>
+</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(V\)</span> est un ensemble de sommets.</p></li>
+<li><p><span class="math notranslate nohighlight">\(E\)</span> est un ensemble d’arêtes.</p></li>
+<li><p>Les arêtes ou les sommets sont valués.</p></li>
+</ul>
+<div class="admonition-definition-du-degre admonition">
+<p class="admonition-title">Définition du degré</p>
+<ul class="simple">
+<li><p>Le degré d’un sommet est le nombre de voisins.</p></li>
+<li><p>Le degré maximum d’un graphe est le degré le plus grand du graphe.</p></li>
+<li><p>Le degré minimum d’un graphe est le degré le plus petit du graphe.</p></li>
+</ul>
+</div>
+<div class="admonition-definition-d-une-chaine admonition">
+<p class="admonition-title">Définition d’une chaîne</p>
+<div class="line-block">
+<div class="line">Une suite consécutive d’arêtes <span class="math notranslate nohighlight">\((v_{0}, v_{1}), (v_{1}, v_{2}), ..., (v_{n-1}, v_{n})\)</span> est une chaîne de longueur <span class="math notranslate nohighlight">\(n\)</span>.</div>
+<div class="line">La distance entre deux sommets <span class="math notranslate nohighlight">\(v_{i}\)</span> et <span class="math notranslate nohighlight">\(v_{j}\)</span> est la longueur de la plus courte chaîne entre <span class="math notranslate nohighlight">\(v_{i}\)</span> et <span class="math notranslate nohighlight">\(v_{j}\)</span>.</div>
+<div class="line">Le diamètre d’un graphe est la distance maximale entre deux sommets du graphe.</div>
+</div>
+</div>
+<div class="admonition-definition-d-un-cycle admonition">
+<p class="admonition-title">Définition d’un cycle</p>
+<div class="line-block">
+<div class="line">Un cycle est une chaîne fermée.</div>
+<div class="line">Un cycle est hamiltonien si il passe une et une seule fois par chaque arête.</div>
+</div>
+</div>
+<div class="admonition-definition-de-la-connexite admonition">
+<p class="admonition-title">Définition de la connexité</p>
+<div class="line-block">
+<div class="line">Un graphe est connexe si il existe une chaîne entre chaque paire de sommets.</div>
+<div class="line">Si le graphe n’est pas connexe, il est composé de composantes connexes.</div>
+<div class="line">Un graphe est k-connexe si entre toute paire de sommets il existe k chaînes disjointes.</div>
+</div>
+</div>
+<div class="admonition-autre-definitions admonition">
+<p class="admonition-title">Autre définitions</p>
+<ul class="simple">
+<li><p>Graphe complet <span class="math notranslate nohighlight">\(K_{n}\; \rightarrow \;\)</span> Graphe à <span class="math notranslate nohighlight">\(n\)</span> sommets tous connectés.</p></li>
+<li><p>Graphe biparti <span class="math notranslate nohighlight">\(K_{n,m}\; \rightarrow \;\)</span> Graphe à <span class="math notranslate nohighlight">\(n\)</span> sommets connectés à <span class="math notranslate nohighlight">\(m\)</span> sommets.</p></li>
+<li><p>Ensemble stable ou ensemble de sommets indépendants : ensemble de sommets non connectés entre eux.</p></li>
+<li><p>Arbre.</p></li>
+<li><p>Etoile : graphe connexe à un sommet central connecté à tous les autres sommets.</p></li>
+<li><p>Graphe régulier : tous les sommets ont le même degré.</p></li>
+<li><p>Graphe planaire : peut être dessiné sans que les arêtes se croisent.</p></li>
+<li><p>…</p></li>
+</ul>
+</div>
+</section>
+<section id="graphes-statiques">
+<h3>Graphes (statiques)<a class="headerlink" href="#graphes-statiques" title="Lien permanent vers cette rubrique">#</a></h3>
+<section id="structures-dans-les-graphes">
+<h4>Structures dans les graphes<a class="headerlink" href="#structures-dans-les-graphes" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="line-block">
+<div class="line">Décomposition d’un graphe <span class="math notranslate nohighlight">\(G\)</span> en sous graphes <span class="math notranslate nohighlight">\((H_{1}, H_{2}, ..., H_{k})\)</span> de <span class="math notranslate nohighlight">\(G\)</span> tel que : <span class="math notranslate nohighlight">\(G = \bigcup_{i=1}^{k} H_{i}\)</span>.</div>
+</div>
+<section id="decomposition-en-sommets">
+<h5>Décomposition en sommets<a class="headerlink" href="#decomposition-en-sommets" title="Lien permanent vers cette rubrique">#</a></h5>
+<div class="admonition-decomposition-modulaire admonition">
+<p class="admonition-title">Décomposition modulaire</p>
+<ul class="simple">
+<li><p>Soit <span class="math notranslate nohighlight">\(X\)</span> dans <span class="math notranslate nohighlight">\(V(G)\)</span>. On dit que <span class="math notranslate nohighlight">\(X\)</span> est un module si pour tout <span class="math notranslate nohighlight">\(y \in V(G) \setminus X\)</span>, soit <span class="math notranslate nohighlight">\(y\)</span> est relié à tous les sommets de <span class="math notranslate nohighlight">\(X\)</span>, soit <span class="math notranslate nohighlight">\(y\)</span> n’est relié à aucun sommet de <span class="math notranslate nohighlight">\(X\)</span>.</p></li>
+<li><p>Un module est trivial s’il est égal à <span class="math notranslate nohighlight">\(\varnothing\)</span> ou à <span class="math notranslate nohighlight">\(V(G)\)</span> ou à un singleton <span class="math notranslate nohighlight">\(\{x\}\)</span>.</p></li>
+<li><p>Un graphe est premier si il ne comporte que des modules triviaux.</p></li>
+<li><p>Un module <strong>fort</strong> est un module qui ne chevaux pas avec un autre module.</p></li>
+</ul>
+</div>
+<div class="line-block">
+<div class="line">La décomposition modulaire est solvable en temps polynomial <em>(bcp d’algos en O(n*m))</em>.</div>
+<div class="line">Utile pour un codage compact des graphes.</div>
+<div class="line">Utile pour la résolution de problèmes NP-complets dans certaines classes de graphes.</div>
+</div>
+<div class="admonition-clustering admonition">
+<p class="admonition-title">Clustering</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(C = {X_{1}, ..., X_{k}}\)</span> est une couverture de <span class="math notranslate nohighlight">\(G\)</span> si <span class="math notranslate nohighlight">\(\bigcup_{i=1}^{k} X_{i} = V(G)\)</span> et chaque <span class="math notranslate nohighlight">\(X_{i}\)</span> est connexe.</p></li>
+<li><p>Le rayons des clusters (taille) et la sparsité (interactions entre clusters) sont des paramètres importants.</p></li>
+</ul>
+</div>
+</section>
+<section id="decomposition-en-aretes">
+<h5>Décomposition en arêtes<a class="headerlink" href="#decomposition-en-aretes" title="Lien permanent vers cette rubrique">#</a></h5>
+<div class="line-block">
+<div class="line">Combien de copies <span class="math notranslate nohighlight">\(S\)</span> peut-on placer dans <span class="math notranslate nohighlight">\(G\)</span> sans que deux copies de <span class="math notranslate nohighlight">\(S\)</span> ne se chevauchent ?</div>
+</div>
+<div class="admonition-definition-du-placement-de-math-h-1-h-2-h-k-dans-math-g admonition">
+<p class="admonition-title">Définition du placement de <span class="math notranslate nohighlight">\(H_{1}, H_{2}, ..., H_{k}\)</span> dans <span class="math notranslate nohighlight">\(G\)</span></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(E(G) = \bigcup_{i=1}^{k} E(H'_{i}) \cup R\)</span></p></li>
+<li><p>avec <span class="math notranslate nohighlight">\(H'_{i}\)</span> isomorphe à <span class="math notranslate nohighlight">\(H_{i}\)</span> et <span class="math notranslate nohighlight">\(R\)</span> un ensemble d’arêtes restantes.</p></li>
+</ul>
+<p>Remarques :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Si <span class="math notranslate nohighlight">\(R = \varnothing\)</span> alors <span class="math notranslate nohighlight">\(G\)</span> est un graphe de H-decomposition.</p></li>
+<li><p>Si <span class="math notranslate nohighlight">\(H_{1} = H_{2} = ... = H_{k}\)</span> k-placement de <span class="math notranslate nohighlight">\(H\)</span> dans <span class="math notranslate nohighlight">\(G\)</span>.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="admonition-theoreme-wozniak-1991 admonition">
+<p class="admonition-title">Théorème <em>(Woźniak, 1991)</em></p>
+<div class="line-block">
+<div class="line">Il existe un 2-placement <span class="math notranslate nohighlight">\(\sigma\)</span> de T (non-étoile) dans <span class="math notranslate nohighlight">\(K_{n}\)</span> tel que pour tout <span class="math notranslate nohighlight">\(x\)</span> de <span class="math notranslate nohighlight">\(T\)</span>, <span class="math notranslate nohighlight">\(dist_{T}(x, \sigma(x)) \leq 3\)</span>.</div>
+</div>
+<div class="line-block">
+<div class="line">Corrollaire : Il existe un 2-placement de T (non étoile) dans <span class="math notranslate nohighlight">\(T^{7}\)</span>.</div>
+</div>
+</div>
+<div class="admonition-theoreme-kheddouci-sacle-wozniak-2000 admonition">
+<p class="admonition-title">Théorème (Kheddouci, Saclé &amp; Woźniak, 2000)</p>
+<div class="line-block">
+<div class="line">Deux copies arête-disjointes d’un arbre <span class="math notranslate nohighlight">\(T\)</span> non-étoile sont plaçables dans <span class="math notranslate nohighlight">\(T^{4}\)</span>.</div>
+</div>
+<div class="line-block">
+<div class="line">Conjecture : Deux copies arête-disjointes d’un arbre <span class="math notranslate nohighlight">\(T\)</span> non-étoile sont plaçables dans <span class="math notranslate nohighlight">\(T^{3}\)</span>.</div>
+</div>
+</div>
+</section>
+</section>
+<section id="parametres-de-graphes">
+<h4>Paramètres de graphes<a class="headerlink" href="#parametres-de-graphes" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="line-block">
+<div class="line">Le paramètre d’un graphe est une évaluation sur les sommest et/ou les arêtes du graphe.</div>
+</div>
+<section id="parametre-de-colorations">
+<h5>Paramètre de colorations<a class="headerlink" href="#parametre-de-colorations" title="Lien permanent vers cette rubrique">#</a></h5>
+<div class="line-block">
+<div class="line"><strong>Coloration d’un graphe</strong> : affecter une couleur à chaque sommet de sorte que deux sommets reliés par une arête aient des couleurs différentes.</div>
+<div class="line"><strong>Problème de coloration</strong> : trouver la plus petite valeur de <span class="math notranslate nohighlight">\(k\)</span> telle que le graphe soit k-coloriable, notée <span class="math notranslate nohighlight">\(\chi\)</span>.</div>
+<div class="line">C’est un problème NP-difficile.</div>
+</div>
+<section id="coloration-forte">
+<h6>Coloration forte<a class="headerlink" href="#coloration-forte" title="Lien permanent vers cette rubrique">#</a></h6>
+<div class="line-block">
+<div class="line"><span class="math notranslate nohighlight">\(C\)</span> est une coloration propre <span class="math notranslate nohighlight">\(C_{1}, C_{2}, ..., C_{k}\)</span> tel que <span class="math notranslate nohighlight">\(\forall u \in V(G), \exists i \in {1, ..., k}\)</span> : <span class="math notranslate nohighlight">\(u\)</span> est adjacent à tous les sommets de <span class="math notranslate nohighlight">\(C_{i}\)</span>.</div>
+</div>
+<ul class="simple">
+<li><p>Un graphe <span class="math notranslate nohighlight">\(G\)</span> est fortement <span class="math notranslate nohighlight">\(k\)</span>-colorable s’il admet une coloration propre à <span class="math notranslate nohighlight">\(k\)</span> couleurs.</p></li>
+<li><p>Un graphe (simple et connexe) est <strong>strictement fortement k-colorable</strong> s’il admet une k-coloration forte et que <span class="math notranslate nohighlight">\(\forall i \in {1, ..., k}, C_{i} \neq \varnothing\)</span>.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<div class="line-block">
+<div class="line">Le <strong>strict strong k-coloring</strong> est NP-complet pour <span class="math notranslate nohighlight">\(k \geq 3\)</span>.</div>
+</div>
+</div>
+<div class="admonition-idee-d-algorithme-de-construction-de-coloration-forte admonition">
+<p class="admonition-title">Idée d’algorithme de construction de coloration forte</p>
+<ul class="simple">
+<li><p>Chercher les sous-graphes bipartis complets ou les étoiles dans le graphe.</p></li>
+<li><p>Commencer par les étoiles (sommets de degré 1).</p></li>
+<li><p>Puis, construire les bipartis complets.</p></li>
+</ul>
+</div>
+<div class="line-block">
+<div class="line">La k-coloration forte d’un arbre est équivalent à une décomposition minimum de l’arbre en étoiles.</div>
+</div>
+</section>
+<section id="b-coloration">
+<h6>b-coloration<a class="headerlink" href="#b-coloration" title="Lien permanent vers cette rubrique">#</a></h6>
+<div class="line-block">
+<div class="line"><strong>k-coloration propre dominante</strong> : <span class="math notranslate nohighlight">\(\forall i \in {1..k}, \exists x_{i}\)</span> adjacent à toutes les couleurs sauf <span class="math notranslate nohighlight">\(i\)</span>.</div>
+<div class="line"><strong>Nombre b-chromatique</strong> : <span class="math notranslate nohighlight">\(\varphi(G)\)</span> est le plus grand entier <span class="math notranslate nohighlight">\(k\)</span> tel que <span class="math notranslate nohighlight">\(G\)</span> admet une k-coloration propre dominante.</div>
+</div>
+</section>
+<section id="coloration-de-grundy">
+<h6>Coloration de Grundy<a class="headerlink" href="#coloration-de-grundy" title="Lien permanent vers cette rubrique">#</a></h6>
+<div class="line-block">
+<div class="line"><strong>Coloration de Grundy</strong> : Coloration propre telle que <span class="math notranslate nohighlight">\(\forall c \in C\)</span> <span class="math notranslate nohighlight">\(c\)</span> est adjacent à au moins un sommet de chaque couleur plus petite que <span class="math notranslate nohighlight">\(c\)</span>.</div>
+</div>
+</section>
+</section>
+<section id="parametre-en-vrac">
+<h5>Paramètre en vrac<a class="headerlink" href="#parametre-en-vrac" title="Lien permanent vers cette rubrique">#</a></h5>
+<ul class="simple">
+<li><p><strong>Ensemble de sommets indépendants</strong> : MIS (Maximum Independent Set).</p></li>
+<li><p><strong>Feedback Vertex set (FVS)</strong> : ensemble minimum de sommets à retirer d’un graphe pour casser tous les cycles.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="graphes-dynamiques">
+<h3>Graphes dynamiques<a class="headerlink" href="#graphes-dynamiques" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="line-block">
+<div class="line">Défini par <span class="math notranslate nohighlight">\(G_{t} = (V_{t}, E_{t})\)</span> où <span class="math notranslate nohighlight">\(V_{t}\)</span> et <span class="math notranslate nohighlight">\(E_{t}\)</span> sont des ensembles de sommets et d’arêtes à l’instant <span class="math notranslate nohighlight">\(t\)</span>.</div>
+</div>
+<div class="admonition-definition admonition">
+<p class="admonition-title">Définition</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(G_{t+1} = G_{t} \pm\)</span> {sommets, arêtes}.</p></li>
+<li><p>Suite de graphe : <span class="math notranslate nohighlight">\(G_{0}, G_{1}, ..., G_{n}\)</span>.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[G_{0} \rightarrow_{\sigma_{0,1}} G_{1} \rightarrow_{\sigma_{1,2}} G_{2} \rightarrow_{\sigma_{2,3}} ... \rightarrow_{\sigma_{n-1,n}} G_{n}\]</div>
+<ul class="simple">
+<li><p>Les proprétés classiques deviennent des propriétés temporelles.</p></li>
+</ul>
+</div>
+<div class="line-block">
+<div class="line">Utilisation d’algorithme dynamique. Etant donné un algorithme <span class="math notranslate nohighlight">\(A\)</span> fonctionnant sur <span class="math notranslate nohighlight">\(G_{t}\)</span>, comment <span class="math notranslate nohighlight">\(A\)</span> fonctionne sur <span class="math notranslate nohighlight">\(G_{t+1}\)</span> sans tout recalculer ?</div>
+<div class="line">L’algorithme doit gérer : ajout/suppression d’arêtes, ajout/suppression de sommets.</div>
+</div>
+<div class="line-block">
+<div class="line">Le protocole auto-stabilisant a été introduit par Dijkstra en 1973.</div>
+<div class="line">Il garantie la convergence vers un état légitime dans un temps fini sans intervention extérieure.</div>
+</div>
+</section>
+</section>
 </section>
 
 
@@ -1111,6 +1387,29 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#a-la-fin-de-chaque-cycle">A la fin de chaque cycle</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graphes-et-combinatoire">Graphes et Combinatoire</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions-et-exemples">Définitions et exemples</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#graphes-statiques">Graphes (statiques)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#structures-dans-les-graphes">Structures dans les graphes</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#decomposition-en-sommets">Décomposition en sommets</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#decomposition-en-aretes">Décomposition en arêtes</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#parametres-de-graphes">Paramètres de graphes</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#parametre-de-colorations">Paramètre de colorations</a><ul class="nav section-nav flex-column">
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#coloration-forte">Coloration forte</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#b-coloration">b-coloration</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#coloration-de-grundy">Coloration de Grundy</a></li>
+</ul>
+</li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#parametre-en-vrac">Paramètre en vrac</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#graphes-dynamiques">Graphes dynamiques</a></li>
 </ul>
 </li>
 </ul>
