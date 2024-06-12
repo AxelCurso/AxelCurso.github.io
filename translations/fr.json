@@ -1,0 +1,95 @@
+{
+	"navbar": {
+	  "aboutMe": "À propos de moi",
+	  "hobbies": "Hobbies",
+	  "resume": "Curriculum Vitae",
+	  "projects": "Projets"
+	},
+	"about": {
+	  "title": "À propos de moi",
+	  "content": "Je suis Axel BESSY et je suis étudiant en Intelligence Artificielle en deuxième année de Master à l'Université Claude Bernard Lyon 1 (UCBL). Mon intérêt se situe dans l'exploration de l'intersection entre l'intelligence artificielle, la médecine et le sport. J'aime relever des défis et travailler sur des projets innovants permettant de résoudre des problèmes concrets. Ce site web sert de vitrine à mon parcours, à mes compétences et aux projets passionnants que j'ai entrepris."
+	},
+	"hobbies": {
+	  "title": "Hobbies",
+	  "running": {
+		"title": "Trail",
+		"content": "La course à pieds rythme ma vie depuis 2022. J'ai découvert à traveers ce sport une nouvelle façon de me dépasser et de me surpasser. J'ai pu participer à plusieurs courses de trail, tel que le Lyon Urban Trail, et des marathons et semi-marathons, tel que le run in Lyon."
+	  },
+	  "climbing": {
+		"title": "Escalade",
+		"content": "L'escalade est une passion que j'ai découvert en 2021, c'est un sport qui me permet de m'aérer l'esprit et de vivre des sensations fortes. J'ai la chance de pouvoir m'exercer dans les salles de blocs de Lyon, ainsi que de pouvoir grimper en extérieur dans les monts de la région."
+	  },
+	  "aml": {
+		"title": "L'Association des Musclés Lyonnais",
+		"content": "En 2022, j'ai lancé avec des amis un groupe pour promouvoir le bien-être et l'activité physique. L'Association des Musclés Lyonnais (AML) a pour but de rassembler toute personne le souhaitant autour de la pratique du sport, que ce soit de la course, de l'escalade ou même de la natation."
+	  }
+	},
+	"resume": {
+	  "title": "Curriculum Vitae",
+	  "master": {
+		"title": "Master en Intelligence Artificielle",
+		"company": "Université Claude Bernard Lyon 1",
+		"place": "(Villeurbanne, France)",
+		"date": "2022 - 2024",
+		"content": "Je suis actuellement en deuxième année de Master en Intelligence Artificielle à l'Université Claude Bernard Lyon 1 (UCBL). Ce cursus me permet d'approfondir mes connaissances en IA et d'avoir une formation théorique et pratique des techniques des domaines de recherche de l’IA."
+	  },
+	  "pom": {
+		"title": "POM - Projet Orientation Master",
+		"company": "Université Claude Bernard Lyon 1",
+		"place": "(Villeurbanne, France)",
+		"date": "2022-2023",
+		"content": "Projet de recherche de Master 1 Informatique. Le but était de proposer un algorithme de meta-learning pour la prédiction de liens dans des graphes. En utilisant des algorithmes de détection de communautés."
+	  },
+	  "bachelorIntership": {
+		"title": "Création d’un module d’interaction avec un jumeau numérique de robots",
+		"company": "Go2cam International",
+		"place": "(Lyon, France)",
+		"date": "Eté 2022",
+		"content": "Durant mes 3 mois de stage de fin d'étude de Licence, j'ai travaillé sur la création d’un module permettant l’interaction d’un jumeau numérique d’un robot. Permettant la visualisation et la création de simulation de manière simple et intuitive. J’ai créé un module de pilotage pour un robot de chargement/déchargement, simplifiant la génération de fichiers de commande. Travaillant seul, j’ai acquis des compétences en gestion de projet, programmation C/C++."
+	  },
+	  "bachelor": {
+		"title": "Licence en Informatique",
+		"company": "Université Claude Bernard Lyon 1",
+		"place": "(Villeurbanne, France)",
+		"date": "2019 - 2022",
+		"content": "J'ai obtenu ma licence en Informatique à l'Université Claude Bernard Lyon 1 (UCBL). Ce cursus m'a permis d'acquérir des connaissances solides en programmation, en algorithmique et en mathématiques. J'ai pu également découvrir les domaines de l'intelligence artificielle, de la robotique et de la vision par ordinateur."
+	  },
+	  "ccna1": {
+		"title": "CCNA 1 : Introduction aux réseaux",
+		"company": "Cisco Networking Academy",
+		"place": "",
+		"date": "2022",
+		"content": "J'ai obtenu le certificat CCNA 1 : Introduction aux réseaux de Cisco Networking Academy. Ce certificat valide mes connaissances en réseaux informatiques."
+	  },
+	  "bettingSport": {
+		"title": "Prédictions résultats sportifs",
+		"company": "",
+		"place": "",
+		"date": "2021",
+		"content": "Création d’un base de données disponible au publique avec toutes les statistiques de certains championnats de foot et de basket. Puis recherche d’algorithmes d’apprentissage supervisé permettant la prédiction de résulats sportifs."
+	  },
+	  "42": {
+		"title": "Formation en programmation",
+		"company": "42",
+		"place": "(Paris, France)",
+		"date": "2017 - 2018",
+		"content": "J'ai suivi une formation en programmation à 42 Paris. Cette formation m'a permis d'acquérir des compétences en programmation et en algorithmique, en particulier sur le C. J'ai pu également développer mon esprit d'équipe et mon autonomie."
+	  }
+	},
+	"projects": {
+	  "title": "Projets",
+	  "content": "Voici une liste de projets (et des repos) que j'ai réalisé durant mes études et mes loisirs. Ces projets m'ont permis d'acquérir des compétences en programmation, en gestion de projet et en travail d'équipe.",
+	  "recapM2": {
+		"title": "Recap cours M2",
+		"content": "Des pages web récapitulant les cours de M2 Intelligence Artificielle de l'UCBL de l'année 2023-2024. Ces pages ont été créées pour faciliter la révision des cours et pour partager les connaissances avec les autres étudiants.",
+		"link": "Accès au site",
+		"footer": "Récapitulatifs selon mes appréciations personnelles."
+	  },
+	  "footDB": {
+		"title": "Base de données pour la Ligue 1",
+		"subtitle": "Statistiques complètes, classements, et évolution des équipes de la Ligue 1.",
+		"content": "Une base de données complète pour la Ligue 1, rassemblant les statistiques, les classements, et l'évolution des équipes semaine après semaine. Scrapées depuis le site https://www.ligue1.fr. Les données ne sont plus mises à jour. Découvrez les détails des équipes, des matchs, et suivez l'évolution du classement au fil de la saison. Les statistiques des matchs individuels sont disponibles depuis la saison 2020-2021."
+	  }
+	}
+  }
+  

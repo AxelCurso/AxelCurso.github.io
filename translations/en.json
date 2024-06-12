@@ -1,0 +1,35 @@
+{
+	"navbar": {
+	  "aboutMe": "About Me",
+	  "hobbies": "Hobbies",
+	  "resume": "Resume",
+	  "projects": "Projects"
+	},
+	"about": {
+	  "title": "About Me",
+	  "content": "I am a passionate AI student currently pursuing my Master's degree. My interest lies in exploring the intersection of artificial intelligence and [any specific interest or focus]. I enjoy tackling challenging problems and working on innovative projects that have a positive impact on society. This website serves as a showcase of my journey, skills, and the exciting projects I have undertaken."
+	},
+	"hobbies": {
+		"title": "Hobbies",
+		"running": {
+		  "title": "Trail Running",
+		  "content": "coucou"
+		},
+		"climbing": {
+		  "title": "Bouldering",
+		  "content": "coucou"
+		},
+		"aml": {
+		  "title": "titre",
+		  "content": "coucou"
+		}
+	  },
+	"resume": {
+	  "title": "Resume",
+	  "content": "Provide details about your education, skills, and any relevant experience."
+	},
+	"projects": {
+	  "title": "Projects",
+	  "content": "Highlight some of your notable projects with links to them."
+	}
+  }  
