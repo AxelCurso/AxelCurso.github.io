@@ -86,6 +86,7 @@ p {
 	font-family: Merriweather, serif;
 	font-weight: 300;
 	line-height: 160%;
+	text-align: justify;
 }
 
 a {
@@ -104,11 +105,13 @@ ol {
 	margin-bottom: 10px;
 	padding-left: 40px;
 	font-family: Lato, sans-serif;
+	text-align: justify;
 }
 
 li {
 	font-family: Merriweather, serif;
 	font-weight: 300;
+	text-align: justify;
 }
 
 img {
@@ -134,6 +137,7 @@ blockquote {
 	font-style: italic;
 	font-weight: 400;
 	line-height: 140%;
+	text-align: justify;
 }
 
 figure {
@@ -148,6 +152,46 @@ figcaption {
 	font-family: Merriweather, serif;
 	font-size: 12px;
 	font-weight: 300;
+}
+
+footer {
+	/* fix to bottom */
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.tags {
+	margin-top: -20px;
+}
+
+.tag {
+	background-color: #f2f2f2;
+	border-radius: 3px;
+	padding: 5px 10px;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 20px;
+	text-transform: uppercase;
+	color: #333;
+}
+
+.tag:hover {
+	background-color: #e2e2e2;
+	text-decoration: none;
+	color: inherit;
+}
+
+.blog-list-item {
+	text-decoration: none;
+	color: inherit;
+}
+
+.blog-list-item:hover {
+	text-decoration: none;
+	/* a lighter version of the inherited color */
+	color: #666;
 }
 
 /* tmp */
@@ -229,6 +273,12 @@ figcaption {
 .blog-container {
 	padding-top: 80px;
     padding-bottom: 80px;
+    background-color: white;
+}
+
+.blog-container-specific {
+	padding-top: 0px;
+	padding-bottom: 0px;
     background-color: white;
 }
 
